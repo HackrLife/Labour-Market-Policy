@@ -12,7 +12,8 @@ datasets:
       url: https://api.e-stat.go.jp/rest/3.0/app/getSimpleStatsData
       ext: csv
       parse: none
-      query: {statsDataId: TBD, appId_env: ESTAT_APP_ID}
+      query: {statsDataId: TBD}
+      key_env: {appId: ESTAT_APP_ID}
     domains: [employment]
     frequency: monthly
     verified: false

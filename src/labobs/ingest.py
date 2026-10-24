@@ -15,7 +15,7 @@ import traceback
 import pandas as pd
 
 from . import LOG_DIR, REGISTRY_DIR, REPO_ROOT
-from .connectors import CONNECTORS
+from .connectors import CONNECTORS, MissingKey
 from .registry import iter_datasets, load_registry
 from .storage import processed_path, store_raw
 from .validate import validate
@@ -31,7 +31,14 @@ def _load_json(path, default):
 def ingest_one(src, ds, today: dt.date) -> dict:
     res = {"dataset": ds.key, "title": ds.title, "started": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")}
     fetch, norm = CONNECTORS[ds.connector]
-    fetched = fetch(ds.params)
+    if "TBD" in json.dumps(ds.params):
+        res["status"] = "skipped_unconfigured"
+        return res
+    try:
+        fetched = fetch(ds.params)
+    except MissingKey as e:
+        res.update(status="skipped_no_key", error=str(e))
+        return res
     dom = ds.domains[0]
     is_new, meta = store_raw(dom, src.id, ds.id, fetched.payload, fetched.ext, fetched.url,
                              src.redistribution, today)

@@ -10,7 +10,7 @@ datasets:
     connector: sdmx
     params:
       url: TBD
-      headers_env: {Ocp-Apim-Subscription-Key: STATSNZ_API_KEY}
+      header_env: {Ocp-Apim-Subscription-Key: STATSNZ_API_KEY}
     domains: [employment]
     frequency: quarterly
     verified: false

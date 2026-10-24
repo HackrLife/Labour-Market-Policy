@@ -62,5 +62,6 @@ vintage("worldbank/unemployment_youth")      # release date and hash in use
 ## Setup (one time)
 
 - Repository secret `BLS_API_KEY` (free, https://data.bls.gov/registrationEngine/) raises BLS limits to 50 series and 20 years per request.
+- Optional secrets for national offices that require keys: `ESTAT_APP_ID` (Japan e-Stat), `KOSIS_API_KEY` (Korea), `STATSNZ_API_KEY` (Stats NZ). Datasets whose key is missing are skipped and logged, not failed.
 - Repository variable `LABOBS_CONTACT`: a contact address sent in the User-Agent, as several statistics offices request.
 - Actions permissions: Settings → Actions → General → Workflow permissions → **Read and write**.

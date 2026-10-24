@@ -218,9 +218,91 @@ def norm_fred(b: bytes, p: dict) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------- generic file
+class MissingKey(RuntimeError):
+    pass
+
+
+def _secret_params(p: dict) -> tuple[dict, dict, list[str]]:
+    """Resolve API keys from environment variables named in key_env / header_env."""
+    query, headers, secrets = dict(p.get("query") or {}), dict(p.get("headers") or {}), []
+    for param, env in (p.get("key_env") or {}).items():
+        val = os.environ.get(env)
+        if not val:
+            raise MissingKey(f"environment variable {env} not set")
+        query[param] = val
+        secrets.append(val)
+    for header, env in (p.get("header_env") or {}).items():
+        val = os.environ.get(env)
+        if not val:
+            raise MissingKey(f"environment variable {env} not set")
+        headers[header] = val
+        secrets.append(val)
+    return query, headers, secrets
+
+
+def _mask(url: str, secrets: list[str]) -> str:
+    for s in secrets:
+        url = url.replace(s, "***")
+    return url
+
+
 def fetch_http(p: dict) -> Fetched:
-    r = _get(p["url"], headers=p.get("headers"))
-    return Fetched(r.content, p.get("ext", p["url"].rsplit(".", 1)[-1].lower()), r.url)
+    query, headers, secrets = _secret_params(p)
+    r = _get(p["url"], headers=headers, params=query or None)
+    return Fetched(r.content, p.get("ext", p["url"].split("?")[0].rsplit(".", 1)[-1].lower()),
+                   _mask(r.url, secrets))
+
+
+ONS_MONTHS = {m: f"{i:02d}" for i, m in enumerate(
+    ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"], 1)}
+
+
+def parse_ons_ts(b: bytes, p: dict) -> pd.DataFrame:
+    """ONS time-series generator CSV: metadata rows, then mixed annual/quarterly/monthly rows."""
+    text = b.decode("utf-8-sig")
+    meta, rows = {}, []
+    for line in text.splitlines():
+        parts = [x.strip().strip('"') for x in line.split('","')] if line.startswith('"') else line.split(",")
+        if len(parts) < 2:
+            continue
+        k, v = parts[0].strip('"'), parts[1].strip('"')
+        tok = k.split()
+        if tok and tok[0].isdigit() and len(tok[0]) == 4:
+            if len(tok) == 1:
+                per, freq = tok[0], "A"
+            elif tok[1].startswith("Q"):
+                per, freq = f"{tok[0]}-{tok[1]}", "Q"
+            elif tok[1][:3].upper() in ONS_MONTHS:
+                per, freq = f"{tok[0]}-{ONS_MONTHS[tok[1][:3].upper()]}", "M"
+            else:
+                continue
+            rows.append({"period": per, "freq": freq, "value": pd.to_numeric(v, errors="coerce")})
+        else:
+            meta[k] = v
+    df = pd.DataFrame(rows)
+    keep = p.get("freq")
+    if keep:
+        df = df[df["freq"] == keep]
+    df["indicator"] = meta.get("CDID", p.get("indicator", ""))
+    df["indicator_label"] = meta.get("Title", "")
+    df["unit"] = meta.get("Unit", "")
+    return df
+
+
+def parse_sidra(b: bytes, p: dict) -> pd.DataFrame:
+    """IBGE SIDRA /values JSON: first record is a header mapping codes to labels."""
+    recs = json.loads(b)
+    header, data = recs[0], recs[1:]
+    df = pd.DataFrame(data).rename(columns={k: v for k, v in header.items()})
+    df.columns = [str(c).strip() for c in df.columns]
+    return df
+
+
+def parse_json_records(b: bytes, p: dict) -> pd.DataFrame:
+    obj = json.loads(b)
+    for k in p.get("records_path", []):
+        obj = obj[k]
+    return pd.DataFrame(obj)
 
 
 def norm_http(b: bytes, p: dict) -> pd.DataFrame | None:
@@ -228,14 +310,29 @@ def norm_http(b: bytes, p: dict) -> pd.DataFrame | None:
     if kind == "none":
         return None
     if kind == "csv":
-        return pd.read_csv(io.BytesIO(b), low_memory=False)
-    if kind == "zip_csv":
+        df = pd.read_csv(io.BytesIO(b), low_memory=False, skiprows=p.get("skiprows", 0))
+    elif kind == "zip_csv":
         with zipfile.ZipFile(io.BytesIO(b)) as z:
-            return pd.read_csv(z.open(p["member"]), sep=p.get("sep", ","), low_memory=False)
-    if kind == "xlsx":
-        return pd.read_excel(io.BytesIO(b), sheet_name=p.get("sheet", 0),
-                             header=p.get("header", 0))
-    raise ConnectorError(f"unknown parse kind {kind}")
+            df = pd.read_csv(z.open(p["member"]), sep=p.get("sep", ","), low_memory=False)
+    elif kind == "xlsx":
+        df = pd.read_excel(io.BytesIO(b), sheet_name=p.get("sheet", 0), header=p.get("header", 0))
+    elif kind == "ons_ts":
+        df = parse_ons_ts(b, p)
+    elif kind == "sidra":
+        df = parse_sidra(b, p)
+    elif kind == "json_records":
+        df = parse_json_records(b, p)
+    else:
+        raise ConnectorError(f"unknown parse kind {kind}")
+    # map publisher columns onto the tidy schema: params.rename {publisher_col: tidy_col}
+    df = df.rename(columns=p.get("rename", {}))
+    df.columns = [str(c).lower() for c in df.columns]
+    for col, default in (("ref_area", p.get("ref_area", "")), ("indicator", p.get("indicator", ""))):
+        if col not in df.columns:
+            df[col] = default
+    if "value" in df.columns:
+        df["value"] = pd.to_numeric(df["value"], errors="coerce")
+    return df
 
 
 CONNECTORS: dict[str, tuple[Callable[[dict], Fetched], Callable[[bytes, dict], pd.DataFrame | None]]] = {

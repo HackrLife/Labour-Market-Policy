@@ -13,6 +13,8 @@ datasets:
       ext: zip
       parse: zip_csv
       member: 14100287.csv
+      rename: {REF_DATE: period, GEO: ref_area, VALUE: value}
+      indicator: "14100287"
     domains: [employment]
     frequency: monthly
     verified: true
@@ -30,6 +32,8 @@ datasets:
       ext: zip
       parse: zip_csv
       member: 14100371.csv
+      rename: {REF_DATE: period, GEO: ref_area, VALUE: value}
+      indicator: "14100371"
     domains: [vacancies]
     frequency: monthly
     verified: true
@@ -43,6 +47,8 @@ datasets:
       ext: zip
       parse: zip_csv
       member: 14100432.csv
+      rename: {REF_DATE: period, GEO: ref_area, VALUE: value}
+      indicator: "14100432"
     domains: [vacancies]
     frequency: monthly
     verified: true

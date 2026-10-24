@@ -108,3 +108,35 @@ class TestStorage(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestHttpParsers(unittest.TestCase):
+    def test_ons_ts(self):
+        csv = ('"Title","LFS: Unemployment rate"\n"CDID","MGSX"\n"Unit","%"\n'
+               '"1971","4.0"\n"1971 Q1","3.9"\n"2026 AUG","4.8"\n').encode()
+        df = C.norm_http(csv, {"parse": "ons_ts", "freq": "M", "ref_area": "GBR"})
+        self.assertEqual(list(df.period), ["2026-08"])
+        self.assertEqual(df.iloc[0].indicator, "MGSX")
+        self.assertEqual(df.iloc[0].ref_area, "GBR")
+
+    def test_rename_defaults(self):
+        csv = b"REF_DATE,GEO,VALUE,Sex\n2026-09,Canada,6.9,Both sexes\n"
+        df = C.norm_http(csv, {"parse": "csv", "rename": {"REF_DATE": "period", "GEO": "ref_area", "VALUE": "value"},
+                               "indicator": "14100287"})
+        self.assertEqual(list(df.columns[:4]), ["period", "ref_area", "value", "sex"])
+        self.assertEqual(df.iloc[0].indicator, "14100287")
+
+    def test_sidra(self):
+        payload = [{"D1C": "Trimestre (Código)", "V": "Valor"}, {"D1C": "202602", "V": "5.8"}]
+        df = C.norm_http(json.dumps(payload).encode(),
+                         {"parse": "sidra", "rename": {"Trimestre (Código)": "period", "Valor": "value"}, "ref_area": "BRA"})
+        self.assertEqual(df.iloc[0].value, 5.8)
+
+    def test_missing_key_and_mask(self):
+        with mock.patch.dict("os.environ", {}, clear=True):
+            with self.assertRaises(C.MissingKey):
+                C._secret_params({"key_env": {"appId": "ESTAT_APP_ID"}})
+        with mock.patch.dict("os.environ", {"K": "s3cret"}):
+            q, h, sec = C._secret_params({"key_env": {"apiKey": "K"}, "query": {"a": 1}})
+            self.assertEqual(q, {"a": 1, "apiKey": "s3cret"})
+            self.assertEqual(C._mask("https://x?apiKey=s3cret", sec), "https://x?apiKey=***")

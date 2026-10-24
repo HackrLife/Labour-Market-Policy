@@ -12,7 +12,8 @@ datasets:
       url: https://kosis.kr/openapi/Param/statisticsParameterData.do
       ext: json
       parse: none
-      query: {method: getList, apiKey_env: KOSIS_API_KEY, orgId: "101", tblId: TBD, itmId: ALL, objL1: ALL, format: json, jsonVD: "Y", prdSe: M, newEstPrdCnt: "60"}
+      query: {method: getList, orgId: "101", tblId: TBD, itmId: ALL, objL1: ALL, format: json, jsonVD: "Y", prdSe: M, newEstPrdCnt: "60"}
+      key_env: {apiKey: KOSIS_API_KEY}
     domains: [employment]
     frequency: monthly
     verified: false

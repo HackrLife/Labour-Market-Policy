@@ -11,7 +11,10 @@ datasets:
     params:
       url: https://apisidra.ibge.gov.br/values/t/4099/n1/all/v/4099/p/all
       ext: json
-      parse: none
+      parse: sidra
+      rename: {"Trimestre (Código)": period, "Valor": value}
+      ref_area: BRA
+      indicator: pnadc_4099
     domains: [employment]
     frequency: quarterly
     verified: false

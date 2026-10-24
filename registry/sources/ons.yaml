@@ -11,7 +11,9 @@ datasets:
     params:
       url: https://www.ons.gov.uk/generator?format=csv&uri=%2Femploymentandlabourmarket%2Fpeoplenotinwork%2Funemployment%2Ftimeseries%2Fmgsx%2Flms
       ext: csv
-      parse: none
+      parse: ons_ts
+      freq: M
+      ref_area: GBR
     domains: [employment]
     frequency: monthly
     verified: true
@@ -27,7 +29,9 @@ datasets:
     params:
       url: https://www.ons.gov.uk/generator?format=csv&uri=%2Femploymentandlabourmarket%2Fpeopleinwork%2Femploymentandemployeetypes%2Ftimeseries%2Fap2y%2Funem
       ext: csv
-      parse: none
+      parse: ons_ts
+      freq: M
+      ref_area: GBR
     domains: [vacancies]
     frequency: monthly
     verified: true
@@ -40,7 +44,9 @@ datasets:
     params:
       url: https://www.ons.gov.uk/generator?format=csv&uri=%2Femploymentandlabourmarket%2Fpeopleinwork%2Fearningsandworkinghours%2Ftimeseries%2Fkab9%2Femp
       ext: csv
-      parse: none
+      parse: ons_ts
+      freq: M
+      ref_area: GBR
     domains: [wages]
     frequency: monthly
     verified: true

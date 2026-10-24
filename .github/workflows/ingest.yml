@@ -39,6 +39,9 @@ jobs:
       - name: Ingest
         env:
           BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+          KOSIS_API_KEY: ${{ secrets.KOSIS_API_KEY }}
+          STATSNZ_API_KEY: ${{ secrets.STATSNZ_API_KEY }}
           LABOBS_CONTACT: ${{ vars.LABOBS_CONTACT }}
         run: |
           args=""
