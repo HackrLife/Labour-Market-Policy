@@ -1,0 +1,29 @@
+id: fred_longrun
+publisher: Federal Reserve Bank of St. Louis — FRED, long-run BLS Current Employment Statistics series
+homepage: https://fred.stlouisfed.org
+licence: BLS series are US government works (public domain); FRED requests citation
+redistribution: attribution
+release_calendar: Monthly, with the BLS Employment Situation release
+datasets:
+  - id: ces_longrun
+    title: All employees, total nonfarm and manufacturing, monthly from 1939
+    connector: fred
+    params:
+      series: [PAYEMS, MANEMP]
+    domains: [employment, adjustment]
+    frequency: monthly
+    verified: true
+    notes: >-
+      FRED table pages confirm PAYEMS (Total Nonfarm, thousands, monthly SA, first obs 1939-01) and MANEMP
+      (Manufacturing, thousands, monthly SA, first obs 1939-01). Source BLS CES.
+  - id: ces_information
+    title: All employees, Information sector (USINFO)
+    connector: fred
+    params:
+      series: [USINFO]
+    domains: [employment, adjustment]
+    frequency: monthly
+    verified: false
+    notes: >-
+      Start January 1939 per the IHME GHDx catalogue entry for FRED/USINFO; the FRED page itself was not reached.
+      Note that the Information supersector is a NAICS construct, so pre-1990 values are BLS reconstructions.

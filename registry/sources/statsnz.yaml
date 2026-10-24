@@ -1,0 +1,22 @@
+id: statsnz
+publisher: Stats NZ Tatauranga Aotearoa — Aotearoa Data Explorer (SDMX) API
+homepage: https://explore.data.stats.govt.nz
+licence: Not confirmed in this pass (Stats NZ content is generally published under CC BY 4.0; the copyright page was not reachable)
+redistribution: attribution
+release_calendar: https://www.stats.govt.nz/release-calendar/ (Household Labour Force Survey quarterly)
+datasets:
+  - id: hlfs_headline
+    title: Household Labour Force Survey — headline labour force (dataflow id to be confirmed)
+    connector: sdmx
+    params:
+      url: TBD
+      headers_env: {Ocp-Apim-Subscription-Key: STATSNZ_API_KEY}
+    domains: [employment]
+    frequency: quarterly
+    verified: false
+    notes: >-
+      Infoshare has been replaced by Aotearoa Data Explorer. The API portal (https://portal.apis.stats.govt.nz/how-to-subscribe,
+      /documentation) says every call needs a subscription key sent in the header Ocp-Apim-Subscription-Key.
+      The base URL and HLFS dataflow id were not published on the pages reached, so this entry is a placeholder.
+      Needs: (1) a free portal subscription stored in env STATSNZ_API_KEY; (2) fetch_sdmx extended to read header
+      values from environment variables (headers_env). The registry loads with url TBD, but a pull will fail until the URL is filled.

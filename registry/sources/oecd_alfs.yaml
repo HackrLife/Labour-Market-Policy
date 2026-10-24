@@ -1,0 +1,34 @@
+id: oecd_alfs
+publisher: OECD — Annual Labour Force Statistics (Data Explorer SDMX)
+homepage: https://data-explorer.oecd.org
+licence: CC BY 4.0 (OECD terms since July 2024)
+redistribution: open
+release_calendar: Annual
+datasets:
+  - id: alfs_summary
+    title: Annual labour force survey, summary tables (DSD_ALFS@DF_SUMTAB)
+    connector: sdmx
+    params:
+      url: https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_ALFS@DF_SUMTAB,1.0/all
+      query: {format: csvfile}
+      accept: text/csv
+      dataflow: DSD_ALFS@DF_SUMTAB
+    domains: [employment, demography]
+    frequency: annual
+    verified: false
+    notes: >-
+      Dataflow DSD_ALFS@DF_SUMTAB version 1.0 per DBnomics mirror (48 areas, series 1956–2025). Agency OECD.SDD.TPS is
+      inferred from the companion flow DF_ALFS_EMP (listed as oecd_sdd_tps_dsd_alfs_df_alfs_emp_v1_1) and the existing
+      IALFS entries; not confirmed for SUMTAB. Kept in a separate file so the oecd.yaml copy is not edited.
+  - id: alfs_employment_activity
+    title: Employment by activities and status (DSD_ALFS@DF_ALFS_EMP)
+    connector: sdmx
+    params:
+      url: https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_ALFS@DF_ALFS_EMP,1.1/all
+      query: {format: csvfile}
+      accept: text/csv
+      dataflow: DSD_ALFS@DF_ALFS_EMP
+    domains: [employment, adjustment]
+    frequency: annual
+    verified: false
+    notes: Agency and version (OECD.SDD.TPS, 1.1) taken from a third-party mirror slug (baselight); confirm against https://sdmx.oecd.org/public/rest/dataflow/all before use.

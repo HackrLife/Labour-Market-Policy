@@ -1,0 +1,27 @@
+id: estat_japan
+publisher: Statistics Bureau of Japan (MIC) — e-Stat API 3.0
+homepage: https://www.e-stat.go.jp
+licence: e-Stat terms of use — conform to Government of Japan Standard Terms of Use v2.0 and stated compatible with CC BY 4.0; source citation required, edits must be marked
+redistribution: attribution
+release_calendar: https://www.stat.go.jp/data/roudou/ (Labour Force Survey, monthly, end of month)
+datasets:
+  - id: lfs_long_series
+    title: Labour Force Survey (労働力調査, survey code 00200531) — long time series, 1953 onward, incl. unemployment rate
+    connector: http
+    params:
+      url: https://api.e-stat.go.jp/rest/3.0/app/getSimpleStatsData
+      ext: csv
+      parse: none
+      query: {statsDataId: TBD, appId_env: ESTAT_APP_ID}
+    domains: [employment]
+    frequency: monthly
+    verified: false
+    notes: >-
+      Endpoint pattern http(s)://api.e-stat.go.jp/rest/<version>/app/getSimpleStatsData (CSV) or .../app/json/getStatsData
+      from the API spec (https://www.e-stat.go.jp/api/en/node/166); "3.0" used as version per spec 3.0 document title.
+      appId is required and issued on free registration (API terms, Articles 2–3); store it in env ESTAT_APP_ID and do not share it.
+      The statsDataId for the headline series is not confirmed: the long series file list is at
+      https://www.e-stat.go.jp/stat-search/files?tclass=000001226526&cycle=0 and monthly detailed tables at
+      tstat=000001226583. Look up the id with getStatsList (surveyYears/statsCode=00200531) before setting verified.
+      Connector change: fetch_http does not pass query params; add params.query support plus appId injection from env.
+      Credit line required for services using the API (https://www.e-stat.go.jp/api/api-info/credit/).

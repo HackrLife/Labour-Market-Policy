@@ -1,0 +1,24 @@
+id: ibge
+publisher: Instituto Brasileiro de Geografia e Estatística (IBGE) — SIDRA API
+homepage: https://sidra.ibge.gov.br
+licence: Not confirmed in this pass (IBGE permits reuse with source citation per its site terms; not read here)
+redistribution: attribution
+release_calendar: PNAD Contínua monthly (rolling quarter) and quarterly releases
+datasets:
+  - id: pnadc_unemployment_quarterly
+    title: PNAD Contínua — unemployment rate (taxa de desocupação), quarterly, Brazil (table 4099)
+    connector: http
+    params:
+      url: https://apisidra.ibge.gov.br/values/t/4099/n1/all/v/4099/p/all
+      ext: json
+      parse: none
+    domains: [employment]
+    frequency: quarterly
+    verified: false
+    notes: >-
+      Base https://apisidra.ibge.gov.br/values and path grammar /t/<table>/n1/all/v/<var>/p/<periods> confirmed in the
+      sidrar documentation (CRAN). Table 4099 is listed as "Unemployment rate (PNAD Contínua, quarterly)" by an
+      IBGE MCP wrapper, and v/4099 appears as the unemployment-rate variable in sidrar examples (table 6468).
+      The variable code for table 4099 itself was not confirmed against /desctabapi.aspx?c=4099, so verified is false.
+      Response is a JSON array whose first element is a header record (suppress with /h/n). Needs a JSON normaliser
+      (columns D1C/D2C/V). Table 6381 (monthly rolling quarters) could not be confirmed and is omitted.

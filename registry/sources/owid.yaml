@@ -1,0 +1,23 @@
+id: owid
+publisher: Our World in Data (Global Change Data Lab) — grapher exports
+homepage: https://ourworldindata.org
+licence: OWID charts and processing CC BY 4.0; underlying third-party data keep their original licences (here PWT 11.0, CC BY 4.0; Huberman & Minns 2005 discussion paper)
+redistribution: attribution
+release_calendar: Updated when upstream sources update
+datasets:
+  - id: annual_working_hours
+    title: Annual working hours per worker, long run (Huberman & Minns 1870–1938; PWT 11.0 from 1950)
+    connector: http
+    params:
+      url: https://ourworldindata.org/grapher/annual-working-hours-per-worker.csv?v=1&csvType=full&useColumnShortNames=false
+      ext: csv
+      parse: csv
+    domains: [employment]
+    frequency: annual
+    verified: true
+    notes: >-
+      Slug annual-working-hours-per-worker and CSV/metadata URLs confirmed on the grapher page
+      (https://ourworldindata.org/grapher/annual-working-hours-per-worker?tab=table). Metadata JSON at
+      .../annual-working-hours-per-worker.metadata.json. Columns are Entity, Code, Year, <indicator>; rename to
+      ref_area/period/value in the notebook. Related slug annual-working-hours-per-persons-engaged and
+      compare-sources-working-hours exist. Cite OWID and both upstream sources. Not pulled from this sandbox.

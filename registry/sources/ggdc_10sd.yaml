@@ -1,0 +1,22 @@
+id: ggdc_10sd
+publisher: Groningen Growth and Development Centre — 10-Sector Database (2014 release, legacy)
+homepage: https://www.rug.nl/ggdc/structuralchange/previous-sector-database/10-sector-2014
+licence: No licence named on the release page; citation of Timmer, de Vries and de Vries (2015) required; site Disclaimer & Copyright terms not reviewed
+redistribution: restricted
+release_calendar: Discontinued; superseded by the Economic Transformation Database (page last modified February 2021)
+datasets:
+  - id: ten_sector_2014
+    title: GGDC 10-Sector Database — employment and value added by 10 sectors, c.1950–2012 (coverage varies by country)
+    connector: http
+    params:
+      url: https://www.rug.nl/ggdc/docs/10sd_jan15_2014.xlsx
+      ext: xlsx
+      parse: none
+    domains: [adjustment, employment, macro]
+    frequency: annual
+    verified: false
+    notes: >-
+      Download links (xlsx, and Stata zip at https://www.rug.nl/ggdc/docs/10sd_jan15_2014.zip) still appear on the
+      release page, but the files could not be fetched from this sandbox and the page gives no licence. Kept restricted:
+      fetch locally for analysis, do not commit raw or processed files until the GGDC copyright terms are checked.
+      The R package collapse ships a GGDC10S extract (third-party copy, not used here).

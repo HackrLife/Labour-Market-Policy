@@ -1,0 +1,27 @@
+id: imf
+publisher: International Monetary Fund — SDMX 3.0 data API (api.imf.org)
+homepage: https://data.imf.org
+licence: "IMF Copyright and Usage terms — free reuse and redistribution of Data with citation (Source: International Monetary Fund, <database>, <link>); commercial reuse needs permission; automated bulk download needs explicit permission"
+redistribution: attribution
+release_calendar: WEO twice yearly (April, October)
+datasets:
+  - id: weo_unemployment
+    title: World Economic Outlook — unemployment rate (LUR), annual, all countries
+    connector: sdmx
+    params:
+      url: https://api.imf.org/external/sdmx/3.0/data/dataflow/IMF.RES/WEO/+/*.LUR.A
+      query: {dimensionAtObservation: TIME_PERIOD}
+      accept: text/csv
+      dataflow: IMF.RES:WEO
+      indicator_label: LUR
+    domains: [employment]
+    frequency: annual
+    verified: false
+    notes: >-
+      Base URL https://api.imf.org/external/sdmx/3.0 confirmed at https://browser.sdmx.io/agencies/IMF; data path
+      /data/dataflow/{agency}/{flow}/{version}/{key}, key order COUNTRY.INDICATOR.FREQUENCY, WEO version 9.0.0 and
+      LUR = "Unemployment rate" in the WEO codelist, all per the worked examples in rogermariolopez.com (Dec 2025) and
+      bd-econ.com IMF API guide part 3, which also show CSV via "Accept: text/csv" with no key. The IMF's own pages
+      (data.imf.org/en/Resource-Pages/IMF-API) mention registration on the API portal, so whether anonymous access
+      lasts is uncertain. Not pulled from this sandbox; verify the wildcard key, then set verified. The IMF terms
+      bar automated bulk download without permission, so pull only the series you need, at low frequency.

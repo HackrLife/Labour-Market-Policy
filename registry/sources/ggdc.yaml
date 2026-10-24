@@ -1,0 +1,65 @@
+id: ggdc
+publisher: Groningen Growth and Development Centre (GGDC), University of Groningen — via DataverseNL
+homepage: https://www.rug.nl/ggdc/
+licence: CC BY 4.0 (stated on each release page for PWT 11.0, Maddison 2023 and ETD)
+redistribution: open
+release_calendar: Ad hoc releases; PWT 11.0 released October 2025; Maddison Project Database 2023 update; ETD updated September 2023
+datasets:
+  - id: pwt_110
+    title: Penn World Table 11.0 — employment (emp), average hours (avh), human capital (hc), labour share (labsh), output, capital
+    connector: http
+    params:
+      url: https://dataverse.nl/api/access/datafile/554105
+      ext: xlsx
+      parse: none
+    domains: [macro, employment]
+    frequency: annual
+    verified: true
+    notes: >-
+      Main Excel file linked from https://www.rug.nl/ggdc/productivity/pwt/pwt-releases/pwt110 (DOI 10.34894/FABVLR).
+      Stata version is datafile/554030. Variable names emp, avh, hc, labsh as in the PWT user guide
+      (pwt100-user-guide-to-data-files.pdf). Sheet name for 11.0 not confirmed, so parse is none; set parse: xlsx
+      and sheet once the workbook has been opened. Dataverse returns non-ingested xlsx files as uploaded.
+      Cite Feenstra, Inklaar and Timmer (2015), AER 105(10). Not pulled from this sandbox (egress blocked).
+  - id: pwt_110_na
+    title: Penn World Table 11.0 — National Accounts data supplement
+    connector: http
+    params:
+      url: https://dataverse.nl/api/access/datafile/554022
+      ext: xlsx
+      parse: none
+    domains: [macro]
+    frequency: annual
+    verified: true
+    notes: Linked from the PWT 11.0 release page. Stata version datafile/554024; capital detail xlsx datafile/554029.
+  - id: maddison_2023
+    title: Maddison Project Database 2023 — GDP per capita (gdppc) and population (pop), long run
+    connector: http
+    params:
+      url: https://dataverse.nl/api/access/datafile/421302
+      ext: xlsx
+      parse: xlsx
+      sheet: Full data
+    domains: [macro, demography]
+    frequency: annual
+    verified: true
+    notes: >-
+      Excel link from https://rug.nl/ggdc/historicaldevelopment/maddison/releases/maddison-project-database-2023
+      (DOI 10.34894/INZBF2); Stata datafile/421303. Sheet "Full data" with columns countrycode, country, region, year,
+      gdppc, pop (per CRAN MaddisonData vignette, which read mpd2023web.xlsx). Cite Bolt and van Zanden (2024),
+      Journal of Economic Surveys, doi:10.1111/joes.12618. Not pulled from this sandbox.
+  - id: etd
+    title: GGDC/UNU-WIDER Economic Transformation Database — sectoral employment (EMP) and value added, 12 sectors, 51 economies, 1990–2018
+    connector: http
+    params:
+      url: https://dataverse.nl/api/access/datafile/382704
+      ext: xlsx
+      parse: none
+    domains: [adjustment, employment, macro]
+    frequency: annual
+    verified: true
+    notes: >-
+      Excel link from https://www.rug.nl/ggdc/structuralchange/etd/ (DOI 10.34894/LCH4CA). Stata datafile/382706,
+      R datafile/382707, change log datafile/382705, ETD Linked Series datafile/356908. Covers 1990–2018 (updated
+      Sept 2023); no later years. Sheet layout not confirmed, so parse is none. Cite Kruse, Mensah, Sen and de Vries (2022),
+      IMF Economic Review, doi:10.1057/s41308-022-00183-7. A separate ETD Transition Economies release exists.

@@ -1,0 +1,49 @@
+id: statcan
+publisher: Statistics Canada — full-table CSV downloads
+homepage: https://www150.statcan.gc.ca
+licence: Statistics Canada Open Licence (https://www.statcan.gc.ca/en/reference/licence); open.canada.ca lists these tables under the Open Government Licence – Canada
+redistribution: attribution
+release_calendar: https://www150.statcan.gc.ca/n1/dai-quo/cal2-eng.htm (LFS monthly; Job Vacancy and Wage Survey monthly)
+datasets:
+  - id: lfs_characteristics_monthly
+    title: Labour force characteristics, monthly, seasonally adjusted and trend-cycle (table 14-10-0287-01)
+    connector: http
+    params:
+      url: https://www150.statcan.gc.ca/n1/en/tbl/csv/14100287-eng.zip
+      ext: zip
+      parse: zip_csv
+      member: 14100287.csv
+    domains: [employment]
+    frequency: monthly
+    verified: true
+    notes: >-
+      Title confirmed in The Daily, 2026-02-06. URL pattern from https://www.statcan.gc.ca/en/developers/tips
+      (example uses this exact table). The user guide (https://www.statcan.gc.ca/en/developers/csv/user-guide)
+      says the zip holds PID.csv and PID_Metadata.csv. Columns REF_DATE, GEO, VALUE etc.; rename in notebook.
+      Attribution notice required: "Source: Statistics Canada, Table 14-10-0287-01, <reference date>".
+      Large file (all provinces, ages, sexes). Not pulled from this sandbox.
+  - id: job_vacancies_monthly_nsa
+    title: Job vacancies, payroll employees and job vacancy rate by province and territory, monthly, unadjusted (table 14-10-0371-01)
+    connector: http
+    params:
+      url: https://www150.statcan.gc.ca/n1/en/tbl/csv/14100371-eng.zip
+      ext: zip
+      parse: zip_csv
+      member: 14100371.csv
+    domains: [vacancies]
+    frequency: monthly
+    verified: true
+    notes: >-
+      Table is monthly (not quarterly) per The Daily, 2024-12-19. Same URL pattern as 14-10-0287-01.
+  - id: job_vacancies_monthly_sa
+    title: Job vacancies, payroll employees and job vacancy rate by province and territory, monthly, seasonally adjusted (table 14-10-0432-01)
+    connector: http
+    params:
+      url: https://www150.statcan.gc.ca/n1/tbl/csv/14100432-eng.zip
+      ext: zip
+      parse: zip_csv
+      member: 14100432.csv
+    domains: [vacancies]
+    frequency: monthly
+    verified: true
+    notes: URL as listed on open.canada.ca dataset 1862cd2e-a516-4f00-a62b-7777fea8eb0d (the /n1/tbl/csv/ form without /en/ also works per that catalogue).

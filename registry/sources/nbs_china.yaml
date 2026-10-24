@@ -1,0 +1,21 @@
+id: nbs_china
+publisher: National Bureau of Statistics of China — National Data (data.stats.gov.cn)
+homepage: https://data.stats.gov.cn
+licence: No open licence identified; NBS website copyright terms apply
+redistribution: restricted
+release_calendar: Monthly surveyed urban unemployment rate, mid-month press release
+datasets:
+  - id: urban_surveyed_unemployment
+    title: Surveyed urban unemployment rate (monthly)
+    connector: http
+    params:
+      url: TBD
+      ext: json
+      parse: none
+    domains: [employment]
+    frequency: monthly
+    verified: false
+    notes: >-
+      No documented, stable public API was found. Community packages (R rstatscn, pedquant::ed_nbs) scrape the
+      undocumented easyquery.htm endpoint behind the web interface; its behaviour and terms are not documented by NBS.
+      Prefer ILOSTAT or IMF WEO (LUR) for China in pipelines. Do not redistribute.

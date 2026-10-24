@@ -1,0 +1,23 @@
+id: mospi
+publisher: Ministry of Statistics and Programme Implementation (India) — eSankhyiki data APIs
+homepage: https://esankhyiki.mospi.gov.in
+licence: Not confirmed in this pass (Government Open Data Licence – India is likely but not verified for the API)
+redistribution: restricted
+release_calendar: PLFS quarterly bulletin (urban, CWS) and monthly bulletin; annual report
+datasets:
+  - id: plfs
+    title: Periodic Labour Force Survey — LFPR, WPR, unemployment rate, earnings
+    connector: http
+    params:
+      url: TBD
+      ext: json
+      parse: none
+    domains: [employment, wages]
+    frequency: quarterly
+    verified: false
+    notes: >-
+      MoSPI's official MCP server (nso-india/esankhyiki-mcp, MIT, hosted at https://mcp.mospi.gov.in/) lists PLFS
+      as dataset 1 and calls the data API host api.mospi.gov.in without a key, following list_datasets ->
+      get_indicators -> get_metadata -> get_data. The REST paths are in that repo's swagger/ directory, which could
+      not be read from this session. Fill url and query from the PLFS swagger spec, then verify. Licence also unconfirmed,
+      so kept restricted. Microdata are on https://microdata.gov.in (registration).

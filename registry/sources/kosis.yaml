@@ -1,0 +1,25 @@
+id: kosis
+publisher: Statistics Korea (National Data Agency) — KOSIS OpenAPI
+homepage: https://kosis.kr
+licence: KOSIS statistical information terms of use (통계정보 활용약관); exact reuse terms not confirmed in this pass
+redistribution: restricted
+release_calendar: Economically Active Population Survey, monthly (mid-month)
+datasets:
+  - id: eaps_unemployment
+    title: Economically Active Population Survey — unemployment and participation (orgId 101; tblId to be confirmed)
+    connector: http
+    params:
+      url: https://kosis.kr/openapi/Param/statisticsParameterData.do
+      ext: json
+      parse: none
+      query: {method: getList, apiKey_env: KOSIS_API_KEY, orgId: "101", tblId: TBD, itmId: ALL, objL1: ALL, format: json, jsonVD: "Y", prdSe: M, newEstPrdCnt: "60"}
+    domains: [employment]
+    frequency: monthly
+    verified: false
+    notes: >-
+      Endpoint and parameter names taken from the kosis R package manual (getStatDataFromURL example with orgId 101,
+      tblId DT_1B41) and the KOSIS OpenAPI guide (https://kosis.kr/serviceInfo/openAPIGuide.do), which lists JSON and SDMX
+      outputs. An API key from free KOSIS registration is required; store in env KOSIS_API_KEY.
+      The EAPS table id (DT_1DA7xxx family) is not confirmed; find it via the KOSIS search API before use.
+      Kept restricted until the terms of use (https://kosis.kr/serviceInfo/applicationClause.do, unreachable from here)
+      are read. Connector change: query params with env-injected apiKey; JSON normaliser (fields PRD_DE, DT, ITM_ID, C1).

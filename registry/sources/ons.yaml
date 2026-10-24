@@ -1,0 +1,49 @@
+id: ons
+publisher: Office for National Statistics (UK) — time series CSV generator
+homepage: https://www.ons.gov.uk
+licence: Open Government Licence v3.0
+redistribution: open
+release_calendar: https://www.ons.gov.uk/releasecalendar (Labour market overview, monthly)
+datasets:
+  - id: lfs_unemployment_rate
+    title: LFS unemployment rate, aged 16+, seasonally adjusted (MGSX, dataset LMS)
+    connector: http
+    params:
+      url: https://www.ons.gov.uk/generator?format=csv&uri=%2Femploymentandlabourmarket%2Fpeoplenotinwork%2Funemployment%2Ftimeseries%2Fmgsx%2Flms
+      ext: csv
+      parse: none
+    domains: [employment]
+    frequency: monthly
+    verified: true
+    notes: >-
+      CSV href copied from https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/timeseries/mgsx/lms.
+      The generator CSV has a metadata block (Title, CDID, Source dataset ID, PreUnit, Unit, Release date, ...) then
+      annual, quarterly and monthly rows mixed in one Date/Value pair of columns ("1971", "1971 Q1", "1971 FEB").
+      parse is none because pandas read_csv cannot handle the header block. Needs a parse kind "ons_ts"
+      (skip rows until the first period row, split by period format) — see VERIFICATION_EXTENSION.md.
+  - id: vacancies_total
+    title: UK vacancies, total, thousands (AP2Y, dataset UNEM)
+    connector: http
+    params:
+      url: https://www.ons.gov.uk/generator?format=csv&uri=%2Femploymentandlabourmarket%2Fpeopleinwork%2Femploymentandemployeetypes%2Ftimeseries%2Fap2y%2Funem
+      ext: csv
+      parse: none
+    domains: [vacancies]
+    frequency: monthly
+    verified: true
+    notes: >-
+      CSV href from https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/timeseries/ap2y/unem.
+      Rolling three-month averages from the Vacancy Survey. Same CSV layout and parser need as MGSX.
+  - id: awe_total_pay
+    title: Average weekly earnings, whole economy, total pay excluding arrears, £, SA (KAB9, dataset EMP)
+    connector: http
+    params:
+      url: https://www.ons.gov.uk/generator?format=csv&uri=%2Femploymentandlabourmarket%2Fpeopleinwork%2Fearningsandworkinghours%2Ftimeseries%2Fkab9%2Femp
+      ext: csv
+      parse: none
+    domains: [wages]
+    frequency: monthly
+    verified: true
+    notes: >-
+      CSV href from https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/timeseries/kab9/emp.
+      Same CSV layout and parser need as MGSX. None of the three was pulled from this sandbox (egress blocked).
