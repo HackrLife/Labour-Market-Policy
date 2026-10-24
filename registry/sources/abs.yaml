@@ -1,0 +1,37 @@
+id: abs
+publisher: Australian Bureau of Statistics — Data API (SDMX)
+homepage: https://www.abs.gov.au
+licence: CC BY 4.0
+redistribution: open
+release_calendar: https://www.abs.gov.au/release-calendar/future-releases — Labour Force monthly (~3rd Thursday)
+datasets:
+  - id: labour_force
+    title: Labour Force, Australia — headline estimates
+    connector: sdmx
+    params:
+      url: https://data.api.abs.gov.au/rest/data/ABS,LF,1.0.0/all
+      query: {startPeriod: "2000-01", dimensionAtObservation: AllDimensions}
+      dataflow: LF
+      ref_area: AUS
+    domains: [employment]
+    frequency: monthly
+  - id: job_vacancies
+    title: Job Vacancies, Australia
+    connector: sdmx
+    params:
+      url: https://data.api.abs.gov.au/rest/data/ABS,JV,1.0.0/all
+      query: {startPeriod: "2000-Q1", dimensionAtObservation: AllDimensions}
+      dataflow: JV
+      ref_area: AUS
+    domains: [vacancies]
+    frequency: quarterly
+  - id: wage_price_index
+    title: Wage Price Index, Australia
+    connector: sdmx
+    params:
+      url: https://data.api.abs.gov.au/rest/data/ABS,WPI,1.0.0/all
+      query: {startPeriod: "2000-Q1", dimensionAtObservation: AllDimensions}
+      dataflow: WPI
+      ref_area: AUS
+    domains: [wages]
+    frequency: quarterly

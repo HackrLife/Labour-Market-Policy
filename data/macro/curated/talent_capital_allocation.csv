@@ -1,0 +1,121 @@
+series,region,period,value,unit,source,url
+Share of US output-per-person growth explained by improved talent allocation (lower bound),US,1960-2010,20,percent,"Hsieh, Hurst, Jones, Klenow (2019) Econometrica 87(5):1439-1474",https://econometricsociety.org/doi/10.3982/ECTA11427
+Share of US output-per-person growth explained by improved talent allocation (upper bound),US,1960-2010,40,percent,"Hsieh, Hurst, Jones, Klenow (2019) Econometrica 87(5):1439-1474",https://econometricsociety.org/doi/10.3982/ECTA11427
+White men share of doctors and lawyers,US,1960,94,percent,"Hsieh, Hurst, Jones, Klenow (2019)",https://econometricsociety.org/doi/10.3982/ECTA11427
+White men share of doctors and lawyers,US,2010,62,percent,"Hsieh, Hurst, Jones, Klenow (2019)",https://econometricsociety.org/doi/10.3982/ECTA11427
+Finance excess relative wage (actual minus benchmark),US,1933,42,percent,Philippon & Reshef (2012) QJE 127(4):1551-1609,https://pages.stern.nyu.edu/tphilipp/papers/pr_qje2012.pdf
+Finance excess relative wage (actual minus benchmark),US,1980,-3,percent,Philippon & Reshef (2012) QJE 127(4):1551-1609,https://pages.stern.nyu.edu/tphilipp/papers/pr_qje2012.pdf
+Finance excess relative wage (actual minus benchmark),US,2005,51,percent,Philippon & Reshef (2012) QJE 127(4):1551-1609,https://pages.stern.nyu.edu/tphilipp/papers/pr_qje2012.pdf
+Rents share of finance wage differential (low),US,2006,30,percent,Philippon & Reshef NBER w14644 abstract,https://www.nber.org/papers/w14644
+Rents share of finance wage differential (high),US,2006,50,percent,Philippon & Reshef NBER w14644 abstract,https://www.nber.org/papers/w14644
+MIT S&E majors whose first job was in finance (classes 2006-2008),US,2006-2008,8.8,percent,Shu (2016) HBS/NBER conference paper 'Innovating in Science and Engineering or Cashing In on Wall Street?',https://conference.nber.org/conf_papers/f90981/f90981.pdf
+MIT S&E majors whose first job was in finance (class 2009),US,2009,5.3,percent,Shu (2016),https://conference.nber.org/conf_papers/f90981/f90981.pdf
+MIT S&E majors who became inventors (classes 1994-2008),US,1994-2008,13.4,percent,Shu (2016),https://conference.nber.org/conf_papers/f90981/f90981.pdf
+MIT bachelor's employed graduates: Information/Computer Technology,US,2025,42.7,percent of accepted positions (n=185),MIT Institutional Research Graduating Student Survey 2025,https://ir.mit.edu/projects/student-placement
+MIT bachelor's employed graduates: Finance and Insurance,US,2025,20.5,percent of accepted positions (n=185),MIT Institutional Research Graduating Student Survey 2025,https://ir.mit.edu/projects/student-placement
+"MIT bachelor's employed graduates: Professional, Scientific, Technical incl. Consulting",US,2025,12.4,percent of accepted positions (n=185),MIT Institutional Research Graduating Student Survey 2025,https://ir.mit.edu/projects/student-placement
+"MIT bachelor's employed graduates: Health Care, Pharma, Medical Devices",US,2025,5.9,percent of accepted positions (n=185),MIT Institutional Research Graduating Student Survey 2025,https://ir.mit.edu/projects/student-placement
+MIT bachelor's employed graduates: Energy and Utilities,US,2025,3.2,percent of accepted positions (n=185),MIT Institutional Research Graduating Student Survey 2025,https://ir.mit.edu/projects/student-placement
+MIT bachelor's employed graduates: Chemicals or Materials,US,2025,2.2,percent of accepted positions (n=185),MIT Institutional Research Graduating Student Survey 2025,https://ir.mit.edu/projects/student-placement
+Effective researchers increase (aggregate US since 1930s),US,1930s-2014,23,multiple,"Bloom, Jones, Van Reenen, Webb (2020) AER 110(4):1104-44",https://www.aeaweb.org/doi/10.1257/aer.20180338
+Research productivity decline (aggregate US since 1930s),US,1930s-2014,5.1,percent per year,"Bloom, Jones, Van Reenen, Webb (2020)",https://www.aeaweb.org/doi/10.1257/aer.20180338
+Researchers required for Moore's law vs early 1970s,US,1971-2014,18,multiple,"Bloom, Jones, Van Reenen, Webb (2020)",https://www.aeaweb.org/doi/10.1257/aer.20180338
+Research productivity decline (Moore's law),US,1971-2014,6.8,percent per year,"Bloom, Jones, Van Reenen, Webb (2020)",https://www.aeaweb.org/doi/10.1257/aer.20180338
+Research productivity decline (new molecular entities),US,n.a.,3.5,percent per year,"Bloom, Jones, Van Reenen, Webb (2020)",https://www.aeaweb.org/doi/10.1257/aer.20180338
+TFP growth,US,1920-1970,2.03,percent per year,"Gordon, NBER Reporter 2015 No.1",https://www2.nber.org/reporter/2015number1/gordon.html
+TFP growth,US,1970-2014,0.74,percent per year,"Gordon, NBER Reporter 2015 No.1",https://www2.nber.org/reporter/2015number1/gordon.html
+Labour productivity growth,US,1920-1970,2.82,percent per year,Gordon (2016) IMF Finance & Development June 2016,https://www.imf.org/external/pubs/ft/fandd/2016/06/gordon.htm
+Labour productivity growth,US,1994-2004,2.26,percent per year,Gordon (2016) IMF F&D,https://www.imf.org/external/pubs/ft/fandd/2016/06/gordon.htm
+Labour productivity growth (avg of 1970-1994 and 2004-2015),US,1970-2015,1.38,percent per year,Gordon (2016) IMF F&D,https://www.imf.org/external/pubs/ft/fandd/2016/06/gordon.htm
+Construction value added per worker change,US,1970-2020,-40,percent (approx.),"Goolsbee & Syverson, BFI research summary of NBER w30845",https://bfi.uchicago.edu/insight/research-summary/the-strange-and-awful-path-of-productivity-in-the-us-construction-sector/
+Construction value added share of GDP (average),US,1950-2020,4.3,percent,"Goolsbee & Syverson, BFI summary",https://bfi.uchicago.edu/insight/research-summary/the-strange-and-awful-path-of-productivity-in-the-us-construction-sector/
+Counterfactual extra aggregate labour productivity growth if construction grew 1%/yr,US,1970-2020,0.18,percentage points per year,"Goolsbee & Syverson, BFI summary",https://bfi.uchicago.edu/insight/research-summary/the-strange-and-awful-path-of-productivity-in-the-us-construction-sector/
+Construction labour productivity growth,World,c.1995-2015,1.0,percent per year,McKinsey Global Institute (Feb 2017) Reinventing Construction,https://www.mckinsey.com/mgi/our-research/reinventing-construction-through-a-productivity-revolution
+Total economy labour productivity growth,World,c.1995-2015,2.8,percent per year,MGI (2017),https://www.mckinsey.com/mgi/our-research/reinventing-construction-through-a-productivity-revolution
+Manufacturing labour productivity growth,World,c.1995-2015,3.6,percent per year,MGI (2017),https://www.mckinsey.com/mgi/our-research/reinventing-construction-through-a-productivity-revolution
+Value of closing construction productivity gap,World,2017,1.6,USD trillion per year,MGI (2017),https://www.mckinsey.com/mgi/our-research/reinventing-construction-through-a-productivity-revolution
+Total US venture investment,US,2000,68.8,USD billion,PwC/NVCA MoneyTree via CNN Money (16 Feb 2001),https://money.cnn.com/2001/02/16/sbstarting/q_venture/index.htm
+Internet-related venture investment,US,2000,56.9,USD billion,PwC/NVCA MoneyTree via CNN Money,https://money.cnn.com/2001/02/16/sbstarting/q_venture/index.htm
+Internet-related share of venture investment,US,2000,83,percent (derived),PwC/NVCA MoneyTree via CNN Money,https://money.cnn.com/2001/02/16/sbstarting/q_venture/index.htm
+VC deal value: Software,US,2016,32.98,USD billion,NVCA 2017 Yearbook (PitchBook),https://nvca.org/wp-content/uploads/2023/07/NVCA-2017-Yearbook.pdf
+VC deal value: Pharma & Biotech,US,2016,7.79,USD billion,NVCA 2017 Yearbook,https://nvca.org/wp-content/uploads/2023/07/NVCA-2017-Yearbook.pdf
+VC deal value: Energy,US,2016,1.35,USD billion,NVCA 2017 Yearbook,https://nvca.org/wp-content/uploads/2023/07/NVCA-2017-Yearbook.pdf
+VC deal value: HC Devices & Supplies,US,2016,3.86,USD billion,NVCA 2017 Yearbook,https://nvca.org/wp-content/uploads/2023/07/NVCA-2017-Yearbook.pdf
+VC deal value: total,US,2016,69,USD billion (2017 vintage; later revised to 84.02),NVCA 2017 Yearbook,https://nvca.org/wp-content/uploads/2023/07/NVCA-2017-Yearbook.pdf
+VC deal value: Software,US,2022,90.21,USD billion,NVCA 2023 Yearbook data pack,https://nvca.org/wp-content/uploads/2023/03/2022-Venture-Yearbook-PDF-Data.pdf
+VC deal value: Pharma & Biotech,US,2022,31.30,USD billion,NVCA 2023 Yearbook data pack,https://nvca.org/wp-content/uploads/2023/03/2022-Venture-Yearbook-PDF-Data.pdf
+VC deal value: Commercial Products & Services,US,2022,37.25,USD billion,NVCA 2023 Yearbook data pack,https://nvca.org/wp-content/uploads/2023/03/2022-Venture-Yearbook-PDF-Data.pdf
+VC deal value: HC Services & Systems,US,2022,22.06,USD billion,NVCA 2023 Yearbook data pack,https://nvca.org/wp-content/uploads/2023/03/2022-Venture-Yearbook-PDF-Data.pdf
+VC deal value: HC Devices & Supplies,US,2022,7.31,USD billion,NVCA 2023 Yearbook data pack,https://nvca.org/wp-content/uploads/2023/03/2022-Venture-Yearbook-PDF-Data.pdf
+VC deal value: Energy,US,2022,5.91,USD billion,NVCA 2023 Yearbook data pack,https://nvca.org/wp-content/uploads/2023/03/2022-Venture-Yearbook-PDF-Data.pdf
+VC deal value: total,US,2022,240.93,USD billion,NVCA 2023 Yearbook data pack,https://nvca.org/wp-content/uploads/2023/03/2022-Venture-Yearbook-PDF-Data.pdf
+VC deal value: total,US,2021,345.45,USD billion (2023 vintage),NVCA 2023 Yearbook data pack,https://nvca.org/wp-content/uploads/2023/03/2022-Venture-Yearbook-PDF-Data.pdf
+VC deal value: Software,US,2023,66.64,USD billion,NVCA 2024 Yearbook data pack,https://nvca.org/wp-content/uploads/2024/04/2024-YB-data-PDF.pdf
+VC deal value: Pharma & Biotech,US,2023,21.36,USD billion,NVCA 2024 Yearbook data pack,https://nvca.org/wp-content/uploads/2024/04/2024-YB-data-PDF.pdf
+VC deal value: Energy,US,2023,3.91,USD billion,NVCA 2024 Yearbook data pack,https://nvca.org/wp-content/uploads/2024/04/2024-YB-data-PDF.pdf
+VC deal value: sum of sectors,US,2023,170.59,USD billion,NVCA 2024 Yearbook data pack,https://nvca.org/wp-content/uploads/2024/04/2024-YB-data-PDF.pdf
+VC deal value: total,US,2025,339.4,USD billion,Q4 2025 PitchBook-NVCA Venture Monitor,https://nvca.org/wp-content/uploads/2026/01/q4-2025-pitchbook-nvca-venture-monitor.pdf
+VC deal value: AI & ML share,US,2025,65.4,percent,Q4 2025 PitchBook-NVCA Venture Monitor,https://nvca.org/wp-content/uploads/2026/01/q4-2025-pitchbook-nvca-venture-monitor.pdf
+VC deal count: AI & ML share,US,2025,39.4,percent,Q4 2025 PitchBook-NVCA Venture Monitor,https://nvca.org/wp-content/uploads/2026/01/q4-2025-pitchbook-nvca-venture-monitor.pdf
+VC deal value: Life sciences,US,2025,36.3,USD billion,Q4 2025 PitchBook-NVCA Venture Monitor,https://nvca.org/wp-content/uploads/2026/01/q4-2025-pitchbook-nvca-venture-monitor.pdf
+VC deal value: total,US,2026Q1,267.2,USD billion,Q1 2026 PitchBook-NVCA Venture Monitor via SiliconANGLE (3 Apr 2026),https://siliconangle.com/2026/04/03/pitchbook-us-venture-funding-surges-record-267b-openai-anthropic-xai-dominate-ai-deals/
+VC deal value: AI share,US,2026Q1,89,percent,Q1 2026 PitchBook-NVCA Venture Monitor via SiliconANGLE,https://siliconangle.com/2026/04/03/pitchbook-us-venture-funding-surges-record-267b-openai-anthropic-xai-dominate-ai-deals/
+VC deal value: total,US,2026H1,412.7,USD billion,Q2 2026 PitchBook-NVCA Venture Monitor via SiliconANGLE (9 Jul 2026),https://siliconangle.com/2026/07/09/pitchbook-us-venture-funding-hits-412-7b-first-half-ai-deals-dominate/
+VC deal value: AI,US,2026H1,355.9,USD billion,Q2 2026 PitchBook-NVCA Venture Monitor via SiliconANGLE,https://siliconangle.com/2026/07/09/pitchbook-us-venture-funding-hits-412-7b-first-half-ai-deals-dominate/
+VC deal value: AI share,US,2026H1,86,percent,Q2 2026 PitchBook-NVCA Venture Monitor via SiliconANGLE,https://siliconangle.com/2026/07/09/pitchbook-us-venture-funding-hits-412-7b-first-half-ai-deals-dominate/
+Global venture funding,World,2024,328,USD billion,Crunchbase News (Teare 7 Jan 2026),https://news.crunchbase.com/venture/funding-data-third-largest-year-2025/
+Global venture funding,World,2025,425,USD billion,Crunchbase News (Teare 7 Jan 2026),https://news.crunchbase.com/venture/funding-data-third-largest-year-2025/
+Global venture funding: AI,World,2024,114,USD billion,Crunchbase News,https://news.crunchbase.com/venture/funding-data-third-largest-year-2025/
+Global venture funding: AI,World,2025,211,USD billion,Crunchbase News,https://news.crunchbase.com/venture/funding-data-third-largest-year-2025/
+Global venture funding: healthcare & biotech,World,2025,71.7,USD billion,Crunchbase News,https://news.crunchbase.com/venture/funding-data-third-largest-year-2025/
+Global venture funding: financial services,World,2025,52,USD billion,Crunchbase News,https://news.crunchbase.com/venture/funding-data-third-largest-year-2025/
+Climate tech venture and growth investment,World,2025,40.5,USD billion,CTVC/Sightline Climate (6 Jan 2026),https://www.ctvc.co/40-5bn-and-8-upturn-as-power-demand-drives-25-investment/
+ConTech venture funding,World,2025,6.1,USD billion (410 rounds),ConTech Roundup / Last Week in ConTech (Jan 2026),https://contechroundup.substack.com/p/contech-funding-report-2025
+Cleantech VC invested,US,2006-2011,25,USD billion (over),"Gaddy, Sivaram, O'Sullivan (2017) Energy Policy 102:385-395",https://energy.mit.edu/wp-content/uploads/2016/07/MITEI-WP-2016-06.pdf
+Cleantech companies funded after 2007 that failed to return initial capital,US,2007-2016,90,percent (more than),"Gaddy, Sivaram, O'Sullivan (2017)",https://energy.mit.edu/wp-content/uploads/2016/07/MITEI-WP-2016-06.pdf
+Business R&D performed: all industries,US,2022,691547,USD million,NCSES NSB-2025-7 Table DISC-3 / NSF 24-335 Table 2,https://www.ncses.nsf.gov/pubs/nsb20257/assets/u-s-business-r-d/tables/nsb20257-tabdisc-003.pdf
+Business R&D performed: manufacturing,US,2022,372459,USD million,NCSES NSB-2025-7 Table DISC-3,https://www.ncses.nsf.gov/pubs/nsb20257/assets/u-s-business-r-d/tables/nsb20257-tabdisc-003.pdf
+Business R&D performed: information (NAICS 51),US,2022,182340,USD million,NCSES NSB-2025-7 Table DISC-3,https://www.ncses.nsf.gov/pubs/nsb20257/assets/u-s-business-r-d/tables/nsb20257-tabdisc-003.pdf
+Business R&D performed: software publishers (NAICS 5112),US,2022,50295,USD million,NCSES NSB-2025-7 Table DISC-3,https://www.ncses.nsf.gov/pubs/nsb20257/assets/u-s-business-r-d/tables/nsb20257-tabdisc-003.pdf
+"Business R&D performed: professional, scientific, technical services",US,2022,74773,USD million,NCSES NSB-2025-7 Table DISC-3,https://www.ncses.nsf.gov/pubs/nsb20257/assets/u-s-business-r-d/tables/nsb20257-tabdisc-003.pdf
+Business R&D performed: pharmaceuticals and medicines,US,2022,116073,USD million,NCSES NSB-2025-7 Table DISC-3,https://www.ncses.nsf.gov/pubs/nsb20257/assets/u-s-business-r-d/tables/nsb20257-tabdisc-003.pdf
+Business R&D performed: finance and insurance,US,2022,17222,USD million,NCSES NSB-2025-7 Table DISC-3,https://www.ncses.nsf.gov/pubs/nsb20257/assets/u-s-business-r-d/tables/nsb20257-tabdisc-003.pdf
+Business R&D performed: information share of total,US,2022,26.4,percent,NCSES NSB-2025-7 Fig DISC-9,https://www.ncses.nsf.gov/pubs/nsb20257/table/DISC-4
+Software R&D across all industries,US,2022,291.7,USD billion,NCSES NSB-2025-7 (U.S. Business R&D),https://www.ncses.nsf.gov/pubs/nsb20257/table/DISC-4
+Software R&D share of business R&D,US,2022,42,percent,NCSES NSB-2025-7,https://www.ncses.nsf.gov/pubs/nsb20257/table/DISC-4
+Business R&D performed: all industries,US,2023,722,USD billion,NCSES NSF 25-353 (29 Sep 2025),https://www.ncses.nsf.gov/pubs/nsf25353
+Business R&D: manufacturing share,US,2023,55,percent,NCSES NSF 25-353,https://www.ncses.nsf.gov/pubs/nsf25353
+Hsieh-Moretti original claim: GDP gain from relaxing constraints in NY/SF/San Jose (imperfect mobility),US,2009,3.7,percent of GDP,Hsieh & Moretti (2019) AEJ Macro 11(2):1-39,https://www.aeaweb.org/doi/10.1257/mac.20170388
+Hsieh-Moretti original claim: housing constraints lowered aggregate growth,US,1964-2009,36,percent,Hsieh & Moretti (2019) AEJ Macro 11(2):1-39,https://www.aeaweb.org/doi/10.1257/mac.20170388
+Greaney replication: corrected effect relative to original 3.7%,US,2009,~0.04,percent of GDP (about two orders of magnitude smaller; indicative),Greaney (2026) AEJ Macro 18(2):409-28,https://www.aeaweb.org/doi/10.1257/mac.20230141
+Seattle metro rent growth (Amazon effect),US-Seattle,2011-2015,17,percent,US Census Bureau / Zillow (30 Apr 2019),https://www.census.gov/library/stories/2019/04/impact-of-tech-boom-on-housing.html
+Home value growth near Facebook employees after IPO,US-Bay Area,2012-2013,21,percent (vs 17% elsewhere in Bay Area),US Census Bureau / Zillow (30 Apr 2019),https://www.census.gov/library/stories/2019/04/impact-of-tech-boom-on-housing.html
+Share of US innovation-sector job growth in 5 metros (Boston/SF/San Jose/Seattle/San Diego),US,2005-2017,90,percent (more than),"Atkinson, Muro, Whiton (Brookings/ITIF, 9 Dec 2019)",https://www.brookings.edu/wp-content/uploads/2019/12/PressRelease_GrowthCenters.pdf
+Local jobs created per new high-tech job,US,2012,5,jobs,Moretti (2012) The New Geography of Jobs via MIT Sloan Management Review,https://sloanreview.mit.edu/?p=13772
+Sydney + Melbourne CBD share of Australian economic activity,Australia,2011-12,10,percent (almost; $118bn on 7.1 km2),Grattan Institute (Kelly & Donegan 2014) Mapping Australia's economy,https://grattan.edu.au/wp-content/uploads/2014/07/814-mapping-australia-economy.pdf
+Sydney CBD share of Greater Sydney economic activity,Australia-Sydney,2011-12,23,percent (with 13% of workforce),Grattan Institute (2014),https://grattan.edu.au/wp-content/uploads/2014/07/814-mapping-australia-economy.pdf
+Zoning effect on detached house prices above marginal cost,Australia-Sydney,2016,73,percent,Kendall & Tulip (2018) RBA RDP 2018-03,https://www.rba.gov.au/publications/rdp/2018/2018-03/
+Zoning effect on detached house prices above marginal cost,Australia-Melbourne,2016,69,percent,Kendall & Tulip (2018) RBA RDP 2018-03,https://www.rba.gov.au/publications/rdp/2018/2018-03/
+Zoning effect on detached house prices above marginal cost,Australia-Brisbane,2016,42,percent,Kendall & Tulip (2018) RBA RDP 2018-03,https://www.rba.gov.au/publications/rdp/2018/2018-03/
+Zoning effect on detached house prices above marginal cost,Australia-Perth,2016,54,percent,Kendall & Tulip (2018) RBA RDP 2018-03,https://www.rba.gov.au/publications/rdp/2018/2018-03/
+Apartment price minus cost gap,Australia-Sydney,c.2019,68,percent of cost ($355000),Jenner & Tulip (2020) RBA RDP 2020-04,https://www.rba.gov.au/publications/rdp/2020/pdf/rdp2020-04.pdf
+Apartment price minus cost gap,Australia-Melbourne,c.2019,20,percent of cost ($97000),Jenner & Tulip (2020) RBA RDP 2020-04,https://www.rba.gov.au/publications/rdp/2020/pdf/rdp2020-04.pdf
+Contribution of falling real risk-free rate to UK real house price rise (with supply response),UK,1985-2018,109,percent (vs observed rise 153%),Miles & Monro (2020/21) BoE SWP 837 / Economic Policy,https://www.economic-policy.org/wp-content/uploads/2020/10/9100_UK-House-Prices-and-Decline-in-Risk-Free-Real-Interest.pdf
+Market cap: Nvidia,World,2026-10-23,5.0,USD trillion,americancompanies.com (nightly refresh),https://americancompanies.com/reports/largest-american-companies/
+Market cap: Apple,World,2026-10-23,4.9,USD trillion,americancompanies.com,https://americancompanies.com/reports/largest-american-companies/
+Market cap: Alphabet,World,2026-10-23,3.9,USD trillion,americancompanies.com,https://americancompanies.com/reports/largest-american-companies/
+Market cap: Microsoft,World,2026-10-23,2.8,USD trillion,americancompanies.com,https://americancompanies.com/reports/largest-american-companies/
+Market cap: Amazon,World,2026-10-23,2.5,USD trillion,americancompanies.com,https://americancompanies.com/reports/largest-american-companies/
+Market cap: Meta Platforms,World,2026-10-23,1.5,USD trillion,americancompanies.com,https://americancompanies.com/reports/largest-american-companies/
+Market cap: Meta Platforms,World,2026-10-22,1.653,USD trillion,finhacker.cz,https://www.finhacker.cz/en/stocks/meta-platforms-market-cap/
+Global advertising spend (forecast),World,2026,1343.0,USD billion,WARC Global Ad Spend Forecast Q3 2026 (8 Oct 2026) via PPC Land,https://ppc.land/warc-forecasts-social-media-ad-spend-gains-21-3-to-394-6bn-in-2026/
+Social media ad spend (forecast),World,2026,394.6,USD billion,WARC Q3 2026 via PPC Land,https://ppc.land/warc-forecasts-social-media-ad-spend-gains-21-3-to-394-6bn-in-2026/
+Search ad spend (forecast),World,2026,295.7,USD billion,WARC Q3 2026 via PPC Land,https://ppc.land/warc-forecasts-social-media-ad-spend-gains-21-3-to-394-6bn-in-2026/
+Retail media ad spend (forecast),World,2026,202.1,USD billion,WARC Q3 2026 via PPC Land,https://ppc.land/warc-forecasts-social-media-ad-spend-gains-21-3-to-394-6bn-in-2026/
+Social + search + retail media share of global ad spend,World,2026,66.4,percent,WARC Q3 2026 via PPC Land,https://ppc.land/warc-forecasts-social-media-ad-spend-gains-21-3-to-394-6bn-in-2026/
+Alphabet+Amazon+Meta share of ad spend ex-China,World ex-China,2026,59.7,percent ($659.6bn),WARC Q3 2026 via PPC Land,https://ppc.land/warc-forecasts-social-media-ad-spend-gains-21-3-to-394-6bn-in-2026/
+Adjusted vs measured TFP level (intangibles),US,2017,15.9,percent higher,Brynjolfsson Rock Syverson (2021) AEJ Macro 13(1):333-72,https://www.nber.org/papers/w25148.pdf
+Utility-scale solar PV LCOE,World,2010,0.460,USD per kWh,IRENA Renewable Power Generation Costs in 2023 via pv magazine (27 Sep 2024),https://www.pv-magazine.com/2024/09/27/global-average-solar-lcoe-stood-at-0-044-kwh-in-2023-says-irena/
+Utility-scale solar PV LCOE,World,2023,0.044,USD per kWh,IRENA via pv magazine,https://www.pv-magazine.com/2024/09/27/global-average-solar-lcoe-stood-at-0-044-kwh-in-2023-says-irena/
+US workers with >=10% of tasks exposed to LLMs,US,2023,80,percent,Eloundou et al. arXiv 2303.10130,https://arxiv.org/abs/2303.10130v2
+US workers with >=50% of tasks exposed to LLMs,US,2023,19,percent,Eloundou et al. arXiv 2303.10130,https://arxiv.org/abs/2303.10130v2

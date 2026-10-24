@@ -1,0 +1,62 @@
+id: ilostat
+publisher: International Labour Organization — ILOSTAT
+homepage: https://ilostat.ilo.org
+licence: CC BY 4.0
+redistribution: open
+release_calendar: Modelled estimates (ILOEST) twice yearly (Jan WESO Trends, May update); national series continuously
+datasets:
+  - id: unemployment_rate_modelled
+    title: Unemployment rate by sex and age — ILO modelled estimates (%)
+    connector: ilostat
+    params: {indicator: UNE_2EAP_SEX_AGE_RT_A}
+    domains: [employment]
+    frequency: annual
+  - id: employment_by_activity_modelled
+    title: Employment by sex and economic activity — ILO modelled estimates (thousands)
+    connector: ilostat
+    params: {indicator: EMP_2EMP_SEX_ECO_NB_A}
+    domains: [employment, adjustment]
+    frequency: annual
+  - id: employment_by_occupation_modelled
+    title: Employment by sex and occupation — ILO modelled estimates (thousands)
+    connector: ilostat
+    params: {indicator: EMP_2EMP_SEX_OCU_NB_A}
+    domains: [employment, micro]
+    frequency: annual
+  - id: neet_youth_modelled
+    title: Share of youth not in employment, education or training (NEET) — ILO modelled estimates (%)
+    connector: ilostat
+    params: {indicator: EIP_2EET_SEX_RT_A}
+    domains: [employment]
+    frequency: annual
+  - id: labour_income_share
+    title: Labour income share as a percent of GDP — ILO modelled estimates (%)
+    connector: ilostat
+    params: {indicator: LAP_2GDP_NOC_RT_A}
+    domains: [macro, wages]
+    frequency: annual
+  - id: output_per_worker
+    title: Output per worker (GDP constant 2021 international $ at PPP) — ILO modelled estimates
+    connector: ilostat
+    params: {indicator: GDP_205U_NOC_NB_A}
+    domains: [macro]
+    frequency: annual
+  - id: mean_monthly_earnings
+    title: Average monthly earnings of employees by sex and economic activity (national series)
+    connector: ilostat
+    params: {indicator: EAR_4MTH_SEX_ECO_CUR_NB_A}
+    domains: [wages]
+    frequency: annual
+  - id: informality_rate
+    title: Informal employment rate by sex (national series, %)
+    connector: ilostat
+    params: {indicator: EMP_NIFL_SEX_RT_A}
+    domains: [employment]
+    frequency: annual
+  - id: migrant_workers_by_citizenship
+    title: Employment by sex and citizenship (labour migration statistics, thousands)
+    connector: ilostat
+    params: {indicator: EMP_TEMP_SEX_CCT_NB_A}
+    domains: [migration, employment]
+    frequency: annual
+    notes: ID to be confirmed against ILOSTAT labour migration catalogue

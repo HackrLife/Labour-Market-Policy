@@ -1,0 +1,38 @@
+series,region,period,value,unit,source,url,topic
+TFR,World,2024,2.3,births per woman,UN WPP 2024 Key Messages,https://population.un.org/WPP/Publications/Files/WPP2024_Key-Messages.pdf,fertility
+Projected peak population,World,2080s,10.3,billion (mid-2080s),UN WPP 2024 Key Messages,https://population.un.org/WPP/Publications/Files/WPP2024_Key-Messages.pdf,fertility
+Population 2100,World,2100,10.2,billion,UN WPP 2024 Key Messages,https://population.un.org/WPP/Publications/Files/WPP2024_Key-Messages.pdf,fertility
+Countries below replacement (GBD),World,2021,110 of 204,countries,Lancet GBD 2021 Fertility (2024),https://www.scimex.org/newsfeed/3-in-4-countries-could-be-below-a-replacement-level-of-fertility-by-2050,fertility
+Countries below replacement (GBD),World,2050,76,% (155 of 204),Lancet GBD 2021 Fertility (2024),https://www.scimex.org/newsfeed/3-in-4-countries-could-be-below-a-replacement-level-of-fertility-by-2050,fertility
+Countries below replacement (GBD),World,2100,97,% (198 of 204),Lancet GBD 2021 Fertility (2024),https://www.scimex.org/newsfeed/3-in-4-countries-could-be-below-a-replacement-level-of-fertility-by-2050,fertility
+GBD global TFR,World,2021,2.2,births per woman,Lancet GBD 2021 Fertility (2024),https://www.scimex.org/newsfeed/3-in-4-countries-could-be-below-a-replacement-level-of-fertility-by-2050,fertility
+GBD global TFR forecast,World,2100,1.6,births per woman,Lancet GBD 2021 Fertility (2024),https://www.scimex.org/newsfeed/3-in-4-countries-could-be-below-a-replacement-level-of-fertility-by-2050,fertility
+TFR (preliminary),South Korea,2025,0.80,births per woman,Ministry of Data and Statistics via AFP,https://www.capitalfm.co.ke/business/2026/02/s-koreas-total-fertility-rate-hits-4-year-high-in-2025/,fertility
+TFR,South Korea,2024,0.75,births per woman,Ministry of Data and Statistics via AFP,https://www.capitalfm.co.ke/business/2026/02/s-koreas-total-fertility-rate-hits-4-year-high-in-2025/,fertility
+TFR,Japan,2025,1.14,births per woman,MHLW via Jiji/Nippon.com,https://www.nippon.com/en/news/yjj2026060300610/,fertility
+Births (Japanese nationals),Japan,2025,671236,births,MHLW via Jiji/Nippon.com,https://www.nippon.com/en/news/yjj2026060300610/,fertility
+TFR,Australia,2024,1.48,births per woman,ABS Births 2024 via CathNews,https://cathnews.com/2025/10/16/birth-rate-hits-record-low-as-parents-put-off-having-children/,fertility
+General fertility rate (provisional),United States,2025,53.1,per 1000 women 15-44,CDC NCHS VSRR 43,https://www.cdc.gov/nchs/data/vsrr/vsrr043.pdf,fertility
+Births (provisional),United States,2025,3606400,births,CDC NCHS VSRR 43,https://www.cdc.gov/nchs/data/vsrr/vsrr043.pdf,fertility
+TFR (WPP 2024 secondary; year unstated),China,c.2023-24,1.01,births per woman,Population Connection summary of WPP 2024,https://populationconnection.org/blog/new-un-population-projections-where-are-we-headed/,fertility
+TFR (WPP 2024 secondary; year unstated),United States,c.2023-24,1.62,births per woman,Population Connection summary of WPP 2024,https://populationconnection.org/blog/new-un-population-projections-where-are-we-headed/,fertility
+Share of population in cities (Degree of Urbanisation),World,2025,45,%,UN WUP 2025,https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_key_messages_wup_2025.pdf,rural_urban
+Share of population in towns,World,2025,36,%,UN WUP 2025,https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_key_messages_wup_2025.pdf,rural_urban
+Share of population in rural areas,World,2025,19,%,UN WUP 2025,https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_key_messages_wup_2025.pdf,rural_urban
+Urban share (national definitions aggregated),World,2025,58,%,UN WUP 2025,https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_key_messages_wup_2025.pdf,rural_urban
+Nonmetro unemployment rate,United States,2024,4.0,%,USDA ERS EIB-295,https://ers.usda.gov/media/20831/eib-295.pdf,rural_urban
+Prime-age employment rate nonmetro,United States,2024,76,%,USDA ERS EIB-295,https://ers.usda.gov/media/20831/eib-295.pdf,rural_urban
+Prime-age employment rate metro,United States,2024,81,%,USDA ERS EIB-295,https://ers.usda.gov/media/20831/eib-295.pdf,rural_urban
+Regional unemployment rate,Australia,Jul 2026,4.2,%,Regional Australia Institute,https://regionalaustralia.org.au/Web/Toolkits-Indexes/Regional-Jobs-Update/Updates/2026/Regional_Labour_Markets_Update_July_2026,rural_urban
+Metropolitan unemployment rate,Australia,Jul 2026,4.5,%,Regional Australia Institute,https://regionalaustralia.org.au/Web/Toolkits-Indexes/Regional-Jobs-Update/Updates/2026/Regional_Labour_Markets_Update_July_2026,rural_urban
+Remote Australia unemployment rate,Australia,Jun 2026,5.4,%,Jobs and Skills Australia RLMI,https://www.jobsandskills.gov.au/sites/default/files/2026-08/rlmi_quarterly_report_-_june_2026.pdf,rural_urban
+Distressed counties share of announced strategic-sector investment since 2021,United States,2021-2023,16,%,Brookings/MIT CEEPR 2024,https://www.brookings.edu/articles/strategic-sector-investments-are-poised-to-benefit-distressed-us-counties/,rural_urban
+Distressed counties share of GDP,United States,2022,8,%,Brookings/MIT CEEPR 2024,https://www.brookings.edu/articles/strategic-sector-investments-are-poised-to-benefit-distressed-us-counties/,rural_urban
+Micropolitan share of distressed-county announced investment,United States,2021-2023,50,%,Brookings/MIT CEEPR 2024,https://www.brookings.edu/articles/strategic-sector-investments-are-poised-to-benefit-distressed-us-counties/,rural_urban
+Energy communities share of clean investment (post-IRA yr1),United States,2022-2023,36.8,% (vs 18.6% pop),Rhodium Group,https://rhg.com/research/clean-investment-at-the-community-level,rural_urban
+Rural counties share of major clean energy projects (IRA yr1),United States,2022-2023,25,% (52 of 210),E2,https://e2.org/reports/clean-economy-works-benefits-to-rural-america/,rural_urban
+Old-age dependency ratio (65+/15-64),World,2020,14.3,per 100,UNCTAD Handbook,https://unctad.org/system/files/official-document/tdstat46_FS12_en.pdf,ageing
+Old-age dependency ratio (65+/15-64),World,2050,25.3,per 100,UNCTAD Handbook,https://unctad.org/system/files/official-document/tdstat46_FS12_en.pdf,ageing
+Old-age dependency ratio (65+/15-64),Developed economies,2020,29.9,per 100,UNCTAD Handbook,https://unctad.org/system/files/official-document/tdstat46_FS12_en.pdf,ageing
+Old-age dependency ratio (65+/15-64),Developed economies,2050,46.2,per 100,UNCTAD Handbook,https://unctad.org/system/files/official-document/tdstat46_FS12_en.pdf,ageing
+Old-age dependency ratio (65+/15-64),G20,2050,33.6,per 100,UNCTAD Handbook,https://unctad.org/system/files/official-document/tdstat46_FS12_en.pdf,ageing

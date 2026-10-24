@@ -1,0 +1,79 @@
+id: bls
+publisher: US Bureau of Labor Statistics
+homepage: https://www.bls.gov
+licence: Public domain (US federal government work)
+redistribution: open
+release_calendar: https://www.bls.gov/schedule/ — Employment Situation first Friday; JOLTS ~5 weeks after reference month; OEWS annually (spring); Employment Projections annually (late Aug/Sep)
+datasets:
+  - id: headline_monthly
+    title: CPS and CES headline series (unemployment, payrolls, sector employment)
+    connector: bls
+    params:
+      start_year: 1990
+      series: [LNS14000000, LNS14000012, LNS11300000, CES0000000001, CES3000000001,
+               CES2000000001, CES5000000001, CES6562000001, CES6000000001, CES9000000001]
+      labels:
+        LNS14000000: Unemployment rate (SA)
+        LNS14000012: Unemployment rate 16–19 (SA)
+        LNS11300000: Labour force participation rate (SA)
+        CES0000000001: Total nonfarm employment (thousands, SA)
+        CES3000000001: Manufacturing employment (thousands, SA)
+        CES2000000001: Construction employment (thousands, SA)
+        CES5000000001: Information employment (thousands, SA)
+        CES6562000001: Health care and social assistance employment (thousands, SA)
+        CES6000000001: Professional and business services employment (thousands, SA)
+        CES9000000001: Government employment (thousands, SA)
+    domains: [employment, adjustment]
+    frequency: monthly
+    verified: true
+  - id: jolts
+    title: JOLTS openings, hires, quits, layoffs — total nonfarm
+    connector: bls
+    params:
+      start_year: 2001
+      series: [JTS000000000000000JOL, JTS000000000000000JOR, JTS000000000000000HIL,
+               JTS000000000000000QUL, JTS000000000000000LDL, JTS620000000000000JOR,
+               JTS300000000000000JOR, JTS510000000000000JOR, JTS230000000000000JOR]
+      labels:
+        JTS000000000000000JOL: Job openings (thousands, SA)
+        JTS000000000000000JOR: Job openings rate (SA)
+        JTS000000000000000HIL: Hires (thousands, SA)
+        JTS000000000000000QUL: Quits (thousands, SA)
+        JTS000000000000000LDL: Layoffs and discharges (thousands, SA)
+        JTS620000000000000JOR: Openings rate — health care and social assistance
+        JTS300000000000000JOR: Openings rate — manufacturing
+        JTS510000000000000JOR: Openings rate — information
+        JTS230000000000000JOR: Openings rate — construction
+    domains: [vacancies, adjustment]
+    frequency: monthly
+  - id: productivity_labour_share
+    title: Nonfarm business labour productivity and labour share (Productivity and Costs)
+    connector: bls
+    params:
+      start_year: 1990
+      series: [PRS85006092, PRS85006173, PRS85006112]
+      labels:
+        PRS85006092: Labour productivity, nonfarm business (% change, annual rate)
+        PRS85006173: Labour share, nonfarm business (index 2017=100)
+        PRS85006112: Unit labour costs, nonfarm business (% change, annual rate)
+    domains: [macro]
+    frequency: quarterly
+  - id: oews_national
+    title: Occupational Employment and Wage Statistics — national, all occupations
+    connector: http
+    params:
+      url: https://www.bls.gov/oes/special-requests/oesm25nat.zip
+      ext: zip
+      parse: none
+    domains: [micro, wages]
+    frequency: annual
+    notes: Filename increments each May release (oesm26nat.zip in 2027). Parsed in notebooks/micro.
+  - id: employment_projections
+    title: Employment Projections — occupational data (2025–35)
+    connector: http
+    params:
+      url: https://www.bls.gov/emp/ind-occ-matrix/occupation.xlsx
+      ext: xlsx
+      parse: none
+    domains: [micro, employment]
+    frequency: annual

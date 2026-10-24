@@ -1,0 +1,57 @@
+id: eurostat
+publisher: Eurostat — European Commission
+homepage: https://ec.europa.eu/eurostat
+licence: CC BY 4.0 (Commission Decision 2011/833/EU reuse policy)
+redistribution: open
+release_calendar: https://ec.europa.eu/eurostat/news/release-calendar
+datasets:
+  - id: une_rt_m
+    title: Unemployment by sex and age — monthly data
+    connector: sdmx
+    params:
+      url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/une_rt_m
+      query: {format: SDMX-CSV, compressed: "false"}
+      accept: text/csv
+      dataflow: une_rt_m
+    domains: [employment]
+    frequency: monthly
+  - id: jvs_q_nace2
+    title: Job vacancy statistics by NACE Rev. 2 activity — quarterly
+    connector: sdmx
+    params:
+      url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/jvs_q_nace2
+      query: {format: SDMX-CSV, compressed: "false"}
+      accept: text/csv
+      dataflow: jvs_q_nace2
+    domains: [vacancies]
+    frequency: quarterly
+  - id: lfsa_ergan
+    title: Employment rates by sex, age and citizenship (%)
+    connector: sdmx
+    params:
+      url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/lfsa_ergan
+      query: {format: SDMX-CSV, compressed: "false"}
+      accept: text/csv
+      dataflow: lfsa_ergan
+    domains: [employment, migration]
+    frequency: annual
+  - id: migr_pop1ctz
+    title: Population on 1 January by age group, sex and citizenship
+    connector: sdmx
+    params:
+      url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/migr_pop1ctz
+      query: {format: SDMX-CSV, compressed: "false", startPeriod: "2010"}
+      accept: text/csv
+      dataflow: migr_pop1ctz
+    domains: [migration, demography]
+    frequency: annual
+  - id: lc_lci_r2_q
+    title: Labour cost index by NACE Rev. 2 activity — quarterly
+    connector: sdmx
+    params:
+      url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/lc_lci_r2_q
+      query: {format: SDMX-CSV, compressed: "false", startPeriod: "2010"}
+      accept: text/csv
+      dataflow: lc_lci_r2_q
+    domains: [wages]
+    frequency: quarterly

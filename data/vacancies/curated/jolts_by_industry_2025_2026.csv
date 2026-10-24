@@ -1,0 +1,41 @@
+industry,period,openings_thousands,openings_rate,source_url
+Total nonfarm,2025-08,6919,4.2,https://www.bls.gov/news.release/pdf/jolts.pdf
+Total nonfarm,2026-05,7537,4.5,https://www.bls.gov/news.release/pdf/jolts.pdf
+Total nonfarm,2026-06,7182,4.3,https://www.bls.gov/news.release/pdf/jolts.pdf
+Total nonfarm,2026-07,7335,4.4,https://www.bls.gov/news.release/pdf/jolts.pdf
+Total nonfarm,2026-08 (p),7079,4.3,https://www.bls.gov/news.release/pdf/jolts.pdf
+Construction,2025-08,213,2.5,https://www.bls.gov/news.release/pdf/jolts.pdf
+Construction,2026-05,291,3.4,https://www.bls.gov/news.release/pdf/jolts.pdf
+Construction,2026-06,298,3.5,https://www.bls.gov/news.release/pdf/jolts.pdf
+Construction,2026-07,299,3.5,https://www.bls.gov/news.release/pdf/jolts.pdf
+Construction,2026-08 (p),251,2.9,https://www.bls.gov/news.release/pdf/jolts.pdf
+Manufacturing,2025-08,416,3.2,https://www.bls.gov/news.release/pdf/jolts.pdf
+Manufacturing,2026-05,517,3.9,https://www.bls.gov/news.release/pdf/jolts.pdf
+Manufacturing,2026-06,501,3.8,https://www.bls.gov/news.release/pdf/jolts.pdf
+Manufacturing,2026-07,576,4.4,https://www.bls.gov/news.release/pdf/jolts.pdf
+Manufacturing,2026-08 (p),522,4.0,https://www.bls.gov/news.release/pdf/jolts.pdf
+Information,2025-08,141,4.7,https://www.bls.gov/news.release/pdf/jolts.pdf
+Information,2026-05,72,2.5,https://www.bls.gov/news.release/pdf/jolts.pdf
+Information,2026-06,89,3.1,https://www.bls.gov/news.release/pdf/jolts.pdf
+Information,2026-07,78,2.8,https://www.bls.gov/news.release/pdf/jolts.pdf
+Information,2026-08 (p),123,4.3,https://www.bls.gov/news.release/pdf/jolts.pdf
+Professional and business services,2025-08,1095,4.7,https://www.bls.gov/news.release/pdf/jolts.pdf
+Professional and business services,2026-05,1375,5.8,https://www.bls.gov/news.release/pdf/jolts.pdf
+Professional and business services,2026-06,1203,5.1,https://www.bls.gov/news.release/pdf/jolts.pdf
+Professional and business services,2026-07,1305,5.5,https://www.bls.gov/news.release/pdf/jolts.pdf
+Professional and business services,2026-08 (p),1186,5.0,https://www.bls.gov/news.release/pdf/jolts.pdf
+Private educational services,2025-08,146,3.5,https://www.bls.gov/news.release/pdf/jolts.pdf
+Private educational services,2026-05,115,2.8,https://www.bls.gov/news.release/pdf/jolts.pdf
+Private educational services,2026-06,117,2.8,https://www.bls.gov/news.release/pdf/jolts.pdf
+Private educational services,2026-07,111,2.7,https://www.bls.gov/news.release/pdf/jolts.pdf
+Private educational services,2026-08 (p),125,3.0,https://www.bls.gov/news.release/pdf/jolts.pdf
+Health care and social assistance,2025-08,1366,5.5,https://www.bls.gov/news.release/pdf/jolts.pdf
+Health care and social assistance,2026-05,1494,5.9,https://www.bls.gov/news.release/pdf/jolts.pdf
+Health care and social assistance,2026-06,1384,5.5,https://www.bls.gov/news.release/pdf/jolts.pdf
+Health care and social assistance,2026-07,1474,5.8,https://www.bls.gov/news.release/pdf/jolts.pdf
+Health care and social assistance,2026-08 (p),1359,5.4,https://www.bls.gov/news.release/pdf/jolts.pdf
+State and local government education,2025-08,235,2.1,https://www.bls.gov/news.release/pdf/jolts.pdf
+State and local government education,2026-05,256,2.3,https://www.bls.gov/news.release/pdf/jolts.pdf
+State and local government education,2026-06,267,2.4,https://www.bls.gov/news.release/pdf/jolts.pdf
+State and local government education,2026-07,239,2.2,https://www.bls.gov/news.release/pdf/jolts.pdf
+State and local government education,2026-08 (p),228,2.1,https://www.bls.gov/news.release/pdf/jolts.pdf

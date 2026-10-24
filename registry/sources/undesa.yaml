@@ -1,0 +1,25 @@
+id: undesa
+publisher: United Nations, Department of Economic and Social Affairs — Population Division
+homepage: https://www.un.org/development/desa/pd/
+licence: CC BY 3.0 IGO
+redistribution: attribution
+release_calendar: World Population Prospects biennial (2024 current); International Migrant Stock quinquennial (2024 current)
+datasets:
+  - id: migrant_stock_2024
+    title: International Migrant Stock 2024 — destination and origin
+    connector: http
+    params:
+      url: https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/files/documents/2025/Jan/undesa_pd_2024_ims_stock_by_sex_destination_and_origin.xlsx
+      ext: xlsx
+      parse: none
+    domains: [migration]
+    frequency: quinquennial
+  - id: wpp_2024_indicators
+    title: World Population Prospects 2024 — demographic indicators (medium variant)
+    connector: http
+    params:
+      url: https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz
+      ext: csv.gz
+      parse: none
+    domains: [demography]
+    frequency: biennial

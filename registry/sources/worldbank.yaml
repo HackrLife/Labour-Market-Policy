@@ -1,0 +1,91 @@
+id: worldbank
+publisher: World Bank — World Development Indicators
+homepage: https://data.worldbank.org
+licence: CC BY 4.0
+redistribution: open
+release_calendar: WDI updated quarterly; labour series mirror ILO modelled estimates
+datasets:
+  - id: unemployment_total
+    title: Unemployment, total (% of labour force, modelled ILO estimate)
+    connector: worldbank
+    params: {indicator: SL.UEM.TOTL.ZS}
+    domains: [employment]
+    frequency: annual
+    verified: true
+  - id: unemployment_youth
+    title: Unemployment, youth total (% of labour force ages 15–24, modelled ILO estimate)
+    connector: worldbank
+    params: {indicator: SL.UEM.1524.ZS}
+    domains: [employment]
+    frequency: annual
+    verified: true
+  - id: lfpr_total
+    title: Labour force participation rate, total (% of population ages 15+, modelled ILO estimate)
+    connector: worldbank
+    params: {indicator: SL.TLF.CACT.ZS}
+    domains: [employment]
+    frequency: annual
+    verified: true
+  - id: emp_agriculture_share
+    title: Employment in agriculture (% of total employment)
+    connector: worldbank
+    params: {indicator: SL.AGR.EMPL.ZS}
+    domains: [employment, adjustment]
+    frequency: annual
+    verified: true
+  - id: emp_industry_share
+    title: Employment in industry (% of total employment)
+    connector: worldbank
+    params: {indicator: SL.IND.EMPL.ZS}
+    domains: [employment, adjustment]
+    frequency: annual
+    verified: true
+  - id: emp_services_share
+    title: Employment in services (% of total employment)
+    connector: worldbank
+    params: {indicator: SL.SRV.EMPL.ZS}
+    domains: [employment, adjustment]
+    frequency: annual
+    verified: true
+  - id: migrant_stock
+    title: International migrant stock, total
+    connector: worldbank
+    params: {indicator: SM.POP.TOTL}
+    domains: [migration]
+    frequency: quinquennial
+    verified: true
+  - id: remittances_received
+    title: Personal remittances, received (current US$)
+    connector: worldbank
+    params: {indicator: BX.TRF.PWKR.CD.DT}
+    domains: [migration, macro]
+    frequency: annual
+    verified: true
+  - id: gdp_per_person_employed
+    title: GDP per person employed (constant 2021 PPP $)
+    connector: worldbank
+    params: {indicator: SL.GDP.PCAP.EM.KD}
+    domains: [macro]
+    frequency: annual
+    verified: false
+  - id: fertility_rate
+    title: Fertility rate, total (births per woman)
+    connector: worldbank
+    params: {indicator: SP.DYN.TFRT.IN}
+    domains: [demography]
+    frequency: annual
+    verified: true
+  - id: age_dependency_old
+    title: Age dependency ratio, old (% of working-age population)
+    connector: worldbank
+    params: {indicator: SP.POP.DPND.OL}
+    domains: [demography]
+    frequency: annual
+    verified: true
+  - id: urban_population_share
+    title: Urban population (% of total population)
+    connector: worldbank
+    params: {indicator: SP.URB.TOTL.IN.ZS}
+    domains: [demography]
+    frequency: annual
+    verified: true

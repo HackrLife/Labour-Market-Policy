@@ -1,0 +1,28 @@
+id: research
+publisher: Peer-reviewed research datasets (replication files)
+homepage: https://github.com/HackrLife/labour-observatory
+licence: Per dataset (see notes)
+redistribution: open
+release_calendar: Ad hoc; tracked by repository commit
+datasets:
+  - id: gpts_occ_exposure
+    title: Eloundou, Manning, Mishkin & Rock (2024, Science) — occupation-level LLM exposure
+    connector: http
+    params:
+      url: https://raw.githubusercontent.com/openai/GPTs-are-GPTs/main/data/occ_level.csv
+      ext: csv
+      parse: none
+    domains: [micro]
+    frequency: static
+    verified: true
+    notes: Repository licence MIT; columns human_rating_{alpha,beta,gamma}, dv_rating_*; parsed in notebooks/micro/ai_exposure.
+  - id: onet_database
+    title: O*NET database (tasks, abilities, work context)
+    connector: http
+    params:
+      url: https://www.onetcenter.org/dl_files/database/db_30_0_text.zip
+      ext: zip
+      parse: none
+    domains: [micro]
+    frequency: quarterly
+    notes: CC BY 4.0, US DOL/ETA. Version number in URL increments with each release.

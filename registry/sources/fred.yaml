@@ -1,0 +1,22 @@
+id: fred
+publisher: Federal Reserve Bank of St. Louis — FRED (republishing BEA, BLS and Federal Reserve Board series)
+homepage: https://fred.stlouisfed.org
+licence: Series-specific; public-domain government series only are listed here
+redistribution: attribution
+release_calendar: Follows the originating agency
+datasets:
+  - id: distribution_and_profits
+    title: Wealth shares (Distributional Financial Accounts), corporate profits, GDP
+    connector: fred
+    params:
+      series: [WFRBST01134, WFRBSB50215, WFRBSN09161, CP, GDP, A4102C1Q027SBEA]
+    domains: [macro]
+    frequency: quarterly
+    notes: WFRBST01134 top 1% share of net worth; WFRBSB50215 bottom 50%; CP corporate profits after tax; A4102C1Q027SBEA compensation of employees (to be confirmed)
+  - id: labour_market_extras
+    title: Prime-age employment ratio, real median weekly earnings
+    connector: fred
+    params:
+      series: [LNS12300060, LES1252881600Q]
+    domains: [employment, wages]
+    frequency: monthly

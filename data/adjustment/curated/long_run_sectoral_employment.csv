@@ -1,0 +1,101 @@
+series,region,period,value,unit,source,url
+Agriculture share of workforce,US,1900,41.0,percent of workforce,"Dimitri, Effland & Conklin (2005) USDA ERS EIB-3",https://primary.ers.usda.gov/webdocs/publications/44197/13566_eib3_1_.pdf
+Agriculture share of workforce,US,1930,21.5,percent of workforce,"Dimitri, Effland & Conklin (2005) USDA ERS EIB-3",https://primary.ers.usda.gov/webdocs/publications/44197/13566_eib3_1_.pdf
+Agriculture share of workforce,US,1945,16.0,percent of workforce,"Dimitri, Effland & Conklin (2005) USDA ERS EIB-3",https://primary.ers.usda.gov/webdocs/publications/44197/13566_eib3_1_.pdf
+Agriculture share of employed labor force,US,1970,4.0,percent of employed labor force,"Dimitri, Effland & Conklin (2005) USDA ERS EIB-3",https://primary.ers.usda.gov/webdocs/publications/44197/13566_eib3_1_.pdf
+Agriculture share of employed labor force,US,2000,1.9,percent of employed labor force,"Dimitri, Effland & Conklin (2005) USDA ERS EIB-3",https://primary.ers.usda.gov/webdocs/publications/44197/13566_eib3_1_.pdf
+Manufacturing share of nonfarm employment (BLS stated),US,1953,32.0,percent (May 1953 peak),"BLS Beyond the Numbers 9(16), Harris (Nov 2020)",https://www.bls.gov/opub/btn/volume-9/forty-years-of-falling-manufacturing-employment.htm
+Manufacturing share of nonfarm employment (BLS stated),US,1979,22.0,percent (June 1979),"BLS Beyond the Numbers 9(16), Harris (Nov 2020)",https://www.bls.gov/opub/btn/volume-9/forty-years-of-falling-manufacturing-employment.htm
+Manufacturing share of nonfarm employment (BLS stated),US,2019,9.0,percent (June 2019),"BLS Beyond the Numbers 9(16), Harris (Nov 2020)",https://www.bls.gov/opub/btn/volume-9/forty-years-of-falling-manufacturing-employment.htm
+Goods-producing share of nonfarm employment,US,1943,44.0,percent (annual; series peak),BLS TED (2024) 'A look at a long-term trend for the Bureau's birthday',https://www.bls.gov/opub/ted/2024/a-look-at-a-long-term-trend-for-the-bureaus-birthday.htm
+Goods-producing share of nonfarm employment,US,2023,13.8,percent (annual),BLS TED (2024),https://www.bls.gov/opub/ted/2024/a-look-at-a-long-term-trend-for-the-bureaus-birthday.htm
+Service-providing share of nonfarm employment,US,1939,62.4,percent (annual),BLS TED (2024),https://www.bls.gov/opub/ted/2024/a-look-at-a-long-term-trend-for-the-bureaus-birthday.htm
+Service-providing share of nonfarm employment,US,1943,56.0,percent (annual; series low),BLS TED (2024),https://www.bls.gov/opub/ted/2024/a-look-at-a-long-term-trend-for-the-bureaus-birthday.htm
+Service-providing share of nonfarm employment,US,2023,86.2,percent (annual),BLS TED (2024),https://www.bls.gov/opub/ted/2024/a-look-at-a-long-term-trend-for-the-bureaus-birthday.htm
+Total nonfarm employment (PAYEMS),US,1950-01,43526.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/PAYEMS
+Total nonfarm employment (PAYEMS),US,1953-01,50144.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/PAYEMS
+Total nonfarm employment (PAYEMS),US,1979-06,90108.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/PAYEMS
+Total nonfarm employment (PAYEMS),US,1990-01,109196.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/PAYEMS
+Total nonfarm employment (PAYEMS),US,2000-01,131011.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/PAYEMS
+Total nonfarm employment (PAYEMS),US,2010-01,129802.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/PAYEMS
+Total nonfarm employment (PAYEMS),US,2020-01,152031.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/PAYEMS
+Total nonfarm employment (PAYEMS),US,2024-12,158316.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/PAYEMS
+Total nonfarm employment (PAYEMS),US,2025-12,158432.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/PAYEMS
+Total nonfarm employment (PAYEMS),US,2026-09,159044.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/PAYEMS
+Manufacturing employment (MANEMP),US,1950-01,13161.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/MANEMP
+Manufacturing employment (MANEMP),US,1953-01,16067.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/MANEMP
+Manufacturing employment (MANEMP),US,1979-06,19553.0,thousands SA (all-time peak),BLS CES via FRED,https://fred.stlouisfed.org/data/MANEMP
+Manufacturing employment (MANEMP),US,1990-01,17797.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/MANEMP
+Manufacturing employment (MANEMP),US,2000-01,17284.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/MANEMP
+Manufacturing employment (MANEMP),US,2010-01,11447.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/MANEMP
+Manufacturing employment (MANEMP),US,2024-12,12693.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/MANEMP
+Manufacturing employment (MANEMP),US,2025-12,12580.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/MANEMP
+Manufacturing employment (MANEMP),US,2026-09,12652.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/MANEMP
+Manufacturing share of nonfarm (derived MANEMP/PAYEMS),US,1953-01,32.04,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/MANEMP
+Manufacturing share of nonfarm (derived MANEMP/PAYEMS),US,1979-06,21.7,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/MANEMP
+Manufacturing share of nonfarm (derived MANEMP/PAYEMS),US,1990-01,16.3,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/MANEMP
+Manufacturing share of nonfarm (derived MANEMP/PAYEMS),US,2025-12,7.94,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/MANEMP
+Manufacturing share of nonfarm (derived MANEMP/PAYEMS),US,2026-09,7.96,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/MANEMP
+Health care and social assistance employment (CES6562000001),US,1990-01,9116.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/CES6562000001.txt
+Health care and social assistance employment (CES6562000001),US,2000-01,12749.5,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/CES6562000001.txt
+Health care and social assistance employment (CES6562000001),US,2010-01,16714.7,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/CES6562000001.txt
+Health care and social assistance employment (CES6562000001),US,2020-01,20724.7,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/CES6562000001.txt
+Health care and social assistance employment (CES6562000001),US,2024-12,22901.4,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/CES6562000001.txt
+Health care and social assistance employment (CES6562000001),US,2025-12,23587.5,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/CES6562000001.txt
+Health care and social assistance employment (CES6562000001),US,2026-09,23958.6,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/CES6562000001.txt
+Health care and social assistance share of nonfarm (derived),US,1990-01,8.35,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/CES6562000001.txt
+Health care and social assistance share of nonfarm (derived),US,2025-12,14.89,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/CES6562000001.txt
+Health care and social assistance share of nonfarm (derived),US,2026-09,15.06,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/CES6562000001.txt
+Information sector employment (USINFO),US,1990-01,2671.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/USINFO
+Information sector employment (USINFO),US,2000-01,3552.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/USINFO
+Information sector employment (USINFO),US,2001-03,3718.0,thousands SA (series maximum),BLS CES via FRED,https://fred.stlouisfed.org/data/USINFO
+Information sector employment (USINFO),US,2010-01,2739.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/USINFO
+Information sector employment (USINFO),US,2020-01,2901.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/USINFO
+Information sector employment (USINFO),US,2024-12,2895.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/USINFO
+Information sector employment (USINFO),US,2025-12,2842.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/USINFO
+Information sector employment (USINFO),US,2026-09,2739.0,thousands SA,BLS CES via FRED,https://fred.stlouisfed.org/data/USINFO
+Information sector share of nonfarm (derived),US,1990-01,2.45,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/USINFO
+Information sector share of nonfarm (derived),US,2000-01,2.71,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/USINFO
+Information sector share of nonfarm (derived),US,2025-12,1.79,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/USINFO
+Information sector share of nonfarm (derived),US,2026-09,1.72,percent (derived),BLS CES via FRED (author calculation),https://fred.stlouisfed.org/data/USINFO
+S&P 500 weight: Information Technology,US,2026-09-30,39.7,percent of index market cap,Schwab Center for Financial Research / S&P Dow Jones Indices,https://www.schwabassetmanagement.com/node/29586
+S&P 500 weight: Communication Services,US,2026-09-30,9.9,percent of index market cap,Schwab Center for Financial Research / S&P Dow Jones Indices,https://www.schwabassetmanagement.com/node/29586
+S&P 500 weight: Information Technology (estimate),US,2026-10-22,37.8,percent (ChartRow estimate from ETF holdings; not official),ChartRow,https://chartrow.com/sp500/sector-weights
+S&P 500 weight: Communication Services (estimate),US,2026-10-22,9.2,percent (ChartRow estimate; not official),ChartRow,https://chartrow.com/sp500/sector-weights
+S&P 500 weight: Health Care (estimate),US,2026-10-22,9.8,percent (ChartRow estimate; not official),ChartRow,https://chartrow.com/sp500/sector-weights
+JOLTS annual hires,US,2025,63.0,millions (NSA annual total),BLS JOLTS news release 13 Mar 2026,https://www.bls.gov/news.release/archives/jolts_03132026.htm
+JOLTS annual hires,US,2024,64.5,millions (derived: 2025 level + 1.5m decline),BLS JOLTS news release 13 Mar 2026,https://www.bls.gov/news.release/archives/jolts_03132026.htm
+JOLTS annual total separations,US,2025,62.8,millions (NSA annual total),BLS JOLTS news release 13 Mar 2026,https://www.bls.gov/news.release/archives/jolts_03132026.htm
+JOLTS annual quits,US,2025,38.0,millions (NSA annual total),BLS JOLTS news release 13 Mar 2026,https://www.bls.gov/news.release/archives/jolts_03132026.htm
+JOLTS annual layoffs and discharges,US,2025,21.2,millions (NSA annual total),BLS JOLTS news release 13 Mar 2026,https://www.bls.gov/news.release/archives/jolts_03132026.htm
+Employment in services share (modelled ILO),World,1991,34.45,percent of total employment,ILO modelled estimates via World Bank WDI (IndexMundi mirror; WDI vintage ~2020),https://www.indexmundi.com/facts/world/employment-in-services
+Employment in services share (modelled ILO),World,2000,39.41,percent of total employment,ILO modelled estimates via World Bank WDI (IndexMundi mirror),https://www.indexmundi.com/facts/world/employment-in-services
+Employment in services share (modelled ILO),World,2010,44.51,percent of total employment,ILO modelled estimates via World Bank WDI (IndexMundi mirror),https://www.indexmundi.com/facts/world/employment-in-services
+Employment in services share (modelled ILO),World,2019,50.62,percent of total employment,ILO modelled estimates via World Bank WDI (IndexMundi mirror),https://www.indexmundi.com/facts/world/employment-in-services
+Employment in agriculture share,World,2023,26.1,percent of total employment,FAO Statistics highlight (July 2025 update; ILO-based),https://www.fao.org/statistics/highlights-archive/highlights-detail/employment-indicators-2000-2023-%28july-2025-update%29/en
+Employment in agriculture,World,2023,916.0,millions of persons,FAO Statistics highlight (July 2025 update),https://www.fao.org/statistics/highlights-archive/highlights-detail/employment-indicators-2000-2023-%28july-2025-update%29/en
+Global unemployment rate,World,2024,5.0,percent,ILO WESO Trends 2025,https://www.ilo.org/sites/default/files/2025-01/WESO25_Trends_EN_WEB5.pdf
+Global jobs gap,World,2024,402.4,millions of persons,ILO WESO Trends 2025,https://www.ilo.org/sites/default/files/2025-01/WESO25_Trends_EN_WEB5.pdf
+Global labour force participation rate,World,2024,61.0,percent,ILO WESO Trends 2025,https://www.ilo.org/sites/default/files/2025-01/WESO25_Trends_EN_WEB5.pdf
+Global employment-to-population ratio,World,2024,57.9,percent,ILO WESO Trends 2025,https://www.ilo.org/sites/default/files/2025-01/WESO25_Trends_EN_WEB5.pdf
+Global employment growth,World,2024,1.3,percent,ILO WESO Trends 2025,https://www.ilo.org/sites/default/files/2025-01/WESO25_Trends_EN_WEB5.pdf
+Global unemployment rate,World,2025,4.9,percent,ILO Employment and Social Trends 2026,https://ilo.org/publications/flagship-reports/employment-and-social-trends-2026
+Global unemployed persons (projection),World,2026,186.0,millions of persons,ILO Employment and Social Trends 2026 (press release 14 Jan 2026),https://www.ilo.org/resource/news/global-job-quality-stagnates-despite-resilient-growth
+Global jobs gap (projection),World,2026,408.0,millions of persons,ILO Employment and Social Trends 2026,https://ilo.org/publications/flagship-reports/employment-and-social-trends-2026
+Global informal employment (projection),World,2026,2.1,billions of persons,ILO Employment and Social Trends 2026,https://ilo.org/publications/flagship-reports/employment-and-social-trends-2026
+Global labour force,World,2023,3601.7,millions of persons,ILO WESO Trends 2023 as tabulated by UC Davis Rural Migration News (secondary),https://migration.ucdavis.edu/rmn/blog/post/?id=2856
+Global employment,World,2023,3393.4,millions of persons,ILO WESO Trends 2023 as tabulated by UC Davis Rural Migration News (secondary),https://migration.ucdavis.edu/rmn/blog/post/?id=2856
+ICT specialists share of total employment,EU,2023,4.8,percent,Eurostat news 24 May 2024,https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20240524-2
+ICT specialists employed,EU,2023,9.8,millions of persons,Eurostat news 24 May 2024,https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20240524-2
+Output per worker growth (Allen),Britain,1780-1840,46.0,percent cumulative,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
+Real wage growth (Feinstein index; Allen),Britain,1780-1840,12.0,percent cumulative,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
+Output per worker growth (Allen),Britain,1840-1900,90.0,percent cumulative,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
+Real wage growth (Allen),Britain,1840-1900,123.0,percent cumulative,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
+Output per worker annual growth (Allen Table 1),Britain,1760-1800,0.26,percent per year,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
+Real wage annual growth (Allen Table 1),Britain,1760-1800,0.39,percent per year,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
+Output per worker annual growth (Allen Table 1),Britain,1800-1830,0.63,percent per year,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
+Real wage annual growth (Allen Table 1),Britain,1800-1830,0.0,percent per year,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
+Output per worker annual growth (Allen Table 1),Britain,1830-1860,1.12,percent per year,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
+Real wage annual growth (Allen Table 1),Britain,1830-1860,0.86,percent per year,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
+Output per worker annual growth (Allen Table 1),Britain,1860-1900,1.03,percent per year,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
+Real wage annual growth (Allen Table 1),Britain,1860-1900,1.61,percent per year,Allen (2009) EEH 46(4),https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf

@@ -1,0 +1,26 @@
+[project]
+name = "labobs"
+version = "0.1.0"
+description = "Global labour data observatory: curated official labour statistics, analysis notebooks and ongoing AI-labour monitoring"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT (code); see DATA_LICENSES.md for data" }
+dependencies = [
+  "requests>=2.31",
+  "pandas>=2.0",
+  "pyyaml>=6.0",
+  "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+analysis = ["matplotlib>=3.8", "jupyter>=1.0", "statsmodels>=0.14"]
+
+[project.scripts]
+labobs = "labobs.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,47 @@
+id: oecd
+publisher: OECD — Data Explorer (SDMX)
+homepage: https://data-explorer.oecd.org
+licence: CC BY 4.0 (OECD terms since July 2024)
+redistribution: open
+release_calendar: https://www.oecd.org/en/data/insights/statistical-releases.html
+datasets:
+  - id: unemployment_monthly
+    title: Monthly unemployment rates (infra-annual labour statistics)
+    connector: sdmx
+    params:
+      url: https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_UNE_M,1.0/all
+      query: {startPeriod: "2000-01", dimensionAtObservation: AllDimensions, format: csvfile}
+      accept: text/csv
+      dataflow: DSD_LFS@DF_IALFS_UNE_M
+    domains: [employment]
+    frequency: monthly
+  - id: house_prices
+    title: Analytical house price indicators (incl. price-to-income ratio)
+    connector: sdmx
+    params:
+      url: https://sdmx.oecd.org/public/rest/data/OECD.ECO.MPD,DSD_AN_HOUSE_PRICES@DF_HOUSE_PRICES,1.0/all
+      query: {format: csvfile}
+      accept: text/csv
+      dataflow: DSD_AN_HOUSE_PRICES@DF_HOUSE_PRICES
+    domains: [housing]
+    frequency: quarterly
+  - id: average_annual_wages
+    title: Average annual wages
+    connector: sdmx
+    params:
+      url: https://sdmx.oecd.org/public/rest/data/OECD.ELS.SAE,DSD_EARNINGS@AV_AN_WAGE,1.0/all
+      query: {format: csvfile}
+      accept: text/csv
+      dataflow: DSD_EARNINGS@AV_AN_WAGE
+    domains: [wages]
+    frequency: annual
+  - id: migration_flows
+    title: International Migration Database — inflows of foreign population
+    connector: sdmx
+    params:
+      url: https://sdmx.oecd.org/public/rest/data/OECD.ELS.IMD,DSD_MIG@DF_MIG,1.0/all
+      query: {format: csvfile}
+      accept: text/csv
+      dataflow: DSD_MIG@DF_MIG
+    domains: [migration]
+    frequency: annual

@@ -1,0 +1,28 @@
+series,region,period,value,unit,source,url,topic
+Youth unemployment rate (15-24),World,2025,12.4,%,ILO GET Youth 2026,https://www.ilo.org/resource/news/youth-unemployment-rises-young-people-face-harder-road-decent-work,youth_labour
+Youth unemployed (15-24),World,2025,67,million,ILO GET Youth 2026,https://www.ilo.org/resource/news/youth-unemployment-rises-young-people-face-harder-road-decent-work,youth_labour
+NEET rate,World,2025,20,%,ILO GET Youth 2026,https://www.ilo.org/resource/news/youth-unemployment-rises-young-people-face-harder-road-decent-work,youth_labour
+NEET number,World,2025,257,million (more than),ILO GET Youth 2026,https://www.ilo.org/resource/news/youth-unemployment-rises-young-people-face-harder-road-decent-work,youth_labour
+Youth unemployment rate,Northern America,2025,9.8,%,ILO GET Youth 2026,https://www.ilo.org/resource/news/youth-unemployment-rises-young-people-face-harder-road-decent-work,youth_labour
+Youth unemployment rate (SA),Australia,Sep 2026,11.1,%,ABS Labour Force Australia,https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/sep-2026,youth_labour
+Unemployment rate 16-24 (SA),United States,Sep 2026,9.9,%,BLS via FRED LNS14024887,https://fred.stlouisfed.org/series/LNS14024887,youth_labour
+Unemployment rate 16-24 (July NSA),United States,Jul 2026,9.1,%,BLS Youth Summer 2026,https://www.bls.gov/news.release/archives/youth_08202026.htm,youth_labour
+Unemployment rate 16-24,United Kingdom,Apr-Jun 2026,16.2,%,ONS via CBI-Pertemps,https://www.cbi.org.uk/media/mbuj230q/cbi-pertemps-labour-market-update-august-2026.pdf,youth_labour
+NEET 16-24 share,United Kingdom,Apr-Jun 2026,13.0,%,ONS NEET Aug 2026,https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/bulletins/youngpeoplenotineducationemploymentortrainingneet/august2026,youth_labour
+NEET 16-24 number,United Kingdom,Apr-Jun 2026,981000,persons,ONS NEET Aug 2026,https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/bulletins/youngpeoplenotineducationemploymentortrainingneet/august2026,youth_labour
+Youth unemployment rate 15-24,Canada,Sep 2026,13,%,StatCan LFS via TodoCanada,https://www.todocanada.ca/alberta-adds-23000-jobs-as-canada-loses-68000-and-unemployment-rises-to-6-5-in-september/,youth_labour
+Youth unemployment rate <25 (SA),Germany,Jul 2026,7.2,%,Eurostat via kurzy.cz,https://zpravy.kurzy.cz/873219-euro-area-unemployment-at-6-4-1-9-2026/,youth_labour
+Youth unemployment rate <25 (SA),France,Jul 2026,20.7,%,Eurostat via kurzy.cz,https://zpravy.kurzy.cz/873219-euro-area-unemployment-at-6-4-1-9-2026/,youth_labour
+Youth unemployment rate <25 (SA),Spain,Jul 2026,22.9,%,Eurostat via kurzy.cz,https://zpravy.kurzy.cz/873219-euro-area-unemployment-at-6-4-1-9-2026/,youth_labour
+Youth unemployment rate <25 (SA),Italy,Jul 2026,18.9,%,Eurostat via kurzy.cz,https://zpravy.kurzy.cz/873219-euro-area-unemployment-at-6-4-1-9-2026/,youth_labour
+Youth unemployment rate <25 (SA),Sweden,Jul 2026,24.4,%,Eurostat via kurzy.cz,https://zpravy.kurzy.cz/873219-euro-area-unemployment-at-6-4-1-9-2026/,youth_labour
+Youth unemployment rate <25 (SA),EU27,Jul 2026,15.1,%,Eurostat via kurzy.cz,https://zpravy.kurzy.cz/873219-euro-area-unemployment-at-6-4-1-9-2026/,youth_labour
+Unemployment rate 15-24 (annual avg),Japan,2025,3.83,%,OECD ILS via FRED LRUN24TTJPA156S,https://fred.stlouisfed.org/data/LRUN24TTJPA156S,youth_labour
+Youth unemployment rate 15-29,South Korea,Jul 2026,6.8,%,National Data Office via JoongAng Daily,https://www.koreajoongangdaily.com/business/youth-employment-falls-for-27th-month-as-jobless-rate-posts-sharpest-rise-in-over-5-years/12820901,youth_labour
+Urban unemployment 16-24 excl. students,China,Sep 2026,18.0,%,NBS via Trading Economics,https://tradingeconomics.com/china/youth-unemployment-rate/news/593601,youth_labour
+Unemployment rate 15-29 (usual status),India,2025,9.9,%,MoSPI PLFS Annual Report 2025,https://www.mospi.gov.in/uploads/latestReleases/latest_release_1774607827733_3e8964a9-268b-4cc9-ad65-cfc8a9e32f08_Press_note_AR_PLFS_2025_23032025_V2.1_26032026_final.pdf,youth_labour
+Unemployment rate 15-29 urban,India,2025,13.6,%,MoSPI PLFS Annual Report 2025,https://www.mospi.gov.in/uploads/latestReleases/latest_release_1774607827733_3e8964a9-268b-4cc9-ad65-cfc8a9e32f08_Press_note_AR_PLFS_2025_23032025_V2.1_26032026_final.pdf,youth_labour
+Unemployment rate 15-29 rural,India,2025,8.3,%,MoSPI PLFS Annual Report 2025,https://www.mospi.gov.in/uploads/latestReleases/latest_release_1774607827733_3e8964a9-268b-4cc9-ad65-cfc8a9e32f08_Press_note_AR_PLFS_2025_23032025_V2.1_26032026_final.pdf,youth_labour
+Unemployment rate 15-24,Indonesia,May 2026,17.37,%,BPS Sakernas via CNBC Indonesia,https://www.cnbcindonesia.com/news/20260806131950-4-757114/tingkat-pengangguran-usia-15-24-terus-naik-paling-banyak-lulusan-smk/amp,youth_labour
+Youth unemployment rate 15-34,South Africa,Q2 2026,47.4,%,Stats SA QLFS,https://www.statssa.gov.za/publications/P0211/Media%20Release%20QLFS%20Q2%202026.pdf,youth_labour
+Official unemployment rate (all ages),South Africa,Q2 2026,33.6,%,Stats SA QLFS,https://www.statssa.gov.za/publications/P0211/Media%20Release%20QLFS%20Q2%202026.pdf,youth_labour

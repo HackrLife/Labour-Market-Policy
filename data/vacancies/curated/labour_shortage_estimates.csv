@@ -1,0 +1,50 @@
+series,region,period,value,unit,source,url,sector
+Health worker shortage (current),Global,2023,14.7,million workers,WHO EB156/15,https://apps.who.int/gb/ebwha/pdf_files/EB156/B156_15-en.pdf,Healthcare
+Projected health worker shortage,Global,2030,11.1,million workers,WHO EB156/15,https://apps.who.int/gb/ebwha/pdf_files/EB156/B156_15-en.pdf,Healthcare
+Countries projected short of health workers,Global,2030,67,countries,WHO NHWA 2026 (via Devdiscourse),https://www.devdiscourse.com/article/health/3979244-more-health-workers-unequal-care-who-warns-of-ageing-and-global-staffing-gaps,Healthcare
+Doctors aged over 55 (122 countries),Global,2026,25,percent (approx. one in four),WHO NHWA 2026 (via Devdiscourse),https://www.devdiscourse.com/article/health/3979244-more-health-workers-unequal-care-who-warns-of-ageing-and-global-staffing-gaps,Healthcare
+Nursing workforce,Global,2023,29.8,million,WHO SoWN 2025,https://www.who.int/news/item/11-05-2025-nursing-workforce-grows--but-inequities-threaten-global-health-goals,Healthcare
+Nursing shortage,Global,2023,5.8,million,WHO SoWN 2025,https://www.who.int/news/item/11-05-2025-nursing-workforce-grows--but-inequities-threaten-global-health-goals,Healthcare
+Projected nursing shortage,Global,2030,4.1,million,WHO SoWN 2025,https://www.who.int/news/item/11-05-2025-nursing-workforce-grows--but-inequities-threaten-global-health-goals,Healthcare
+Nurses expected to retire within 10 years,Global,2025,19,percent,WHO SoWN 2025,https://www.who.int/news/item/11-05-2025-nursing-workforce-grows--but-inequities-threaten-global-health-goals,Healthcare
+Projected total employment growth 2025-35,US,2026,3.5,percent,BLS Employment Projections,https://www.bls.gov/news.release/ecopro.nr0.htm,All
+Healthcare & social assistance share of new jobs 2025-35,US,2026,37.0,percent,BLS Employment Projections,https://www.bls.gov/news.release/ecopro.nr0.htm,Healthcare
+Projected change office & admin support 2025-35,US,2026,-4.0,percent,BLS Employment Projections,https://www.bls.gov/news.release/ecopro.nr0.htm,Office/admin (AI-exposed)
+Energy employment,Global,2024,76,million,IEA World Energy Employment 2025,https://www.iea.org/news/energy-employment-has-surged-but-growing-skills-shortages-threaten-future-momentum,Energy
+Energy employment growth,Global,2024,2.2,percent,IEA World Energy Employment 2025,https://www.iea.org/news/energy-employment-has-surged-but-growing-skills-shortages-threaten-future-momentum,Energy
+Surveyed organisations reporting critical hiring bottlenecks,Global,2025,>50,percent (of ~700),IEA World Energy Employment 2025,https://www.iea.org/news/energy-employment-has-surged-but-growing-skills-shortages-threaten-future-momentum,Energy
+Workers near retirement per new entrant under 25,Advanced economies,2025,2.4,ratio,IEA World Energy Employment 2025,https://www.iea.org/news/energy-employment-has-surged-but-growing-skills-shortages-threaten-future-momentum,Energy
+Workers near retirement per new entrant under 25 (grid),Advanced economies,2025,1.4,ratio,IEA World Energy Employment 2025,https://www.iea.org/news/energy-employment-has-surged-but-growing-skills-shortages-threaten-future-momentum,Grid
+Required increase in qualified entrants by 2030,Global,2025,40,percent,IEA World Energy Employment 2025,https://www.iea.org/news/energy-employment-has-surged-but-growing-skills-shortages-threaten-future-momentum,Energy
+Energy employment,US,2025,8.4,million,USEER 2026 (via MyChesCo),https://www.mychesco.com/a/news/national/u-s-energy-jobs-fell-1-in-2025-as-grid-hiring-grew/,Energy
+Energy employment change,US,2025,-1,percent,USEER 2026 (via MyChesCo),https://www.mychesco.com/a/news/national/u-s-energy-jobs-fell-1-in-2025-as-grid-hiring-grew/,Energy
+Transmission distribution & storage employment,US,2025,1.5,million,USEER 2026 (via MyChesCo),https://www.mychesco.com/a/news/national/u-s-energy-jobs-fell-1-in-2025-as-grid-hiring-grew/,Grid
+Electric power T&D jobs added,US,2025,17900,workers,DOE USEER 2026 highlights,https://www.energy.gov/node/4860114,Grid
+Median energy salary premium over national median,US,2025,24,percent,DOE USEER 2026 highlights,https://www.energy.gov/node/4860114,Energy
+Electric power generation construction firms reporting hiring challenges,US,2025,76,percent,DOE (USEER 2026),https://www.energy.gov/node/4860804,Energy
+Nuclear employers reporting hiring difficulty,US,2025,65,percent,DOE (USEER 2026),https://www.energy.gov/node/4860804,Energy
+Power lines to add or replace by 2040,Global,2023,80,million km,IEA Electricity Grids and Secure Energy Transitions,https://www.iea.org/news/lack-of-ambition-and-attention-risks-making-electricity-grids-the-weak-link-in-clean-energy-transitions,Grid
+Annual grid investment needed by 2030,Global,2023,600,USD billion/yr,IEA Electricity Grids and Secure Energy Transitions,https://www.iea.org/news/lack-of-ambition-and-attention-risks-making-electricity-grids-the-weak-link-in-clean-energy-transitions,Grid
+Advanced renewables awaiting grid connection,Global,2023,1500,GW,IEA Electricity Grids and Secure Energy Transitions,https://www.iea.org/news/lack-of-ambition-and-attention-risks-making-electricity-grids-the-weak-link-in-clean-energy-transitions,Grid
+Capacity actively seeking interconnection,US,2024,2290,GW,LBNL Queued Up 2025,https://emp.lbl.gov/sites/default/files/2025-12/Queued%20Up%202025%20Edition%20-%2012.15.2025.pdf,Grid
+Typical months from request to commercial operation,US,2024,55,months,LBNL Queued Up 2025,https://emp.lbl.gov/sites/default/files/2025-12/Queued%20Up%202025%20Edition%20-%2012.15.2025.pdf,Grid
+Capacity actively seeking interconnection,US,2025,2061,GW,LBNL Queued Up 2026 (via APPA),https://www.publicpower.org/node/30574,Grid
+Additional power engineers needed by 2030,US/Global (unspecified),2025,450000-1500000,engineers,IEEE PES 2025 Workforce Development Report (Kearney),https://ieee-pes.org/climate-change/2025-ieee-pes-workforce-development-report/,Grid
+Utility employees with <10 years service,US,2023,56,percent,CEWD 2023 Energy Workforce Survey (via APPA),https://www.publicpower.org/periodical/article/group-sees-need-energy-industry-focus-developing-less-experienced-workforce,Utilities
+New employees needed 2024-2033,US,2024,3.8,million,Deloitte & Manufacturing Institute,https://themanufacturinginstitute.org/manufacturers-need-as-many-as-3-8-million-new-employees-by-2033/,Manufacturing
+Jobs potentially unfilled by 2033,US,2024,1.9,million,Deloitte & Manufacturing Institute,https://themanufacturinginstitute.org/manufacturers-need-as-many-as-3-8-million-new-employees-by-2033/,Manufacturing
+Share of workforce over 55,US,2019,25,percent,Manufacturing Institute / Sloan,https://nam.org/new-report-dives-into-retaining-the-aging-manufacturing-workforce/,Manufacturing
+Net new workers needed,US,2026,349000,workers,Associated Builders and Contractors,https://www.abc.org/wfshortage,Construction
+Net new workers needed,US,2027,456000,workers,Associated Builders and Contractors,https://www.abc.org/wfshortage,Construction
+Net new workers needed (prior estimate),US,2025,439000,workers,ABC (via Construction Dive),https://www.constructiondive.com/news/labor-demand-gap-shrinks-abc-construction-staff/810681/,Construction
+Additional workers to meet Housing Accord (1.2m homes by 2029),Australia,2025,116700,workers,BuildSkills Australia Housing Workforce Capacity Study (via The Urban Developer),https://www.theurbandeveloper.com/articles/buildskills-australia-housing-workforce-shortage,Construction/Housing
+Occupations in national shortage,Australia,2025,29,percent (293 of 1022),Jobs and Skills Australia OSL 2025,https://www.jobsandskills.gov.au/sites/default/files/2025-10/2025%20OSL%20Key%20Findings%20Report.pdf,All
+Occupations in national shortage,Australia,2024,33,percent (333),Jobs and Skills Australia OSL 2025,https://www.jobsandskills.gov.au/sites/default/files/2025-10/2025%20OSL%20Key%20Findings%20Report.pdf,All
+Professional occupations in shortage,Australia,2025,39,percent,Jobs and Skills Australia OSL 2025,https://www.jobsandskills.gov.au/sites/default/files/2025-10/2025%20OSL%20Key%20Findings%20Report.pdf,Professionals
+Additional electricians needed by 2030,Australia,2023,32000 (range 26000-42000),workers,JSA Clean Energy Generation (via Clean Energy Council / Smallcaps),https://cleanenergycouncil.org.au/news/jobs-report-guides-future-for-the-clean-energy-workforce,Clean energy
+Jobs in clean energy generation & transmission construction by 2030,Australia,2023,450000,jobs,JSA Clean Energy Generation (via Clean Energy Council),https://cleanenergycouncil.org.au/news/jobs-report-guides-future-for-the-clean-energy-workforce,Clean energy
+Building & engineering trades workforce needed by 2050,Australia,2023,~2,million (approx. +40%),JSA Clean Energy Generation (via Smallcaps/AAP),https://smallcaps.com.au/article/australia-needs-2-million-workers-meet-clean-energy-future/,Clean energy
+Additional teachers needed by 2030,Global,2024,44,million,UNESCO Global Report on Teachers,https://www.teachertaskforce.org/sites/default/files/2025-12/388832eng.pdf,Education
+Share of teacher need that is replacement of leavers,Global,2024,58,percent,UNESCO Global Report on Teachers,https://www.teachertaskforce.org/sites/default/files/2025-12/388832eng.pdf,Education
+Additional teachers needed by 2030,Sub-Saharan Africa,2024,15,million,UNESCO Global Report on Teachers,https://news.un.org/en/node/1147067,Education
+Occupations in shortage in at least one country,EU/EEA (31 EURES countries),2024,430,occupations (98% of classified),EURES Report on labour shortages and surpluses 2024 (ELA),https://www.ela.europa.eu/lt/publications/labour-shortages-and-surpluses-europe-2024,All
