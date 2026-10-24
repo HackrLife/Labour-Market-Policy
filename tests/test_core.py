@@ -140,3 +140,18 @@ class TestHttpParsers(unittest.TestCase):
             q, h, sec = C._secret_params({"key_env": {"apiKey": "K"}, "query": {"a": 1}})
             self.assertEqual(q, {"a": 1, "apiKey": "s3cret"})
             self.assertEqual(C._mask("https://x?apiKey=s3cret", sec), "https://x?apiKey=***")
+
+
+class TestTimeout(unittest.TestCase):
+    def test_stalled_dataset_is_reported(self):
+        import time
+        from labobs import ingest
+        with mock.patch.object(ingest, "DATASET_TIMEOUT", 1), \
+             mock.patch.object(ingest, "ingest_one", side_effect=lambda *a: time.sleep(3)), \
+             tempfile.TemporaryDirectory() as tmp, \
+             mock.patch.object(ingest, "STATUS", Path(tmp) / "status.json"), \
+             mock.patch.object(ingest, "LOG_DIR", Path(tmp)), \
+             mock.patch.object(ingest, "CHANGELOG", Path(tmp) / "CHANGELOG.md"):
+            res = ingest.run(source="research", dataset="gpts_occ_exposure")
+        self.assertEqual(res[0]["status"], "failed")
+        self.assertIn("exceeded", res[0]["error"])

@@ -10,6 +10,8 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import os
+import signal
 import traceback
 
 import pandas as pd
@@ -69,17 +71,35 @@ def ingest_one(src, ds, today: dt.date) -> dict:
     return res
 
 
+DATASET_TIMEOUT = int(os.environ.get("LABOBS_DATASET_TIMEOUT", "900"))  # seconds per dataset
+
+
+class DatasetTimeout(Exception):
+    pass
+
+
+def _alarm(signum, frame):
+    raise DatasetTimeout(f"exceeded {DATASET_TIMEOUT}s")
+
+
 def run(source=None, dataset=None, domain=None, today: dt.date | None = None) -> list[dict]:
     today = today or dt.date.today()
     reg = load_registry()
     status = _load_json(STATUS, {})
     results = []
     for src, ds in iter_datasets(reg, source, dataset, domain):
+        use_alarm = hasattr(signal, "SIGALRM")
+        if use_alarm:
+            signal.signal(signal.SIGALRM, _alarm)
+            signal.alarm(DATASET_TIMEOUT)
         try:
             r = ingest_one(src, ds, today)
-        except Exception as e:  # one failure must not stop the run
+        except Exception as e:  # one failure (or a stalled download) must not stop the run
             r = {"dataset": ds.key, "status": "failed", "error": f"{type(e).__name__}: {e}",
                  "trace": traceback.format_exc(limit=3)}
+        finally:
+            if use_alarm:
+                signal.alarm(0)
         results.append(r)
         st = status.setdefault(ds.key, {})
         st["last_attempt"] = today.isoformat()
