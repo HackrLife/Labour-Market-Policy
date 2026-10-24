@@ -6,17 +6,37 @@ redistribution: attribution
 release_calendar: Follows the originating agency
 datasets:
   - id: distribution_and_profits
-    title: Wealth shares (Distributional Financial Accounts), corporate profits, GDP
+    title: Wealth shares (Distributional Financial Accounts), corporate profits, labour compensation, GDP
     connector: fred
     params:
-      series: [WFRBST01134, WFRBSB50215, WFRBSN09161, CP, GDP, A4102C1Q027SBEA]
+      series: [WFRBST01134, WFRBSB50215, WFRBSN09161, CP, GDP, GDICOMP]
     domains: [macro]
     frequency: quarterly
-    notes: WFRBST01134 top 1% share of net worth; WFRBSB50215 bottom 50%; CP corporate profits after tax; A4102C1Q027SBEA compensation of employees (to be confirmed)
+    verified: false
+    notes: >-
+      Series ids confirmed on FRED series pages (or ALFRED for WFRBSB50215):
+      WFRBST01134 share of net worth held by the top 1%;
+      WFRBSB50215 share held by the bottom 50%;
+      WFRBSN09161 share held by the 90th to 99th percentiles (Fed Board DFA, tagged "Public Domain:
+      Citation Requested");
+      CP corporate profits after tax without IVA and CCAdj (BEA, $bn SAAR);
+      GDP ($bn SAAR);
+      GDICOMP gross domestic income, compensation of employees paid (BEA, $bn SAAR).
+      GDICOMP replaces A4102C1Q027SBEA, which is GDI compensation of employees paid: wages and salaries
+      only, excluding supplements. The keyless https://fred.stlouisfed.org/graph/fredgraph.csv?id= endpoint
+      the connector uses could not be reached this session.
   - id: labour_market_extras
     title: Prime-age employment ratio, real median weekly earnings
     connector: fred
     params:
       series: [LNS12300060, LES1252881600Q]
     domains: [employment, wages]
-    frequency: monthly
+    frequency: mixed (monthly; quarterly)
+    verified: false
+    notes: >-
+      Confirmed on FRED series pages:
+      LNS12300060 employment-population ratio, ages 25-54 (BLS CPS, %, SA, monthly);
+      LES1252881600Q median usual weekly real earnings, full-time wage and salary workers 16+ (BLS, 1982-84 CPI
+      dollars, SA, quarterly).
+      Frequency was corrected from "monthly" because LES1252881600Q is quarterly. The fredgraph.csv
+      endpoint was not confirmed live.

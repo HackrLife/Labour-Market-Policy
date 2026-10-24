@@ -4,6 +4,9 @@ homepage: https://data.worldbank.org
 licence: CC BY 4.0
 redistribution: open
 release_calendar: WDI updated quarterly; labour series mirror ILO modelled estimates
+# API v2 pattern https://api.worldbank.org/v2/country/all/indicator/{code}?format=json&per_page=&page=
+# is confirmed in the World Bank Data Help Desk "API Basic Call Structures" article (898581). The
+# connector matches it. That article gives no maximum for per_page, and the connector uses 20000.
 datasets:
   - id: unemployment_total
     title: Unemployment, total (% of labour force, modelled ILO estimate)
@@ -12,6 +15,7 @@ datasets:
     domains: [employment]
     frequency: annual
     verified: true
+    notes: Confirmed at data.worldbank.org/indicator/SL.UEM.TOTL.ZS; CC BY-4.0.
   - id: unemployment_youth
     title: Unemployment, youth total (% of labour force ages 15–24, modelled ILO estimate)
     connector: worldbank
@@ -19,6 +23,7 @@ datasets:
     domains: [employment]
     frequency: annual
     verified: true
+    notes: Confirmed in the WDI metadata glossary; CC BY-4.0.
   - id: lfpr_total
     title: Labour force participation rate, total (% of population ages 15+, modelled ILO estimate)
     connector: worldbank
@@ -26,27 +31,31 @@ datasets:
     domains: [employment]
     frequency: annual
     verified: true
+    notes: Confirmed in the WDI metadata glossary; CC BY-4.0.
   - id: emp_agriculture_share
-    title: Employment in agriculture (% of total employment)
+    title: Employment in agriculture (% of total employment, modelled ILO estimate)
     connector: worldbank
     params: {indicator: SL.AGR.EMPL.ZS}
     domains: [employment, adjustment]
     frequency: annual
     verified: true
+    notes: Confirmed at data.worldbank.org/indicator/SL.AGR.EMPL.ZS; CC BY-4.0.
   - id: emp_industry_share
-    title: Employment in industry (% of total employment)
+    title: Employment in industry (% of total employment, modelled ILO estimate)
     connector: worldbank
     params: {indicator: SL.IND.EMPL.ZS}
     domains: [employment, adjustment]
     frequency: annual
     verified: true
+    notes: Confirmed in the WDI metadata glossary; CC BY-4.0.
   - id: emp_services_share
-    title: Employment in services (% of total employment)
+    title: Employment in services (% of total employment, modelled ILO estimate)
     connector: worldbank
     params: {indicator: SL.SRV.EMPL.ZS}
     domains: [employment, adjustment]
     frequency: annual
     verified: true
+    notes: Confirmed in the WDI metadata glossary; CC BY-4.0.
   - id: migrant_stock
     title: International migrant stock, total
     connector: worldbank
@@ -54,6 +63,10 @@ datasets:
     domains: [migration]
     frequency: quinquennial
     verified: true
+    notes: >-
+      Confirmed in the WDI metadata glossary (source: UN Population Division International Migrant Stock;
+      CC BY-4.0). WDI lists the periodicity as annual over 1990-2024, but values exist only for the UN
+      benchmark years.
   - id: remittances_received
     title: Personal remittances, received (current US$)
     connector: worldbank
@@ -61,27 +74,37 @@ datasets:
     domains: [migration, macro]
     frequency: annual
     verified: true
+    notes: Confirmed at data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT; CC BY-4.0.
   - id: gdp_per_person_employed
     title: GDP per person employed (constant 2021 PPP $)
     connector: worldbank
     params: {indicator: SL.GDP.PCAP.EM.KD}
     domains: [macro]
     frequency: annual
-    verified: false
+    verified: true
+    notes: >-
+      Confirmed at data.worldbank.org/indicator/SL.GDP.PCAP.EM.KD (World Bank staff estimates from ILO data;
+      CC BY-4.0). OWID metadata (WDI version 2026-07-14) confirms 2021 constant international $ at PPP.
   - id: fertility_rate
     title: Fertility rate, total (births per woman)
     connector: worldbank
     params: {indicator: SP.DYN.TFRT.IN}
     domains: [demography]
     frequency: annual
-    verified: true
+    verified: false
+    notes: >-
+      This is the standard WDI code, but no official page or live response could be retrieved this session
+      (fetch failed; search budget exhausted). It was previously marked verified with no recorded evidence.
   - id: age_dependency_old
     title: Age dependency ratio, old (% of working-age population)
     connector: worldbank
     params: {indicator: SP.POP.DPND.OL}
     domains: [demography]
     frequency: annual
-    verified: true
+    verified: false
+    notes: >-
+      This is the standard WDI code, but no official page or live response could be retrieved this session.
+      It was previously marked verified with no recorded evidence.
   - id: urban_population_share
     title: Urban population (% of total population)
     connector: worldbank
@@ -89,3 +112,4 @@ datasets:
     domains: [demography]
     frequency: annual
     verified: true
+    notes: Confirmed at data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS; CC BY-4.0.

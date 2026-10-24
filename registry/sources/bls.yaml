@@ -26,6 +26,10 @@ datasets:
     domains: [employment, adjustment]
     frequency: monthly
     verified: true
+    notes: >-
+      LNS ids confirmed on the BLS CPS errata page (Jan 2024). CES industry codes 00/20/30/50/60-000000 are
+      confirmed on the BLS CES series-publication page. CES6562000001 and the government code 90-000000
+      (CEU9000000001) are confirmed on FRED series pages citing BLS.
   - id: jolts
     title: JOLTS openings, hires, quits, layoffs — total nonfarm
     connector: bls
@@ -46,6 +50,14 @@ datasets:
         JTS230000000000000JOR: Openings rate — construction
     domains: [vacancies, adjustment]
     frequency: monthly
+    verified: false
+    notes: >-
+      The 21-character JT series-id layout is confirmed in BLS jt.txt. JTS000000000000000JOL and ...JOR
+      appear in the live BLS file jt.data.2.JobOpenings (latest 2026 M08). The total-nonfarm HIL, QUL and
+      LDL ids are confirmed in a jt mirror listing. The four industry ids are built from the official
+      layout plus the jt.industry codes 620000, 300000, 510000 and 230000 (seen in a mirror of jt.industry).
+      FRED publishes them as JTS6200JOR, JTS3000JOR and so on. No live BLS response was obtained for the
+      industry ids.
   - id: productivity_labour_share
     title: Nonfarm business labour productivity and labour share (Productivity and Costs)
     connector: bls
@@ -58,6 +70,10 @@ datasets:
         PRS85006112: Unit labour costs, nonfarm business (% change, annual rate)
     domains: [macro]
     frequency: quarterly
+    verified: true
+    notes: >-
+      Titles and units confirmed on the FRED series pages, which cite BLS Productivity and Costs:
+      PRS85006092 and PRS85006112 are percent change at annual rate (SA); PRS85006173 is an index, 2017=100 (SA).
   - id: oews_national
     title: Occupational Employment and Wage Statistics — national, all occupations
     connector: http
@@ -67,7 +83,10 @@ datasets:
       parse: none
     domains: [micro, wages]
     frequency: annual
-    notes: Filename increments each May release (oesm26nat.zip in 2027). Parsed in notebooks/micro.
+    verified: true
+    notes: >-
+      The May 2025 estimates were released 15 May 2026. The URL is listed on https://www.bls.gov/oes/current/oes37.htm.
+      The filename increments each May release (oesm26nat.zip in 2027). Parsed in notebooks/micro.
   - id: employment_projections
     title: Employment Projections — occupational data (2025–35)
     connector: http
@@ -77,3 +96,7 @@ datasets:
       parse: none
     domains: [micro, employment]
     frequency: annual
+    verified: true
+    notes: >-
+      Listed on https://www.bls.gov/emp/tables.htm as "All occupational tables in a single file". The 2025–35
+      projections were released 27 Aug 2026. The URL is unversioned and is overwritten with each release.

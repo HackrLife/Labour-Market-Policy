@@ -4,6 +4,11 @@ homepage: https://ec.europa.eu/eurostat
 licence: CC BY 4.0 (Commission Decision 2011/833/EU reuse policy)
 redistribution: open
 release_calendar: https://ec.europa.eu/eurostat/news/release-calendar
+# SDMX 2.1 dissemination API (Eurostat "API detailed guidelines > SDMX 2.1 > data query"):
+#   https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/{datasetCode}[/{key}]?format=SDMX-CSV
+# format=SDMX-CSV returns SDMX-CSV 1.0 (flat). compressed= toggles .gz. The Accept header is not documented,
+# so the format= parameter is what selects CSV. The earlier `accept: text/csv` override was undocumented
+# and has been removed, so the connector default (application/vnd.sdmx.data+csv) is sent.
 datasets:
   - id: une_rt_m
     title: Unemployment by sex and age — monthly data
@@ -11,47 +16,74 @@ datasets:
     params:
       url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/une_rt_m
       query: {format: SDMX-CSV, compressed: "false"}
-      accept: text/csv
       dataflow: une_rt_m
     domains: [employment]
     frequency: monthly
+    verified: true
+    notes: Confirmed by Eurostat metadata https://ec.europa.eu/eurostat/cache/metadata/en/une_rt_m_esms.htm. Data runs to Sep 2026.
   - id: jvs_q_nace2
-    title: Job vacancy statistics by NACE Rev. 2 activity — quarterly
+    title: Job vacancy statistics by NACE Rev. 2 activity — quarterly (2001–2025, closed series)
     connector: sdmx
     params:
       url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/jvs_q_nace2
       query: {format: SDMX-CSV, compressed: "false"}
-      accept: text/csv
       dataflow: jvs_q_nace2
     domains: [vacancies]
     frequency: quarterly
+    verified: false
+    notes: >-
+      The Eurostat data browser now titles this table "Job vacancy statistics by NACE Rev. 2 activity -
+      quarterly data (2001-2025)", which suggests it is closed. Eurostat's Job vacancy statistics article
+      (data extracted Sep 2026) uses jvs_q_r21 (NACE Rev. 2.1) instead. This entry is kept for historical
+      NACE Rev. 2 data. Use eurostat/jvs_q_r21 for current quarters. No live response was obtained.
+  - id: jvs_q_r21
+    title: Job vacancy statistics by NACE Rev. 2.1 activity — quarterly (from 2001 onwards)
+    connector: sdmx
+    params:
+      url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/jvs_q_r21
+      query: {format: SDMX-CSV, compressed: "false"}
+      dataflow: jvs_q_r21
+    domains: [vacancies]
+    frequency: quarterly
+    verified: true
+    notes: >-
+      Added as the NACE Rev. 2.1 successor to jvs_q_nace2. Confirmed as the source table in Eurostat
+      Statistics Explained "Job vacancy statistics" (data extracted Sep 2026; Q2 2026 latest).
   - id: lfsa_ergan
     title: Employment rates by sex, age and citizenship (%)
     connector: sdmx
     params:
       url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/lfsa_ergan
       query: {format: SDMX-CSV, compressed: "false"}
-      accept: text/csv
       dataflow: lfsa_ergan
     domains: [employment, migration]
     frequency: annual
+    verified: false
+    notes: >-
+      Confirmed only via mirrors: DBnomics lists "Employment rates by citizenship", updated by the provider
+      9 Jan 2026, and EIGE lists the same code. No Eurostat page or live response confirmed it this session.
   - id: migr_pop1ctz
     title: Population on 1 January by age group, sex and citizenship
     connector: sdmx
     params:
       url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/migr_pop1ctz
       query: {format: SDMX-CSV, compressed: "false", startPeriod: "2010"}
-      accept: text/csv
       dataflow: migr_pop1ctz
     domains: [migration, demography]
     frequency: annual
+    verified: true
+    notes: Listed as a source table in Eurostat metadata https://ec.europa.eu/eurostat/cache/metadata/en/migr_ind_esmsip2.htm.
   - id: lc_lci_r2_q
-    title: Labour cost index by NACE Rev. 2 activity — quarterly
+    title: Labour cost index by NACE Rev. 2 activity — nominal value, quarterly
     connector: sdmx
     params:
       url: https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/lc_lci_r2_q
       query: {format: SDMX-CSV, compressed: "false", startPeriod: "2010"}
-      accept: text/csv
       dataflow: lc_lci_r2_q
     domains: [wages]
     frequency: quarterly
+    verified: true
+    notes: >-
+      Cited as the source in Eurostat Statistics Explained "Labour cost index - recent trends" (data
+      extracted June 2026). Data runs to Q2 2026. Watch for a NACE Rev. 2.1 successor table, as happened
+      with jvs_q_nace2 -> jvs_q_r21.

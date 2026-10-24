@@ -4,6 +4,12 @@ homepage: https://data-explorer.oecd.org
 licence: CC BY 4.0 (OECD terms since July 2024)
 redistribution: open
 release_calendar: https://www.oecd.org/en/data/insights/statistical-releases.html
+# OECD API explainer (oecd.org/en/data/insights/data-explainers/2024/09/api.html):
+#   https://sdmx.oecd.org/public/rest/data/{agency},{dataflow},{version}/{key}?format=csvfile
+# format=csvfile gives SDMX-CSV with codes only; csvfilewithlabels adds labels. The version may be omitted
+# (the OECD's own CSV example omits it). On the .Stat Suite, format=csvfile is the same as
+# Accept: application/vnd.sdmx.data+csv;file=true, so the Accept override is set to that instead of
+# the undocumented text/csv. The service is rate-limited.
 datasets:
   - id: unemployment_monthly
     title: Monthly unemployment rates (infra-annual labour statistics)
@@ -11,37 +17,57 @@ datasets:
     params:
       url: https://sdmx.oecd.org/public/rest/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_UNE_M,1.0/all
       query: {startPeriod: "2000-01", dimensionAtObservation: AllDimensions, format: csvfile}
-      accept: text/csv
+      accept: "application/vnd.sdmx.data+csv;file=true"
       dataflow: DSD_LFS@DF_IALFS_UNE_M
     domains: [employment]
     frequency: monthly
+    verified: false
+    notes: >-
+      Agency OECD.SDD.TPS, id DSD_LFS@DF_IALFS_UNE_M, version 1.0 and the title "Monthly unemployment rates"
+      are confirmed only via DBnomics (provider link df[ag]/df[vs], updated 16 Jun 2026), not an OECD page.
   - id: house_prices
     title: Analytical house price indicators (incl. price-to-income ratio)
     connector: sdmx
     params:
       url: https://sdmx.oecd.org/public/rest/data/OECD.ECO.MPD,DSD_AN_HOUSE_PRICES@DF_HOUSE_PRICES,1.0/all
       query: {format: csvfile}
-      accept: text/csv
+      accept: "application/vnd.sdmx.data+csv;file=true"
       dataflow: DSD_AN_HOUSE_PRICES@DF_HOUSE_PRICES
     domains: [housing]
     frequency: quarterly
+    verified: true
+    notes: >-
+      Agency and id confirmed by an OECD Data Explorer URL (df[ag]=OECD.ECO.MPD,
+      df[id]=DSD_AN_HOUSE_PRICES@DF_HOUSE_PRICES). Version 1.0 comes from DBnomics. The flow includes
+      HPI_YDH (price-to-income) series and holds both annual and quarterly data (FREQ dimension).
   - id: average_annual_wages
     title: Average annual wages
     connector: sdmx
     params:
       url: https://sdmx.oecd.org/public/rest/data/OECD.ELS.SAE,DSD_EARNINGS@AV_AN_WAGE,1.0/all
       query: {format: csvfile}
-      accept: text/csv
+      accept: "application/vnd.sdmx.data+csv;file=true"
       dataflow: DSD_EARNINGS@AV_AN_WAGE
     domains: [wages]
     frequency: annual
+    verified: true
+    notes: >-
+      Live structure response https://sdmx.oecd.org/public/rest/dataflow/OECD.ELS.SAE/DSD_EARNINGS@AV_AN_WAGE/1.0
+      returned agencyID OECD.ELS.SAE, version 1.0, name "Average annual wages".
   - id: migration_flows
-    title: International Migration Database — inflows of foreign population
+    title: International Migration Database (inflows, outflows and stocks of foreign/foreign-born population)
     connector: sdmx
     params:
-      url: https://sdmx.oecd.org/public/rest/data/OECD.ELS.IMD,DSD_MIG@DF_MIG,1.0/all
+      url: https://sdmx.oecd.org/public/rest/data/OECD.ELS.IMD,DSD_MIG@DF_MIG/all
       query: {format: csvfile}
-      accept: text/csv
+      accept: "application/vnd.sdmx.data+csv;file=true"
       dataflow: DSD_MIG@DF_MIG
     domains: [migration]
     frequency: annual
+    verified: true
+    notes: >-
+      Agency and id confirmed by the OECD Data Explorer page "(DSD_MIG@DF_MIG) International migration
+      database" (df[ag]=OECD.ELS.IMD). The version was not shown, so it is omitted here (latest); the sibling
+      flow DSD_MIG@DF_MIG_EMP_EDU is 1.0. The flow covers the whole database (an OECD explorer view uses
+      measure code B13), so "inflows of foreign population" needs a measure filter. The inflow measure code
+      has not been confirmed (B11 in the legacy OECD.Stat MIG table), so check it against the DSD codelist.

@@ -15,14 +15,23 @@ datasets:
     domains: [micro]
     frequency: static
     verified: true
-    notes: Repository licence MIT; columns human_rating_{alpha,beta,gamma}, dv_rating_*; parsed in notebooks/micro/ai_exposure.
+    notes: >-
+      A live shallow clone of github.com/openai/gpts-are-gpts (default branch main) contains
+      data/occ_level.csv with columns O*NET-SOC Code, Title, dv_rating_{alpha,beta,gamma} and
+      human_rating_{alpha,beta,gamma}. The repository licence is MIT (Copyright 2024 OpenAI). Parsed in
+      analysis/ai_exposure.
   - id: onet_database
     title: O*NET database (tasks, abilities, work context)
     connector: http
     params:
-      url: https://www.onetcenter.org/dl_files/database/db_30_0_text.zip
+      url: https://www.onetcenter.org/dl_files/database/db_31_0_csv.zip
       ext: zip
       parse: none
     domains: [micro]
     frequency: quarterly
-    notes: CC BY 4.0, US DOL/ETA. Version number in URL increments with each release.
+    verified: true
+    notes: >-
+      Updated from db_30_0_text.zip. O*NET 31.0 (Aug 2026) is the current release, per onetcenter.org
+      "What's New". The 31.0 CSV page links https://www.onetcenter.org/dl_files/database/db_31_0_csv.zip, and
+      no db_31_0_text.zip link is listed. Excel (db_31_0_excel.zip) and MySQL (db_31_0_mysql.zip) are also
+      offered. CC BY 4.0, US DOL/ETA. The version number in the URL increments with each release.

@@ -4,34 +4,53 @@ homepage: https://www.abs.gov.au
 licence: CC BY 4.0
 redistribution: open
 release_calendar: https://www.abs.gov.au/release-calendar/future-releases — Labour Force monthly (~3rd Thursday)
+# Data API (official user guide, "Using the API"): /rest/data/{agencyId},{dataflowId},{version}/{key}.
+# Version omitted -> "latest". CSV via Accept header: application/vnd.sdmx.data+csv (the connector
+# default), text/csv, or application/vnd.sdmx.data+csv;labels=both. No format= query parameter is documented.
 datasets:
   - id: labour_force
     title: Labour Force, Australia — headline estimates
     connector: sdmx
     params:
-      url: https://data.api.abs.gov.au/rest/data/ABS,LF,1.0.0/all
+      url: https://data.api.abs.gov.au/rest/data/ABS,LF/all
       query: {startPeriod: "2000-01", dimensionAtObservation: AllDimensions}
       dataflow: LF
       ref_area: AUS
     domains: [employment]
     frequency: monthly
+    verified: false
+    notes: >-
+      URL pattern, CSV Accept header and version-defaults-to-latest confirmed in the ABS Data API user guide.
+      The dataflow id LF is confirmed only by third-party clients (abs-mcp), not by an ABS page or live
+      response. The hard-coded version 1.0.0 was unconfirmed and has been removed so the API resolves the
+      latest version. The ABS guide warns that the "all" key can time out on large dataflows; LF is large,
+      so a filtered key may be needed.
   - id: job_vacancies
     title: Job Vacancies, Australia
     connector: sdmx
     params:
-      url: https://data.api.abs.gov.au/rest/data/ABS,JV,1.0.0/all
+      url: https://data.api.abs.gov.au/rest/data/ABS,JV/all
       query: {startPeriod: "2000-Q1", dimensionAtObservation: AllDimensions}
       dataflow: JV
       ref_area: AUS
     domains: [vacancies]
     frequency: quarterly
+    verified: false
+    notes: >-
+      URL pattern and CSV Accept header confirmed in the ABS Data API user guide. The dataflow id JV is
+      confirmed only by a third-party client (abs-mcp). The unconfirmed version 1.0.0 has been removed (latest).
   - id: wage_price_index
     title: Wage Price Index, Australia
     connector: sdmx
     params:
-      url: https://data.api.abs.gov.au/rest/data/ABS,WPI,1.0.0/all
+      url: https://data.api.abs.gov.au/rest/data/ABS,WPI/all
       query: {startPeriod: "2000-Q1", dimensionAtObservation: AllDimensions}
       dataflow: WPI
       ref_area: AUS
     domains: [wages]
     frequency: quarterly
+    verified: false
+    notes: >-
+      URL pattern and CSV Accept header confirmed in the ABS Data API user guide. The query
+      https://data.api.abs.gov.au/rest/data/ABS,WPI/all appears in the readabs (CRAN) documentation, which is
+      not an ABS source. The unconfirmed version 1.0.0 has been removed (latest).

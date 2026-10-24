@@ -9,11 +9,17 @@ datasets:
     title: International Migrant Stock 2024 — destination and origin
     connector: http
     params:
-      url: https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/files/documents/2025/Jan/undesa_pd_2024_ims_stock_by_sex_destination_and_origin.xlsx
+      url: https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_ims_stock_by_sex_destination_and_origin.xlsx
       ext: xlsx
       parse: none
     domains: [migration]
     frequency: quinquennial
+    verified: true
+    notes: >-
+      URL corrected to the link on the official International Migrant Stock page
+      (https://www.un.org/development/desa/pd/node/3315). The old path had an extra
+      files/documents/2025/Jan/ segment. That page states no licence. CC BY 3.0 IGO is confirmed only for WPP
+      2024, so check the UN terms of use before redistributing this file.
   - id: wpp_2024_indicators
     title: World Population Prospects 2024 — demographic indicators (medium variant)
     connector: http
@@ -23,3 +29,9 @@ datasets:
       parse: none
     domains: [demography]
     frequency: biennial
+    verified: false
+    notes: >-
+      The URL matches the one quoted by a third party (environmentdashboard.org, with parentheses encoded as
+      %28/%29), which also quotes the producer's terms "Copyright © 2024 by United Nations ... CC BY 3.0 IGO".
+      The official population.un.org/wpp download pages are script-rendered and could not be read, so the
+      URL is not confirmed against an official page.

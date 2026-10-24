@@ -4,6 +4,12 @@ homepage: https://ilostat.ilo.org
 licence: CC BY 4.0
 redistribution: open
 release_calendar: Modelled estimates (ILOEST) twice yearly (Jan WESO Trends, May update); national series continuously
+# Endpoint status (see registry/VERIFICATION.md): https://rplumber.ilo.org/data/indicator/?id=<ID> is used in
+# 2026 citations (World Bank WDR 2026 reproducibility package; ERF WP Mar 2026). The connector's
+# format=.csv.gz parameter is not confirmed. A public tutorial documents format=.csv. Rilostat 2.5.1
+# (Oct 2026) downloads https://rplumber.ilo.org/files/indicator/<ID>.rds instead. The official SDMX
+# alternative is https://sdmx.ilo.org/rest/data/ILO,DF_<ID without _A>,1.0/<key>?format=csv.
+# Every entry stays verified: false until a live pull succeeds.
 datasets:
   - id: unemployment_rate_modelled
     title: Unemployment rate by sex and age — ILO modelled estimates (%)
@@ -11,52 +17,82 @@ datasets:
     params: {indicator: UNE_2EAP_SEX_AGE_RT_A}
     domains: [employment]
     frequency: annual
+    verified: false
+    notes: >-
+      The id exists: DBnomics mirror ILO/UNE_2EAP_SEX_AGE_RT, annual, and a public ILO-API tutorial uses
+      UNE_2EAP_SEX_AGE_RT_A. The rplumber endpoint and format were not confirmed live.
   - id: employment_by_activity_modelled
     title: Employment by sex and economic activity — ILO modelled estimates (thousands)
     connector: ilostat
     params: {indicator: EMP_2EMP_SEX_ECO_NB_A}
     domains: [employment, adjustment]
     frequency: annual
+    verified: false
+    notes: The id exists (DBnomics ILO/EMP_2EMP_SEX_ECO_NB, title matches). The endpoint was not confirmed live.
   - id: employment_by_occupation_modelled
     title: Employment by sex and occupation — ILO modelled estimates (thousands)
     connector: ilostat
     params: {indicator: EMP_2EMP_SEX_OCU_NB_A}
     domains: [employment, micro]
     frequency: annual
+    verified: false
+    notes: The id exists (DBnomics ILO/EMP_2EMP_SEX_OCU_NB, title matches). The endpoint was not confirmed live.
   - id: neet_youth_modelled
     title: Share of youth not in employment, education or training (NEET) — ILO modelled estimates (%)
     connector: ilostat
     params: {indicator: EIP_2EET_SEX_RT_A}
     domains: [employment]
     frequency: annual
+    verified: false
+    notes: The id exists (DBnomics ILO/EIP_2EET_SEX_RT). The endpoint was not confirmed live.
   - id: labour_income_share
     title: Labour income share as a percent of GDP — ILO modelled estimates (%)
     connector: ilostat
     params: {indicator: LAP_2GDP_NOC_RT_A}
     domains: [macro, wages]
     frequency: annual
+    verified: false
+    notes: The id exists (DBnomics ILO/LAP_2GDP_NOC_RT, title matches; SDG 10.4.1 equivalent). The endpoint was not confirmed live.
   - id: output_per_worker
     title: Output per worker (GDP constant 2021 international $ at PPP) — ILO modelled estimates
     connector: ilostat
-    params: {indicator: GDP_205U_NOC_NB_A}
+    params: {indicator: GDP_211P_NOC_NB_A}
     domains: [macro]
     frequency: annual
+    verified: false
+    notes: >-
+      Corrected from GDP_205U_NOC_NB_A, which is output per worker in constant 2015 US$ (not PPP). The PPP
+      series is GDP_211P_NOC_NB. DBnomics shows it in 2017 PPP for the Nov 2023 vintage, and the ILOSTAT
+      labour-productivity topic page lists the Nov 2025 vintage in 2021 international $ at PPP. That the
+      2021-PPP vintage keeps the code GDP_211P is inferred, not confirmed. The endpoint was not confirmed live.
   - id: mean_monthly_earnings
     title: Average monthly earnings of employees by sex and economic activity (national series)
     connector: ilostat
     params: {indicator: EAR_4MTH_SEX_ECO_CUR_NB_A}
     domains: [wages]
     frequency: annual
+    verified: false
+    notes: The id exists (DBnomics ILO/EAR_4MTH_SEX_ECO_CUR_NB, title matches). The endpoint was not confirmed live.
   - id: informality_rate
     title: Informal employment rate by sex (national series, %)
     connector: ilostat
     params: {indicator: EMP_NIFL_SEX_RT_A}
     domains: [employment]
     frequency: annual
+    verified: false
+    notes: The id exists (DBnomics ILO/EMP_NIFL_SEX_RT, title matches). The endpoint was not confirmed live.
   - id: migrant_workers_by_citizenship
-    title: Employment by sex and citizenship (labour migration statistics, thousands)
+    title: Employment by sex, age and citizenship (labour migration statistics, thousands)
     connector: ilostat
-    params: {indicator: EMP_TEMP_SEX_CCT_NB_A}
+    params: {indicator: MST_TEMP_SEX_AGE_CCT_NB_A}
     domains: [migration, employment]
     frequency: annual
-    notes: ID to be confirmed against ILOSTAT labour migration catalogue
+    verified: false
+    notes: >-
+      Corrected from EMP_TEMP_SEX_CCT_NB_A, which does not appear in any ILOSTAT catalogue or mirror found.
+      Labour-migration (ILMS) tables use the MST_ prefix. MST_TEMP_SEX_AGE_CCT_NB, "Employment by sex, age and
+      citizenship (thousands)", annual, is listed on DBnomics and under that title on the ILOSTAT
+      labour-migration topic page. No sex-by-citizenship table without age exists, so the title now
+      includes age. The foreign-born equivalent is "Employment by sex, age and place of birth (thousands)"
+      (MST_TEMP_SEX_AGE_CBR_NB_A, inferred from sibling codes such as MST_TEMP_SEX_AGE_CBR_RT; not confirmed).
+      The endpoint was not confirmed live.

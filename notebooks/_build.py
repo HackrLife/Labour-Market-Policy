@@ -134,9 +134,9 @@ SPECS = {
 
 "vacancies/03_eu_job_vacancy_rates.ipynb": nb(
     "Europe: job vacancy rates by activity",
-    "Eurostat quarterly job vacancy rate (vacancies as a share of occupied plus vacant posts) by NACE activity.",
-    ["eurostat/jvs_q_nace2"],
-    [(C, 'v = load("eurostat/jvs_q_nace2")\nprint({c: v[c].drop_duplicates().head(15).tolist() for c in ["indic_em", "nace_r2", "sizeclas"] if c in v.columns})'),
+    "Eurostat quarterly job vacancy rate (vacancies as a share of occupied plus vacant posts) by activity, splicing the closed NACE Rev. 2 table (to 2025) with the NACE Rev. 2.1 table; where both report a quarter, Rev. 2.1 is kept.",
+    ["eurostat/jvs_q_r21", "eurostat/jvs_q_nace2"],
+    [(C, 'v = pd.concat([load("eurostat/jvs_q_nace2").assign(nace_rev="2"), load("eurostat/jvs_q_r21").assign(nace_rev="2.1")])\nv = v.sort_values("nace_rev").drop_duplicates([c for c in v.columns if c not in ("value", "nace_rev", "dataset", "obs_flag")], keep="last")\nprint({c: v[c].drop_duplicates().head(15).tolist() for c in ["indic_em", "nace_r2", "sizeclas"] if c in v.columns})'),
      (C, 'sel = dict(indic_em="JOBRATE")\nif "sizeclas" in v.columns: sel["sizeclas"] = "TOTAL"\nr = select(v, **sel)\nact = {"B-S": "Industry, construction & services", "F": "Construction", "Q": "Health & social work", "J": "Information & communication", "C": "Manufacturing", "P": "Education", "D": "Energy"}\nea = select(r, ref_area="EU27_2020", nace_r2=list(act))\nplot_lines(pivot(ea, columns="nace_r2").rename(columns=act).loc["2015":], "EU27 job vacancy rate by activity", "%", "Eurostat jvs_q_nace2", names={});')]),
 
 "vacancies/04_labour_shortage_estimates.ipynb": nb(

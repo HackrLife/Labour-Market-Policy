@@ -97,11 +97,21 @@ ILO_BULK = "https://rplumber.ilo.org/data/indicator/"
 
 
 def fetch_ilostat(p: dict) -> Fetched:
-    # rplumber is the ILOSTAT data API used by the official Rilostat package.
+    """ILOSTAT rplumber API. The compressed format is tried first, then plain CSV
+    (the documented format); the first that returns a CSV body is kept."""
     url = p.get("url") or ILO_BULK
-    params = {"id": p["indicator"], "format": ".csv.gz", "type": "code"}
-    r = _get(url, params=params)
-    return Fetched(r.content, "csv.gz", r.url)
+    errors = []
+    for fmt, ext in ((".csv.gz", "csv.gz"), (".csv", "csv")):
+        try:
+            r = _get(url, params={"id": p["indicator"], "format": fmt, "type": "code"}, retries=2)
+        except ConnectorError as e:
+            errors.append(str(e))
+            continue
+        body = r.content
+        if body[:2] == b"\x1f\x8b" or body[:200].lower().find(b"ref_area") >= 0:
+            return Fetched(body, ext, r.url)
+        errors.append(f"{fmt}: unexpected body {body[:80]!r}")
+    raise ConnectorError("ILOSTAT: " + " | ".join(errors))
 
 
 def norm_ilostat(b: bytes, p: dict) -> pd.DataFrame:
