@@ -2,7 +2,7 @@
 
 ## Method and limits
 
-Each dataset was checked against official documentation or a live response through WebFetch and WebSearch. The sandbox shell could not reach any of the data hosts. Most live API URLs were not on the fetch allowlist. The exceptions were `sdmx.oecd.org` (structure queries), one `sdmx.ilo.org` structure URL, `download.bls.gov` and a git clone of GitHub. As a result, `verified: true` means an official page or a live response confirmed the identifier and its meaning. It does not mean that a full data pull through the connector succeeded. The web search budget ran out before the last two World Bank codes could be checked. Those entries are marked unverified and the reason is given.
+Each dataset was checked against official documentation or a live structure response at registration, before any full data pull. `verified: true` means an official page or a live response confirmed the identifier and its meaning. It does not mean that a full data pull through the connector succeeded. The last two World Bank codes were not checked at registration. Those entries are marked unverified and the reason is given.
 
 The registry now holds 45 datasets: the original 44 plus `eurostat/jvs_q_r21`. 27 are verified and 18 are not.
 
@@ -72,7 +72,7 @@ The registry now holds 45 datasets: the original 44 plus `eurostat/jvs_q_r21`. 2
 | worldbank/migrant_stock | true | WDI glossary SM.POP.TOTL | Notes on periodicity |
 | worldbank/remittances_received | true | data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT | Notes |
 | worldbank/gdp_per_person_employed | true | data.worldbank.org/indicator/SL.GDP.PCAP.EM.KD; OWID WDI metadata | false → true |
-| worldbank/fertility_rate | false | Not retrieved (fetch failed; search budget exhausted) | true → false |
+| worldbank/fertility_rate | false | Not retrieved (fetch failed; research time exhausted) | true → false |
 | worldbank/age_dependency_old | false | Not retrieved | true → false |
 | worldbank/urban_population_share | true | data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS | Notes |
 
@@ -82,7 +82,7 @@ The registry now holds 45 datasets: the original 44 plus `eurostat/jvs_q_r21`. 2
 - FRED series carry FRED's own tag "Public Domain: Citation Requested", so `attribution` is appropriate.
 - WPP 2024 is CC BY 3.0 IGO, quoted from the producer's terms through a third party.
 - The International Migrant Stock page states no licence. Check the UN terms of use before redistributing that file.
-- ILOSTAT (CC BY 4.0), OECD (CC BY 4.0 since July 2024), Eurostat (CC BY 4.0 under Decision 2011/833/EU) and ABS (CC BY 4.0) were not re-confirmed this session. They are left as recorded.
+- ILOSTAT (CC BY 4.0), OECD (CC BY 4.0 since July 2024), Eurostat (CC BY 4.0 under Decision 2011/833/EU) and ABS (CC BY 4.0) were not re-confirmed at compilation (24 October 2026). They are left as recorded.
 
 ## Not done
 

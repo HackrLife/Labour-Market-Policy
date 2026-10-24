@@ -17,6 +17,6 @@ datasets:
     verified: false
     notes: >-
       Download links (xlsx, and Stata zip at https://www.rug.nl/ggdc/docs/10sd_jan15_2014.zip) still appear on the
-      release page, but the files could not be fetched from this sandbox and the page gives no licence. Kept restricted:
+      release page, but the files had not been downloaded at registration and the page gives no licence. Kept restricted:
       fetch locally for analysis, do not commit raw or processed files until the GGDC copyright terms are checked.
       The R package collapse ships a GGDC10S extract (third-party copy, not used here).

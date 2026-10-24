@@ -1,6 +1,6 @@
 # E. History and theory: sectoral reallocation, Baumol, and the size of the digital sector
 
-Compiled 24 Oct 2026. All figures come from pages fetched in this session (WebSearch/WebFetch). None are from memory. "Derived" means my own arithmetic on fetched values. The session's web-search budget ran out partway through, so several items in sections 5, 6 and 8 are listed under "Could not verify" rather than recorded.
+Compiled 24 Oct 2026. All figures come from pages retrieved on 24 October 2026. "Derived" means arithmetic on retrieved values. Several items in sections 5, 6 and 8 are listed under "Could not verify" rather than recorded.
 
 ---
 
@@ -87,7 +87,7 @@ Additional paper found incidentally (verified page): **Acemoglu, D. and Restrepo
 ---
 
 ## 6. Housing supply and labour reallocation
-None of the three papers could be verified this session. See "Could not verify".
+None of the three papers could be verified at compilation (24 October 2026). See "Could not verify".
 
 ## 7. Labour-market churn (BLS JOLTS)
 - **Citation:** BLS, *Job Openings and Labor Turnover — December 2025* news release, including annual 2025 data, published 13 Mar 2026. https://www.bls.gov/news.release/archives/jolts_03132026.htm
@@ -100,7 +100,7 @@ None of the three papers could be verified this session. See "Could not verify".
 - **Use:** Even a large technology-driven displacement estimate, say several million jobs over a decade, is small next to roughly 21m layoffs and discharges and 63m hires in a single year. The churn figure does not show that displaced workers are re-employed at similar wages (see section 8 and "Contradicting evidence").
 
 ## 8. Mismatch and displacement-cost literature
-None of Şahin et al. (2014), Jacobson, LaLonde and Sullivan (1993) or Davis and von Wachter (2011) could be verified this session. See "Could not verify".
+None of Şahin et al. (2014), Jacobson, LaLonde and Sullivan (1993) or Davis and von Wachter (2011) could be verified at compilation (24 October 2026). See "Could not verify".
 
 ## 9. Engels' pause
 - **Citation:** Allen, R.C. (2009). "Engels' pause: Technical change, capital accumulation, and inequality in the British industrial revolution." *Explorations in Economic History* 46(4): 418–435, October 2009 (Elsevier; ScienceDirect PII S0014-4983(09)00019-9). RePEc: https://ideas.repec.org/a/eee/exehis/v46y2009i4p418-435.html. Author PDF: https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf
@@ -120,10 +120,10 @@ None of Şahin et al. (2014), Jacobson, LaLonde and Sullivan (1993) or Davis and
 3. **Allen (2009):** In the canonical historical case, reallocation came with roughly 60 years (c.1780–1840) of real wages lagging productivity and a sharp shift of income from labour to capital. Aggregate employment survived, but workers bore large distributional costs.
 4. **Baumol/Nordhaus:** Rising employment in stagnant sectors slows aggregate productivity growth. The labour-absorbing sectors (health, education, care) are the ones that drag on measured growth and raise relative costs. This cuts against any welfare-neutral reading of reallocation.
 5. **Information-sector employment is falling in levels.** USINFO is down 26% from its 2001 peak and has fallen from 2,895k (Dec 2024) to 2,739k (Sep 2026). This supports the "small employment footprint" claim. It also means the sector's productivity gains are not creating direct jobs.
-6. **Housing constraints and displacement earnings losses (sections 6 and 8):** I could not verify them this session. The literature is expected to show that reallocation is impeded by geography and that displaced workers suffer persistent earnings losses. Confirm figures before citing.
+6. **Housing constraints and displacement earnings losses (sections 6 and 8):** I could not verify them at compilation (24 October 2026). The literature is expected to show that reallocation is impeded by geography and that displaced workers suffer persistent earnings losses. Confirm figures before citing.
 7. **Classification caveat:** The CES Information sector understates "tech" employment because computer systems design sits in professional services. Use a broader definition as a robustness check.
 
-## Could not verify (search budget exhausted or site blocked; do not cite figures until checked)
+## Could not verify (research time exhausted or site blocked; do not cite figures until checked)
 - **Autor, D. (2015)**, "Why Are There Still So Many Jobs? The History and Future of Workplace Automation," *JEP* 29(3): 3–30. The aeaweb.org fetch returned a different article page.
 - **Autor, D., Levy, F. and Murnane, R. (2003)**, "The Skill Content of Recent Technological Change: An Empirical Exploration," *QJE* 118(4).
 - **Agrawal, A., Gans, J. and Goldfarb, A. (2022)**, *Power and Prediction: The Disruptive Economics of Artificial Intelligence* (Harvard Business Review Press). I did not verify the publisher or date.

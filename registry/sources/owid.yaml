@@ -20,4 +20,4 @@ datasets:
       (https://ourworldindata.org/grapher/annual-working-hours-per-worker?tab=table). Metadata JSON at
       .../annual-working-hours-per-worker.metadata.json. Columns are Entity, Code, Year, <indicator>; rename to
       ref_area/period/value in the notebook. Related slug annual-working-hours-per-persons-engaged and
-      compare-sources-working-hours exist. Cite OWID and both upstream sources. Not pulled from this sandbox.
+      compare-sources-working-hours exist. Cite OWID and both upstream sources. Not yet pulled.

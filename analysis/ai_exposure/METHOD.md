@@ -1,6 +1,6 @@
 # G: LLM task exposure by era-based occupation group: method and results
 
-Prepared 24 Oct 2026. Script: `/home/claude/research/scripts/exposure.py`. The OEWS parser is `/home/claude/research/scripts/parse_t01.py`. Every downloaded file was read with `python3 -I`.
+Prepared 24 Oct 2026. Script: `analysis/ai_exposure/exposure.py`. The OEWS parser is `analysis/ai_exposure/parse_t01.py`. Every downloaded file was read with `python3 -I`.
 
 ## 1. Hypothesis tested
 
@@ -22,8 +22,8 @@ H: generative-AI task exposure is concentrated in occupations created or scaled 
 - Validation against the paper. On this weighting, 82.1% of employment has human β ≥ 0.10 and 21.9% has human β ≥ 0.50. The paper reports about 80% and about 19%. The small difference comes from using May 2025 rather than 2022 employment weights.
 
 ### 2.2 Employment: BLS OEWS May 2025, national, wage and salary
-- The bls.gov site and the `oesm25nat.zip` file could not be reached from the shell (proxy 403). WebFetch truncates the table at 100k characters.
-- Instead, the full text of OEWS News Release Table 1 (https://www.bls.gov/news.release/ocwage.t01.htm, "May 2025", last modified 15 May 2026) was fetched verbatim with the `apify/web-fetch` actor. It is saved as `raw/oews_t01/ocwage_t01.txt` (124,744 characters; SHA-256 prefix `b3b62479c666c9a3`) together with the raw JSON. The parser joins titles that wrap across lines and extracts 1,121 rows (`raw/oews_t01/t01_parsed.csv`).
+- The bls.gov site and the `oesm25nat.zip` file could not be reached from the shell (proxy 403). web retrieval truncates the table at 100k characters.
+- Instead, the full text of OEWS News Release Table 1 (https://www.bls.gov/news.release/ocwage.t01.htm, "May 2025", last modified 15 May 2026) was fetched verbatim with the a web-fetch service actor. It is saved as `raw/oews_t01/ocwage_t01.txt` (124,744 characters; SHA-256 prefix `b3b62479c666c9a3`) together with the raw JSON. The parser joins titles that wrap across lines and extracts 1,121 rows (`raw/oews_t01/t01_parsed.csv`).
 - Table 1 has titles but no SOC codes. Codes are attached by exact title match to the detailed 2018-SOC rows of `data/national_May2021_dl.csv` from the GPTs repository (831 detailed codes). OEWS May 2025 uses the same 2018 SOC structure.
 - Coverage: 830 of 831 detailed occupations match, with 155,481,840 employees, or 99.991% of the Table 1 total of 155,495,730. The only miss is Legislators (11-1031), for which OEWS publishes no employment figure.
 - Cross-check: the parsed values agree with the 45 hand-collected rows in `B_bls_occupations.csv`, for example nuclear engineers at 15,280 and industrial engineers at 365,740.
@@ -67,7 +67,7 @@ Rules are applied in order. Every code, its group, sub-group and rule text are l
 
 **(d) Other pre-1995 (residual, not in the brief).** 179 occupations, 22.7m employees, 14.6% of employment. This group holds majors 19, 21, 25 (excluding K-12), 27 (excluding a2) and 41 (excluding telemarketers), plus 15-20xx mathematical occupations other than data scientists. These occupations are not part of the A versus B contrast, so they are reported separately rather than forced into (b) or (c).
 
-**Alternative classification (Autor, Chin, Salomons and Seegmiller, 2024 QJE: the share of each occupation's employment in titles new since about 1940/1980).** Skipped. The replication data are on openICPSR, which the shell cannot reach (HTTP 000). GitHub code search is blocked for this session, and no GitHub mirror could be found.
+**Alternative classification (Autor, Chin, Salomons and Seegmiller, 2024 QJE: the share of each occupation's employment in titles new since about 1940/1980).** Skipped. The replication data are on openICPSR, which the shell cannot reach (HTTP 000). GitHub code search is blocked for at compilation (24 October 2026), and no GitHub mirror could be found.
 
 ## 4. Results (May 2025 employment weights)
 

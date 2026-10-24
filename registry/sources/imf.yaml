@@ -23,5 +23,5 @@ datasets:
       LUR = "Unemployment rate" in the WEO codelist, all per the worked examples in rogermariolopez.com (Dec 2025) and
       bd-econ.com IMF API guide part 3, which also show CSV via "Accept: text/csv" with no key. The IMF's own pages
       (data.imf.org/en/Resource-Pages/IMF-API) mention registration on the API portal, so whether anonymous access
-      lasts is uncertain. Not pulled from this sandbox; verify the wildcard key, then set verified. The IMF terms
+      lasts is uncertain. Not yet pulled; verify the wildcard key, then set verified. The IMF terms
       bar automated bulk download without permission, so pull only the series you need, at low frequency.

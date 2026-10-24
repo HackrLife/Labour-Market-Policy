@@ -1,4 +1,4 @@
-"""Parse BLS OEWS May 2025 News Release Table 1 (text via apify/web-fetch) into title, employment, indent.
+"""Parse BLS OEWS May 2025 News Release Table 1 (text of the BLS news release table) into title, employment, indent.
 Wrapped titles (a line with no numeric columns followed by a continuation line) are joined."""
 import re
 import pandas as pd

@@ -1,6 +1,6 @@
 # H. Concentration, market power and the one-sided economy: evidence file
 
-Compiled 24 October 2026. Every figure below was retrieved during this session from the URL given; nothing is taken from memory. FRED CSV download endpoints were blocked by the session proxy, so FRED values were read from the FRED "Table Data" pages (fred.stlouisfed.org/data/<ID>) or series pages. Chartable values are in `/home/claude/research/H_series.csv` (352 rows), built by `/home/claude/research/scripts/build_H_series.py`.
+Compiled 24 October 2026. Every figure below was retrieved on 24 October 2026 from the URL given. FRED CSV download endpoints were blocked by the compilation environment's network proxy, so FRED values were read from the FRED "Table Data" pages (fred.stlouisfed.org/data/<ID>) or series pages. Chartable values are in `H_series.csv` (352 rows), built by `analysis/ai_exposure/build_H_series.py`.
 
 ## 0. Claim under test and verdict
 
@@ -136,7 +136,7 @@ The total is about 2.41 million worldwide, or about 0.84 million excluding Amazo
 - Abstract: aggregate data show a "large and decades-long decline" in construction productivity. Physical-output measures for housing show productivity falling or stagnant. Firms have become less efficient at turning materials into output. States with more productive construction sectors do not gain share, which the authors take as evidence of market frictions. Measurement error is unlikely to be the whole explanation.
 - Numbers from Chicago Booth Review (secondary, https://chicagobooth.edu/review/us-construction-has-productivity-problem): construction labour productivity fell about 1% a year from 1970 to 2020, and by 2020 was below its 1950 level. Over the same period construction capital rose nearly eightfold and manufacturing labour productivity rose about ninefold.
 
-**BEA–BLS integrated industry labour productivity, 1995→2020 (index 2012=100).** From a local copy of `BEA_BLS_industry_lp.csv` in the *GPTs are GPTs* replication repository, /home/claude/research/raw/gpts/GPTs-are-GPTs/data/. Upstream vintage not independently verified.
+**BEA–BLS integrated industry labour productivity, 1995→2020 (index 2012=100).** From a local copy of `BEA_BLS_industry_lp.csv` in the *GPTs are GPTs* replication repository, the GPTs-are-GPTs repository's data/ folder . Upstream vintage not independently verified.
 - Construction 109.92 → 106.20 (×0.97)
 - Data processing / internet publishing 29.29 → 144.72 (×4.94)
 - Broadcasting and telecom ×4.44

@@ -24,7 +24,7 @@ datasets:
       GDICOMP gross domestic income, compensation of employees paid (BEA, $bn SAAR).
       GDICOMP replaces A4102C1Q027SBEA, which is GDI compensation of employees paid: wages and salaries
       only, excluding supplements. The keyless https://fred.stlouisfed.org/graph/fredgraph.csv?id= endpoint
-      the connector uses could not be reached this session.
+      the connector uses could not be reached at compilation (24 October 2026).
   - id: labour_market_extras
     title: Prime-age employment ratio, real median weekly earnings
     connector: fred

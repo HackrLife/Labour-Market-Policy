@@ -1,6 +1,6 @@
 # B: BLS occupation and JOLTS data — notes
 
-Collected 24 Oct 2026 via WebFetch of bls.gov pages. No figure was taken from memory. Each value below was read off a fetched BLS page.
+Collected 24 Oct 2026 from bls.gov pages. Each value below was read from the BLS page cited.
 
 ## Vintages (all newer than the brief assumed)
 - **OEWS: May 2025** (released 2026; "Occupational Employment and Wages -- May 2025"). This is not May 2024. The `/oes/current/` profile pages now point to May 2025.
@@ -12,7 +12,7 @@ Collected 24 Oct 2026 via WebFetch of bls.gov pages. No figure was taken from me
 - `mean_wage`: OEWS May 2025 annual mean wage, from the same Table 1.
 - `median_wage`: median annual wage for May 2025, from OEWS, as printed in EP Table 1.2 or the occupation's OOH page. OEWS Table 1 gives only the median *hourly* wage. The hourly figures in Table 1 match the OOH figures (for example, RN $46.90/hr and $97,550/yr).
 - `p90_wage`: the OOH Pay section sentence "the highest 10 percent earned more than $X" (May 2025 OEWS). Blank where OOH gives only a combined group or an hourly figure (see the gaps below).
-- `proj_change_pct`: EP 2025–35. Where `proj_pct_precision` = `1dp`, the value is from EP Table 1.2 or Table 1.5 to one decimal place. Where it is `int`, the value is the OOH rounded integer, because Table 1.2 for that occupation could not be read: WebFetch truncated that part of the 178k-character page.
+- `proj_change_pct`: EP 2025–35. Where `proj_pct_precision` = `1dp`, the value is from EP Table 1.2 or Table 1.5 to one decimal place. Where it is `int`, the value is the OOH rounded integer, because Table 1.2 for that occupation could not be read: web retrieval truncated that part of the 178k-character page.
 - `annual_openings`: EP 2025–35 annual average occupational openings, converted to persons. The source is Table 1.2 (thousands, one decimal place) or the OOH sentence "About N openings … each year".
 - `ep_employment_2025_thous` / `ep_employment_2035_thous`: the EP National Employment Matrix totals, in thousands. These include the self-employed, so they are higher than OEWS employment. Example: construction managers are 609.1k in EP and 380,360 in OEWS, because many are self-employed.
 - `source_url`: the OOH page or EP table used for the projections, median and p90 values.
@@ -27,7 +27,7 @@ Collected 24 Oct 2026 via WebFetch of bls.gov pages. No figure was taken from me
 - **Occupational health and safety specialists (19-5011)**: the OEWS row is specialists only (140,610; mean $93,860). OOH median is $90,150. The OOH openings figure of 20,900 covers specialists *and* technicians, so the CSV leaves it blank.
 - **Customer service reps, bookkeeping clerks, data entry keyers and medical transcriptionists** are grouped as "digital" following the brief. Their wages are below the all-occupations median, so they are routine-information jobs, not well-paid digital ones. Consider labelling them "routine information" in the paper.
 
-## Gaps (not verifiable this session)
+## Gaps (not verifiable at compilation (24 October 2026))
 - **Power plant operators (51-8013)**: the OEWS Table 1 row could not be read because the page was truncated, so OEWS employment and mean wage are blank. The OOH page gives a median of $102,040, EP employment of 29.8k → 28.3k (−5%), and p90 and openings only for the combined group of operators, distributors and dispatchers ($136,550 and about 3,400 openings a year).
 - **Nurse practitioners**: OOH gives p90 ($224,490) and openings (32,200) only for the combined nurse anesthetists, midwives and NPs group, so the CSV leaves both blank. EP 2025–35: 336.3k → 474.1k (+41.0%), the fastest-growing detailed occupation.
 - **Compliance officers (13-1041)**: the p90 value was not fetched. The OOH page was not opened.
@@ -62,4 +62,4 @@ The 2025–35 projections release does attribute declines to AI:
 Source: https://www.bls.gov/news.release/pdf/jolts.pdf (Table 1, seasonally adjusted; levels in thousands, rates in percent). The latest month is August 2026 (preliminary): total nonfarm openings 7,079k at a 4.3% rate. Rates for August 2026: health care and social assistance 5.4%, professional and business services 5.0%, manufacturing 4.0%, information 4.3% (up from 2.5–3.1% in May–July 2026), construction 2.9%. The release says: "Job openings changed little in all industries."
 
 ## CompTIA "State of the Tech Workforce"
-**Not collected.** Both comptia.org report URLs tried were not on the fetch allowlist, and the session's shared web-search budget ran out before another route could be found. No CompTIA figures are reported, and none should be cited from this file. A follow-up session needs to fetch the CompTIA report page or PDF.
+**Not collected.** The comptia.org report pages could not be retrieved. No CompTIA figures are reported, and none should be cited from this file until the report is obtained.

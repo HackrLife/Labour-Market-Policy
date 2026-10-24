@@ -1,6 +1,6 @@
 # A. Evidence file: AI exposure, adoption and measured labour-market effects
 
-Compiled 24 October 2026. Every figure below was taken from a page fetched in this session (URL given). Where the fetched page did not contain a figure, it is listed under "Could not verify" rather than stated. "Supports/complicates" notes refer to the thesis: generative AI mainly automates the digital/information layer; displacement is real but bounded; neither mass permanent unemployment nor an economy-wide productivity transformation.
+Compiled 24 October 2026. Every figure below was taken from a page fetched at compilation (24 October 2026) (URL given). Where the fetched page did not contain a figure, it is listed under "Could not verify" rather than stated. "Supports/complicates" notes refer to the thesis: generative AI mainly automates the digital/information layer; displacement is real but bounded; neither mass permanent unemployment nor an economy-wide productivity transformation.
 
 ---
 
@@ -268,7 +268,7 @@ Compiled 24 October 2026. Every figure below was taken from a page fetched in th
 
 ## Could not verify
 
-- **Science volume number for Eloundou et al. (2024).** Issue 6702, pp. 1306–1308 and DOI 10.1126/science.adj0998 were verified via CiteDrive; the volume was not shown on any page fetched. science.org was not reachable from this session.
+- **Science volume number for Eloundou et al. (2024).** Issue 6702, pp. 1306–1308 and DOI 10.1126/science.adj0998 were verified via CiteDrive; the volume was not shown on any page fetched. science.org was not reachable from at compilation (24 October 2026).
 - **Noy & Zhang Science volume and issue.** Pages 187–192 and the DOI were verified; volume and issue were not shown. science.org was not reachable.
 - **ILO 2023 global automation share.** The global figure appears only in a figure (Figure 9a) that could not be read. HIC 5.5% and LIC 0.4% were verified. The often-cited 2.3% global figure is NOT verified. A single global augmentation figure is not given (13.4% HIC, 10.4% LIC, 13.5% UMIC).
 - **IMF author list.** The IMF page is inconsistent about whether Augustus J. Panton is an author. Check the PDF title page.
@@ -280,5 +280,5 @@ Compiled 24 October 2026. Every figure below was taken from a page fetched in th
 - **Census BTOS live data page** (census.gov/hfp/btos/data) requires JavaScript. The latest reading (19.8%, period ending 3 May 2026) is from the 26 May 2026 Census story. No newer official reading was found.
 - **Yale Budget Lab 2026 numeric updates** (dissimilarity index values, exposure shares) appear only in interactive charts that were not readable. Only the qualitative conclusions were verified.
 - **Stanford AI Index 2026 productivity figures and AI job-postings share** were not present in the fetched page text.
-- **Anthropic Economic Index share of occupations using AI for ≥25% of tasks** (from the 2025 reports) was not verified in this session.
+- **Anthropic Economic Index share of occupations using AI for ≥25% of tasks** (from the 2025 reports) was not verified at compilation (24 October 2026).
 - **arXiv 2509.15510 author surname spelling** ("Kuniesvky" as returned vs. the likely "Kunievsky") needs checking against the PDF.

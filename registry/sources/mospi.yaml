@@ -19,5 +19,5 @@ datasets:
       MoSPI's official MCP server (nso-india/esankhyiki-mcp, MIT, hosted at https://mcp.mospi.gov.in/) lists PLFS
       as dataset 1 and calls the data API host api.mospi.gov.in without a key, following list_datasets ->
       get_indicators -> get_metadata -> get_data. The REST paths are in that repo's swagger/ directory, which could
-      not be read from this session. Fill url and query from the PLFS swagger spec, then verify. Licence also unconfirmed,
+      not be read from at compilation (24 October 2026). Fill url and query from the PLFS swagger spec, then verify. Licence also unconfirmed,
       so kept restricted. Microdata are on https://microdata.gov.in (registration).

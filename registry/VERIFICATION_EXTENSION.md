@@ -2,7 +2,7 @@
 
 This log covers the new source files added to `registry/sources/`. The files that were already there (abs, bls, eurostat, fred, ilostat, oecd, research, undesa, worldbank) were not changed.
 
-**What `verified: true` means here.** The identifier or URL was confirmed against the publisher's own page or documentation, for example a download href copied from the release page. No file was downloaded, because outbound HTTP from this sandbox is blocked by the proxy. Run `labobs pull` from a networked machine to confirm each entry. When a pull fails, set the entry back to `verified: false`.
+**What `verified: true` means here.** The identifier or URL was confirmed against the publisher's own page or documentation, for example a download href copied from the release page. No file had been downloaded at registration; the first ingest run confirms each entry. When a pull fails, set the entry back to `verified: false`.
 
 ## Datasets
 
@@ -25,7 +25,7 @@ This log covers the new source files added to `registry/sources/`. The files tha
 | statsnz/hlfs_headline | false | attribution | https://portal.apis.stats.govt.nz/how-to-subscribe says a key is required in the `Ocp-Apim-Subscription-Key` header. The base URL and the dataflow are not published on any page that could be reached. | **sdmx `headers_env`**: read the key from env `STATSNZ_API_KEY`. The URL is still TBD. |
 | estat_japan/lfs_long_series | false | attribution (Japan Gov Standard Terms v2.0, compatible with CC BY 4.0) | Endpoint pattern from https://www.e-stat.go.jp/api/en/node/166. The appId is issued on registration (https://www.e-stat.go.jp/api/terms-of-use). The statsDataId is TBD. | **http `query` + env injection** for `appId` (env `ESTAT_APP_ID`). The API also requires a credit line. |
 | kosis/eaps_unemployment | false | restricted | Endpoint and parameters from the kosis R package manual and https://kosis.kr/serviceInfo/openAPIGuide.do. The tblId is TBD and the terms page was unreachable. | **http `query` + env injection** for `apiKey` (env `KOSIS_API_KEY`), plus a JSON normaliser. |
-| mospi/plfs | false | restricted | PLFS is listed in MoSPI's official MCP server (nso-india/esankhyiki-mcp). The data host is api.mospi.gov.in and needs no key. The REST paths sit in that repo's `swagger/` folder, which could not be read from this session. | URL TBD, plus a JSON normaliser. |
+| mospi/plfs | false | restricted | PLFS is listed in MoSPI's official MCP server (nso-india/esankhyiki-mcp). The data host is api.mospi.gov.in and needs no key. The REST paths sit in that repo's `swagger/` folder, which could not be read from at compilation (24 October 2026). | URL TBD, plus a JSON normaliser. |
 | nbs_china/urban_surveyed_unemployment | false | restricted | NBS documents no API. Community packages scrape an undocumented endpoint. | Not recommended. Use ILOSTAT or IMF WEO for China instead. |
 | ibge/pnadc_unemployment_quarterly | false | attribution | The base URL and path grammar come from the sidrar CRAN docs. Table 4099 is described as the quarterly unemployment rate. The variable code inside 4099 was not confirmed, and table 6381 could not be confirmed at all, so it is omitted. | A SIDRA JSON normaliser: the first record is the header, and fields are D*C/V. |
 | statssa/qlfs | false | restricted | The portal (isibaloweb.statssa.gov.za …/qlfs2025.php) offers CSV/SPSS/Stata downloads, but only through links the page builds itself, with no stable URL or API. | URL TBD. Use ILOSTAT for headline series. |

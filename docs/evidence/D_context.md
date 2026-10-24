@@ -1,6 +1,6 @@
 # D. Context data: youth labour-market entry, housing, family formation, ageing, rural–urban
 
-Compiled 24 October 2026 using WebSearch/WebFetch only. Every figure below was read from the cited page during this session; nothing comes from memory. Where a page was a secondary report of a primary release, it is flagged [secondary]. Where a value was computed by the compiler, it is flagged [computed].
+Compiled 24 October 2026 Every figure below was read from the cited page on 24 October 2026. Where a page was a secondary report of a primary release, it is flagged [secondary]. Where a value was computed by the compiler, it is flagged [computed].
 
 ---
 
@@ -170,7 +170,7 @@ Synthesis: across US, Australian and Canadian micro-studies, house price increas
 ## 7. Ageing workforce: old-age dependency
 - UNCTAD (UN WPP-based), 65+ per 100 aged 15–64: World 14.3 (2020) → **25.3 (2050)**; developed economies 29.9 → **46.2**; developing economies 11.3 → 22.3; G20 17.1 → 33.6; BRICS 13.9 → 30.6. https://unctad.org/system/files/official-document/tdstat46_FS12_en.pdf . The page cites the UNCTAD Handbook of Statistics 2021, so these figures probably predate WPP 2024.
 - WPP 2024: 65+ will outnumber under-18s by the late 2070s (see 4.1).
-- Country-level ratios (OECD *Pensions at a Glance 2025*, UN WPP 2024 per country) **were not retrieved**. The OECD and OWID pages fetched returned navigation only, and the search budget ran out. See "Could not verify."
+- Country-level ratios (OECD *Pensions at a Glance 2025*, UN WPP 2024 per country) **were not retrieved**. The OECD and OWID pages fetched returned navigation only, and the research time ran out. See "Could not verify."
 
 ---
 

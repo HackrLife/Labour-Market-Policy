@@ -20,7 +20,7 @@ datasets:
       Stata version is datafile/554030. Variable names emp, avh, hc, labsh as in the PWT user guide
       (pwt100-user-guide-to-data-files.pdf). Sheet name for 11.0 not confirmed, so parse is none; set parse: xlsx
       and sheet once the workbook has been opened. Dataverse returns non-ingested xlsx files as uploaded.
-      Cite Feenstra, Inklaar and Timmer (2015), AER 105(10). Not pulled from this sandbox (egress blocked).
+      Cite Feenstra, Inklaar and Timmer (2015), AER 105(10). Not yet pulled.
   - id: pwt_110_na
     title: Penn World Table 11.0 — National Accounts data supplement
     connector: http
@@ -47,7 +47,7 @@ datasets:
       Excel link from https://rug.nl/ggdc/historicaldevelopment/maddison/releases/maddison-project-database-2023
       (DOI 10.34894/INZBF2); Stata datafile/421303. Sheet "Full data" with columns countrycode, country, region, year,
       gdppc, pop (per CRAN MaddisonData vignette, which read mpd2023web.xlsx). Cite Bolt and van Zanden (2024),
-      Journal of Economic Surveys, doi:10.1111/joes.12618. Not pulled from this sandbox.
+      Journal of Economic Surveys, doi:10.1111/joes.12618. Not yet pulled.
   - id: etd
     title: GGDC/UNU-WIDER Economic Transformation Database — sectoral employment (EMP) and value added, 12 sectors, 51 economies, 1990–2018
     connector: http

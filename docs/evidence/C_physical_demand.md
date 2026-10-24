@@ -1,6 +1,6 @@
 # C. Physical-economy labour demand and transition pathways
 
-Research compiled 24 October 2026. Every figure below came from a web page fetched during this session; nothing was taken from memory. Where only a secondary source could be reached, the entry says so. The "Verification" field records the type of source: Primary (the issuing body itself), Secondary (press or trade coverage of the primary source), or Tertiary (an aggregator or credential guide).
+Research compiled 24 October 2026. Every figure below came from a web page fetched on 24 October 2026. Where only a secondary source could be reached, the entry says so. The "Verification" field records the type of source: Primary (the issuing body itself), Secondary (press or trade coverage of the primary source), or Tertiary (an aggregator or credential guide).
 
 ---
 
@@ -21,7 +21,7 @@ Research compiled 24 October 2026. Every figure below came from a web page fetch
 - Year: 18–19 September 2026
 - Citation: Devdiscourse and Allwork.space, both reporting the WHO release
 - URLs: https://www.devdiscourse.com/article/health/3979244-more-health-workers-unequal-care-who-warns-of-ageing-and-global-staffing-gaps ; https://allwork.space/2026/09/who-warns-aging-workforce-could-leave-67-countries-short-of-health-workers-by-2030/
-- Verification: Secondary. The Reuters original was blocked by this session's allowlist.
+- Verification: Secondary. The Reuters original could not be retrieved.
 
 **1.1.3 Nursing (State of the World's Nursing 2025)**
 - Claim: The global nursing workforce grew from 27.9 million (2018) to 29.8 million (2023). The nursing shortage fell from 6.2 million (2020) to 5.8 million (2023) and is projected to reach 4.1 million by 2030. 19% of nurses are expected to retire in the next 10 years.
@@ -161,7 +161,7 @@ Research compiled 24 October 2026. Every figure below came from a web page fetch
 - **ISM CPSM.** Requires three years of full-time supply management experience plus a bachelor's degree, or five years without a degree. https://www.ismworld.org/advance-with-supply-management-certification/ (Primary)
 
 ### 2.4 Project management into construction and infrastructure
-- **PMI PMP.** With a four-year degree: 36 months leading projects. Without one: 60 months. Both routes also require 35 contact hours of project management education or the CAPM. Exam fee: $405 (member) or $555 (non-member). https://www.nasdaq.com/articles/pmp-certification-and-exam:-cost-breakdown (Secondary; pmi.org was blocked by the allowlist)
+- **PMI PMP.** With a four-year degree: 36 months leading projects. Without one: 60 months. Both routes also require 35 contact hours of project management education or the CAPM. Exam fee: $405 (member) or $555 (non-member). https://www.nasdaq.com/articles/pmp-certification-and-exam:-cost-breakdown (Secondary; pmi.org could not be retrieved)
 - **CMAA CCM.** Requires 48 months of responsible-in-charge (RIC) experience with a four-year AEC degree; 48 months plus 4 years of general experience with a two-year AEC degree; 72 months with a four-year non-AEC degree; or 48 months plus 8 years of general experience with no degree. Fees: application $350 (member) or $450 (non-member), plus $300 exam. Fees from https://www.cmaanet.org/certification/certified-construction-manager/becoming-ccm (Primary). Eligibility from https://www.irecruit.co/insights/ccm-certification-explained-cmaa-credential-exam-who-benefits (Secondary; the CMAA chart is an image).
 - Implication: A PMP holder from tech does not qualify for the CCM directly. A four-year non-AEC degree requires six years of construction RIC experience.
 
@@ -209,7 +209,7 @@ Research compiled 24 October 2026. Every figure below came from a web page fetch
 - **WHO NHWA 2026 report** (September 2026): the Reuters original was blocked; figures come from secondary coverage.
 - **JSA Clean Energy Generation** figures (32,000 electricians, 2 million by 2050, 450,000 construction jobs) were not checked against the JSA PDF.
 - **BuildSkills Housing Workforce Capacity Study** primary page (buildskills.com.au/housing) was not fetched.
-- **PMI PMP official page** (pmi.org) was blocked by the session allowlist; the secondary figures were used.
+- **PMI PMP official page** (pmi.org) could not be retrieved; the secondary figures were used.
 - **CMAA CCM official eligibility chart** is an image; the secondary source was used and itself contains an internal inconsistency.
 - **ACRP CCRA official page** was not fetched; a tertiary source was used.
 - **SOCRA exam fee, NABCEP fees, and ASCM CPIM official exam fee** were not found.

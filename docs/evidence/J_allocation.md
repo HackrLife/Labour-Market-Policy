@@ -1,6 +1,6 @@
 # J. Allocation of talent and capital toward communication/media software, c.1995–2025
 
-Compiled 24 October 2026 from WebSearch/WebFetch only. Numbers in `J_series.csv`. "Verified" means the figure was read on the cited page. "Secondary" means it was read in a report of the source, not in the source itself.
+Compiled 24 October 2026 from web retrieval only. Numbers in `J_series.csv`. "Verified" means the figure was read on the cited page. "Secondary" means it was read in a report of the source, not in the source itself.
 
 ## Verdict on the thesis
 
@@ -220,7 +220,7 @@ Data for 2022 (NSB-2025-7 Table DISC-3; NSF 24-335 Table 2), domestic R&D perfor
 ## Could not verify
 
 - **Shu published version.** Whether Shu (2016) was published in a journal; I found only the working papers.
-- **Exact Founders Fund wording.** The exact wording and punctuation on the original Founders Fund page (foundersfund.com was not on the fetch allowlist), and whether "140 characters" appeared as a subtitle or in the body text.
+- **Exact Founders Fund wording.** The exact wording and punctuation on the original Founders Fund page (foundersfund.com could not be retrieved), and whether "140 characters" appeared as a subtitle or in the body text.
 - **Gaddy et al. author list.** The authorship of the published *Energy Policy* article (RePEc and the MITEI working paper disagree; see §8).
 - **Long-run sector series.** A consistent annual series of US VC by sector for 1995–2015. PitchBook yearbooks give single-year sector snapshots, and the MoneyTree "Internet-specific" category is defined differently from PitchBook's "Software."
 - **AI share in Q3 2026.** I found the H1 2026 Venture Monitor but no Q3 2026 Venture Monitor; release is probably mid-October 2026, but it was not found.
@@ -229,5 +229,5 @@ Data for 2022 (NSB-2025-7 Table DISC-3; NSF 24-335 Table 2), domestic R&D perfor
 - **Construction productivity detail.** Exact index values for Goolsbee & Syverson (houses per worker, square feet per worker); only the summary's "about 40%" figure was verified.
 - **Moretti multiplier.** I did not read the book itself; the figure comes from a secondary summary.
 - **Gen-AI paper venue.** The Science (2024) publication details for Eloundou et al.
-- **Causal evidence on tech jobs and house prices.** I found no peer-reviewed causal study in this session that isolates tech-employment shocks as a driver of house prices in San Francisco or Seattle; the Census/Zillow figures are descriptive. Australian evidence that ties *tech* jobs specifically to Sydney or Melbourne prices was not found.
+- **Causal evidence on tech jobs and house prices.** I found no peer-reviewed causal study at compilation (24 October 2026) that isolates tech-employment shocks as a driver of house prices in San Francisco or Seattle; the Census/Zillow figures are descriptive. Australian evidence that ties *tech* jobs specifically to Sydney or Melbourne prices was not found.
 - **Market capitalisation figures.** These come from aggregators, not exchange filings, and are rounded.

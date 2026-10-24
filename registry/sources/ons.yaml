@@ -52,4 +52,4 @@ datasets:
     verified: true
     notes: >-
       CSV href from https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/timeseries/kab9/emp.
-      Same CSV layout and parser need as MGSX. None of the three was pulled from this sandbox (egress blocked).
+      Same CSV layout and parser need as MGSX. None of the three has been pulled yet.

@@ -93,7 +93,7 @@ datasets:
     frequency: annual
     verified: false
     notes: >-
-      This is the standard WDI code, but no official page or live response could be retrieved this session
+      This is the standard WDI code, but no official page or live response could be retrieved at compilation (24 October 2026)
       (fetch failed; search budget exhausted). It was previously marked verified with no recorded evidence.
   - id: age_dependency_old
     title: Age dependency ratio, old (% of working-age population)
@@ -103,7 +103,7 @@ datasets:
     frequency: annual
     verified: false
     notes: >-
-      This is the standard WDI code, but no official page or live response could be retrieved this session.
+      This is the standard WDI code, but no official page or live response could be retrieved at compilation (24 October 2026).
       It was previously marked verified with no recorded evidence.
   - id: urban_population_share
     title: Urban population (% of total population)

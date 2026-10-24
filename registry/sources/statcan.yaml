@@ -23,7 +23,7 @@ datasets:
       (example uses this exact table). The user guide (https://www.statcan.gc.ca/en/developers/csv/user-guide)
       says the zip holds PID.csv and PID_Metadata.csv. Columns REF_DATE, GEO, VALUE etc.; rename in notebook.
       Attribution notice required: "Source: Statistics Canada, Table 14-10-0287-01, <reference date>".
-      Large file (all provinces, ages, sexes). Not pulled from this sandbox.
+      Large file (all provinces, ages, sexes). Not yet pulled.
   - id: job_vacancies_monthly_nsa
     title: Job vacancies, payroll employees and job vacancy rate by province and territory, monthly, unadjusted (table 14-10-0371-01)
     connector: http

@@ -1,6 +1,6 @@
 # I. Economists: verified sources for the digital-layer / conversion-friction thesis
 
-Verification standard: every bibliographic field below was confirmed from a web source fetched or returned in search in this session (24 Oct 2026). Fields that could not be confirmed are marked **[unverified]**. Quotes are under 15 words and taken from fetched text. Page numbers come from the fetched text and are flagged where they were inferred.
+Verification standard: every bibliographic field below was confirmed from a web source fetched or returned in search at compilation (24 October 2026) (24 Oct 2026). Fields that could not be confirmed are marked **[unverified]**. Quotes are under 15 words and taken from fetched text. Page numbers come from the fetched text and are flagged where they were inferred.
 
 Status key:
 - **VERIFIED**: core citation confirmed (author, year, title, venue).
@@ -343,7 +343,7 @@ See **4b** (Breaking the Mould, 2023) and **4c** (Project Syndicate commentary, 
 - **Relevance:** **The strongest causal support for T4.** Earnings rise when programmes convert workers into credentialed occupations in sectors with demand. The mechanism is the removal of credential and access friction, as T4 claims. The heterogeneity (St Nick's, HPOG) is a necessary qualification: design and employer linkage matter.
 
 ### 24c. Duflo / J-PAL policy synthesis: NOT VERIFIED
-- No J-PAL policy insight on job training was fetched in this session. Search J-PAL "vocational and skills training" policy insight if required.
+- No J-PAL policy insight on job training was fetched at compilation (24 October 2026). Search J-PAL "vocational and skills training" policy insight if required.
 
 ---
 

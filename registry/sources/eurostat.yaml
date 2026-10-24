@@ -61,7 +61,7 @@ datasets:
     verified: false
     notes: >-
       Confirmed only via mirrors: DBnomics lists "Employment rates by citizenship", updated by the provider
-      9 Jan 2026, and EIGE lists the same code. No Eurostat page or live response confirmed it this session.
+      9 Jan 2026, and EIGE lists the same code. No Eurostat page or live response confirmed it at compilation (24 October 2026).
   - id: migr_pop1ctz
     title: Population on 1 January by age group, sex and citizenship
     connector: sdmx
