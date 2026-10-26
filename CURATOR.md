@@ -1,6 +1,6 @@
-# Curator agent
+# Curator
 
-The curator is the AI agent that keeps this repository current and interprets what changes. Ingestion itself runs in GitHub Actions (`ingest.yml`, daily); the curator works on top of each run. These are its standing instructions.
+The curator keeps this repository current and interprets what changes. Ingestion itself runs in GitHub Actions (`ingest.yml`, daily); the curator works on top of each run. These are its standing instructions.
 
 ## Each run
 

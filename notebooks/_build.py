@@ -29,7 +29,7 @@ def vintage_cell(keys):
 
 FOOTER = """## Curator notes
 
-_Written by the curator agent after each new vintage: what changed, which revisions matter, and what to watch. See `DATA_CHANGELOG.md` for the full log._"""
+_Written by the curator after each new vintage: what changed, which revisions matter, and what to watch. See `DATA_CHANGELOG.md` for the full log._"""
 
 
 def nb(title, purpose, datasets, cells, curated_inputs=()):

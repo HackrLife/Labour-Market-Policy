@@ -14,7 +14,7 @@ data/<data type>/      every dataset, filed by data type
    curated/                              historical series no API serves, with row-level sources
 notebooks/<data type>/ analysis notebooks, re-executed against each new release
 analysis/              scripted analyses (e.g. ai_exposure: task exposure by occupation group)
-monitor/               dated AI-labour monitor entries written by the curator agent
+monitor/               dated AI-labour monitor entries written by the curator
 docs/evidence/         verified literature and evidence notes with citations
 src/labobs/            ingestion, validation, storage and notebook helpers
 ```
@@ -39,7 +39,7 @@ The full dataset list, generated from the registry, is in [CATALOGUE.md](CATALOG
 
 1. **Ingest** (`.github/workflows/ingest.yml`, daily 05:17 UTC) pulls every registered dataset with its full history. A new vintage is stored only when the publisher's file changes. Each vintage is validated (schema, truncation, revision share) before `latest.csv` is replaced, and the run is logged to `logs/runs/` and `DATA_CHANGELOG.md`.
 2. **Analysis** (`.github/workflows/analysis.yml`) re-executes all notebooks after an ingest that brought new data, and weekly, then commits the rendered outputs. `notebooks/HEALTH.md` lists any notebook that failed.
-3. **Curation** — the curator agent ([CURATOR.md](CURATOR.md)) reviews each run, repairs moved endpoints, writes the curator notes in each notebook, and adds monitor entries.
+3. **Curation** — the curator ([CURATOR.md](CURATOR.md)) reviews each run, repairs moved endpoints, writes the curator notes in each notebook, and adds monitor entries.
 
 ## Use
 

@@ -2,7 +2,7 @@ name: ingest
 
 # Daily pull of every registered dataset. New vintages, revisions and failures
 # are committed to the repo (data/, DATA_CHANGELOG.md, registry/status.json,
-# logs/runs/). The curator agent reviews each run's log.
+# logs/runs/). The curator reviews each run's log.
 
 on:
   schedule:
